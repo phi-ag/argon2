@@ -35,6 +35,6 @@ jobs:
         with:
           #working-directory: phc-winner-argon2
           #args: emmake make
-          run: |
+          args: |
             cd phc-winner-argon2
             emmake make
