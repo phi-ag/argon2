@@ -31,7 +31,7 @@ jobs:
       #    working-directory: ${{ github.workspace }}/phc-winner-argon2
       #    args: cd phc-winner-argon2 && emmake make
       - name: Build
-        uses: docker://alpine:latest
+        uses: docker://alpine:latest@sha256:beefdbd8a1da6d2915566fde36db9db0b524eb737fc57cd1367effd16dc0d06d
         with:
           #working-directory: ${{ github.workspace }}/phc-winner-argon2
           #path: phc-winner-argon2
