@@ -32,11 +32,12 @@ jobs:
       #    args: cd phc-winner-argon2 && emmake make
       - name: Build
         #uses: docker://alpine:latest
-        using: docker
-        image: alpine:latest
-        args:
-          - cd phc-winner-argon2
-          - ls -la
+        run:
+          using: docker
+          image: alpine:latest
+          args:
+            - cd phc-winner-argon2
+            - ls -la
         #with:
         #  #working-directory: ${{ github.workspace }}/phc-winner-argon2
         #  #path: phc-winner-argon2
