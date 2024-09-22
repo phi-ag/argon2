@@ -40,4 +40,5 @@ jobs:
         uses: docker://alpine:latest
         with:
           #working-directory: ${{ github.workspace }}/phc-winner-argon2
-          args: cd phc-winner-argon2 && ls -la
+          path: phc-winner-argon2
+          args: ls -la
