@@ -1,0 +1,32 @@
+name: Check
+
+on:
+  push:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
+
+      - name: Restore
+        uses: ./.github/actions/restore
+
+      - name: Audit
+        continue-on-error: true
+        run: pnpm audit
+
+      - name: Check formatting
+        continue-on-error: true
+        run: pnpm format:check
+
+      - name: Lint
+        continue-on-error: true
+        run: pnpm lint
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      - name: Build
+        run: pnpm build
