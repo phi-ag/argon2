@@ -16,7 +16,6 @@
     "access": "public"
   },
   "scripts": {
-    "dev": "vite-node --watch src/index.ts",
     "build": "tsc && cp ./src/argon2.wasm ./dist",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
@@ -35,8 +34,6 @@
     "prettier": "3.3.3",
     "typescript": "5.6.2",
     "typescript-eslint": "8.6.0",
-    "vite-node": "2.1.1",
-    "vite-plugin-dts": "4.2.1",
     "vitest": "2.1.1"
   },
   "engines": {
