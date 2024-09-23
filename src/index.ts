@@ -28,8 +28,7 @@ type Ptr = number;
 
 type DisposablePtr = Disposable & { ptr: Ptr };
 
-interface Argon2Module extends EmscriptenModule {
-  HEAPU8: Uint8Array;
+export interface Argon2Module extends EmscriptenModule {
   _malloc(length: number): number;
   _free(ptr: Ptr): void;
   UTF8ToString(ptr: Ptr, maxBytesToRead?: number | undefined): string;

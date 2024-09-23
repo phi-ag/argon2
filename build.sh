@@ -14,7 +14,7 @@ set -eux
     -s NO_FILESYSTEM \
     -s MODULARIZE \
     -s EXPORT_ES6 \
-    -s EXPORT_NAME=Argon2 \
+    -s EXPORT_NAME=Argon2ModuleFactory \
     -s EXPORTED_FUNCTIONS="_malloc","_free","_argon2_hash","_argon2_verify","_argon2_error_message","_argon2_encodedlen" \
     -s EXPORTED_RUNTIME_METHODS="UTF8ToString" \
     -s MALLOC=emmalloc \
@@ -27,6 +27,5 @@ set -eux
   shasum argon2.js
 
   cp -f argon2.wasm argon2.js ../src
-
   ls -l ../src
 )
