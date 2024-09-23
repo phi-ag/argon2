@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/phi-ag/argon2/compare/v0.1.0...v0.1.1) (2024-09-23)
+
+
+### Miscellaneous Chores
+
+* public release ([30cc9c9](https://github.com/phi-ag/argon2/commit/30cc9c9078114586a369199fb7021ae4a9d5010e))
+
 ## [0.1.0](https://github.com/phi-ag/argon2/compare/v0.0.1...v0.1.0) (2024-09-23)
 
 
