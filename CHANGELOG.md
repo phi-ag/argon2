@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.7](https://github.com/phi-ag/argon2/compare/v0.1.6...v0.1.7) (2024-09-23)
+
+
+### Miscellaneous Chores
+
+* add more initialize functions and remove types.d.ts ([2a7f235](https://github.com/phi-ag/argon2/commit/2a7f2353c39b92d539b6bae6a0bb716fdcd614fb))
+
 ## [0.1.6](https://github.com/phi-ag/argon2/compare/v0.1.5...v0.1.6) (2024-09-23)
 
 
