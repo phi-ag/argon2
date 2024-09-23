@@ -3,6 +3,7 @@
   "name": "@phi-ag/argon2",
   "version": "0.1.8",
   "license": "MIT",
+  "description": "Minimal Argon2 WebAssembly SIMD build for all runtimes",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/phi-ag/argon2.git"
@@ -12,6 +13,16 @@
   },
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "argon2",
+    "crypto",
+    "hashing",
+    "password",
+    "wasm",
+    "webassembly",
+    "simd",
+    "emscripten"
   ],
   "types": "./dist/index.d.ts",
   "module": "./dist/index.js",
@@ -44,9 +55,6 @@
     "typescript": "5.6.2",
     "typescript-eslint": "8.6.0",
     "vitest": "2.1.1"
-  },
-  "engines": {
-    "node": "22.9.0"
   },
   "packageManager": "pnpm@9.11.0+sha512.0a203ffaed5a3f63242cd064c8fb5892366c103e328079318f78062f24ea8c9d50bc6a47aa3567cabefd824d170e78fa2745ed1f16b132e16436146b7688f19b"
 }
