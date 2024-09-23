@@ -17,7 +17,7 @@ set -eux
     -s EXPORTED_FUNCTIONS="_malloc","_free","_argon2_hash","_argon2_verify","_argon2_error_message","_argon2_encodedlen" \
     -s EXPORTED_RUNTIME_METHODS="UTF8ToString" \
     -s MALLOC=emmalloc \
-    -s INITIAL_HEAP=67108864 \
+    -s INITIAL_HEAP=67174400 \
     -s ALLOW_MEMORY_GROWTH \
     -s ENVIRONMENT="web" \
     -D ARGON2_NO_THREADS \
