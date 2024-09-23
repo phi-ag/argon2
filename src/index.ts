@@ -1,4 +1,6 @@
-// @ts-ignore
+import { readFile } from "node:fs/promises";
+import { resolve } from "node:path";
+
 import init from "./argon2.js";
 
 /**
@@ -26,7 +28,7 @@ type Ptr = number;
 
 type DisposablePtr = Disposable & { ptr: Ptr };
 
-interface Argon2Module {
+interface Argon2Module extends EmscriptenModule {
   HEAPU8: Uint8Array;
   _malloc(length: number): number;
   _free(ptr: Ptr): void;
@@ -109,7 +111,37 @@ class Argon2 {
     this.#module = module;
   }
 
-  static initialize = async () => new Argon2(await init());
+  static initialize = async (overrides?: Partial<Argon2Module>): Promise<Argon2> =>
+    new Argon2(await init(overrides));
+
+  static initializeNode = async (overrides?: Partial<Argon2Module>): Promise<Argon2> => {
+    const path = resolve(import.meta.dirname, "./argon2.wasm");
+    const wasm = await readFile(path);
+
+    return this.initialize({
+      instantiateWasm: (imports, cb) => {
+        WebAssembly.instantiate(wasm, imports).then((instance) => cb(instance.instance));
+        return {};
+      },
+      ...overrides
+    });
+  };
+
+  static initializeWorkerd = async (
+    overrides?: Partial<Argon2Module>
+  ): Promise<Argon2> => {
+    // @ts-ignore
+    const wasm = await import("@phi-ag/argon2/dist/argon2.wasm");
+
+    return this.initialize({
+      instantiateWasm: (imports, cb) => {
+        const instance = new WebAssembly.Instance(wasm, imports);
+        cb(instance);
+        return instance.exports;
+      },
+      ...overrides
+    });
+  };
 
   #errorMessage = (error: number): string =>
     this.#module.UTF8ToString(this.#module._argon2_error_message(error));

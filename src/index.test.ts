@@ -3,7 +3,7 @@ import { describe, expect, test } from "vitest";
 import Argon2, { toHex, toUtf8Array } from ".";
 
 describe("argon2", async () => {
-  const argon2 = await Argon2.initialize();
+  const argon2 = await Argon2.initializeNode();
 
   test("hash password with specific salt", () => {
     const password = "foo";
