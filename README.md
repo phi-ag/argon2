@@ -11,7 +11,7 @@ Minimal Argon2 WebAssembly SIMD build for all runtimes inspired by [antelle/argo
 
 ### Examples
 
-Node.js
+Node.js / Deno / Bun
 
 ```ts
 import initialize from "@phi-ag/argon2/node";
