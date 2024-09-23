@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/phi-ag/argon2/compare/v0.1.2...v0.1.3) (2024-09-23)
+
+
+### Bug Fixes
+
+* add argon2.wasm to package exports ([bb5c990](https://github.com/phi-ag/argon2/commit/bb5c990335a5dab1218e1b34c47aef9918a28325))
+
 ## [0.1.2](https://github.com/phi-ag/argon2/compare/v0.1.1...v0.1.2) (2024-09-23)
 
 
