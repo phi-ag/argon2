@@ -1,3 +1,4 @@
+/// <reference types="emscripten" preserve="true" />
 import factory from "./argon2.js";
 
 /**
@@ -61,16 +62,16 @@ export interface Argon2Module extends EmscriptenModule {
   ): number;
 }
 
-export const toUtf8Array = (value: string) => new TextEncoder().encode(value);
+export const toUtf8Array = (value: string): Uint8Array => new TextEncoder().encode(value);
 
-export const toCString = (value: string) => toUtf8Array(value + "\0");
+export const toCString = (value: string): Uint8Array => toUtf8Array(value + "\0");
 
-export const toHex = (array: Uint8Array) =>
+export const toHex = (array: Uint8Array): string =>
   Array.from(array)
     .map((b) => b.toString(16).padStart(2, "0"))
     .join("");
 
-export const generateSalt = (length: number) => {
+export const generateSalt = (length: number): Uint8Array => {
   const array = new Uint8Array(length);
   crypto.getRandomValues(array);
   return array;
@@ -180,7 +181,11 @@ class Argon2 {
     return { hash, encoded };
   };
 
-  verify = (encoded: string, password: string, type = Argon2Type.Argon2id): void => {
+  verify = (
+    encoded: string,
+    password: string,
+    type: Argon2Type = Argon2Type.Argon2id
+  ): void => {
     using encodedPtr = this.#copyToHeap(toCString(encoded));
     using passwordPtr = this.#copyToHeap(toCString(password));
 
