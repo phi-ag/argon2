@@ -1,5 +1,5 @@
 // @ts-ignore
-import wasm from "@phi-ag/argon2/dist/argon2.wasm";
+import wasm from "@phi-ag/argon2/argon2.wasm";
 
 import Argon2, { type Argon2Module } from "./index";
 

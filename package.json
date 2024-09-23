@@ -18,7 +18,8 @@
   "exports": {
     ".": "./dist/index.js",
     "./node": "./dist/node.js",
-    "./workerd": "./dist/workerd.js"
+    "./workerd": "./dist/workerd.js",
+    "./argon2.wasm": "./dist/argon2.wasm"
   },
   "scripts": {
     "build": "tsc && cp ./src/argon2.wasm ./dist",
