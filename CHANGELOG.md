@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.4](https://github.com/phi-ag/argon2/compare/v0.1.3...v0.1.4) (2024-09-23)
+
+
+### Miscellaneous Chores
+
+* move @types/emscripten to dependencies ([99299a0](https://github.com/phi-ag/argon2/commit/99299a0a7ee6841e7a60efd31d0b5c51839f1e16))
+
 ## [0.1.3](https://github.com/phi-ag/argon2/compare/v0.1.2...v0.1.3) (2024-09-23)
 
 
