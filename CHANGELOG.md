@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.8](https://github.com/phi-ag/argon2/compare/v0.1.7...v0.1.8) (2024-09-23)
+
+
+### Bug Fixes
+
+* polyfill `Symbol.dispose` ([101d3c3](https://github.com/phi-ag/argon2/commit/101d3c380e6ca2ebce735c24f61c2c9f6ce4919c))
+
 ## [0.1.7](https://github.com/phi-ag/argon2/compare/v0.1.6...v0.1.7) (2024-09-23)
 
 
