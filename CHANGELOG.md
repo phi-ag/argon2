@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/phi-ag/argon2/compare/v0.1.1...v0.1.2) (2024-09-23)
+
+
+### Miscellaneous Chores
+
+* move custom initialize functions to separate files ([6a8896f](https://github.com/phi-ag/argon2/commit/6a8896f943069062673a251151f96d6757cb0216))
+
 ## [0.1.1](https://github.com/phi-ag/argon2/compare/v0.1.0...v0.1.1) (2024-09-23)
 
 
