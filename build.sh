@@ -20,6 +20,8 @@ set -eux
     -s MALLOC=emmalloc \
     -s INITIAL_HEAP=67108864 \
     -s ALLOW_MEMORY_GROWTH \
+    -s ENVIRONMENT="web" \
+    -s NO_USE_ES6_IMPORT_META \
     src/argon2.c src/core.c src/blake2/blake2b.c src/encoding.c src/opt.c \
     -o argon2.js
 
