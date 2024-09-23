@@ -113,9 +113,12 @@ class Argon2 {
   static initialize = async (overrides?: Partial<Argon2Module>): Promise<Argon2> =>
     new Argon2(await init(overrides));
 
-  static initializeNode = async (overrides?: Partial<Argon2Module>): Promise<Argon2> => {
-    const path = resolve(import.meta.dirname, "./argon2.wasm");
-    const wasm = await readFile(path);
+  static initializeNode = async (
+    path?: string,
+    overrides?: Partial<Argon2Module>
+  ): Promise<Argon2> => {
+    const wasmPath = path ?? resolve(import.meta.dirname, "./argon2.wasm");
+    const wasm = await readFile(wasmPath);
 
     return this.initialize({
       instantiateWasm: (imports, cb) => {

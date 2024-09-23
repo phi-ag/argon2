@@ -23,7 +23,7 @@
     "test:dev": "vitest",
     "format": "prettier --write \"**/*.{js,ts,tsx,json,css,yml,yaml}\"",
     "format:check": "prettier --check \"**/*.{js,ts,tsx,json,css,yml,yaml}\"",
-    "check": "pnpm format:check && pnpm lint && pnpm typecheck"
+    "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test"
   },
   "devDependencies": {
     "@eslint/js": "9.11.0",
