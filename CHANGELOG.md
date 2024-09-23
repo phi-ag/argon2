@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.1.9](https://github.com/phi-ag/argon2/compare/v0.1.8...v0.1.9) (2024-09-23)
+
+
+### Documentation
+
+* add examples to readme ([c20101d](https://github.com/phi-ag/argon2/commit/c20101d5328c208fc6fc3e88d41cb47bad3c44c9))
+
+
+### Miscellaneous Chores
+
+* add package.json description, keywords and remove engine ([28610d0](https://github.com/phi-ag/argon2/commit/28610d03f5ed5d6c9167b746ad9f0b31da15351b))
+* **deps:** update dependency @types/node to v22.6.0 ([af7a77d](https://github.com/phi-ag/argon2/commit/af7a77d2ad59a48398237dabdb55879af43d0173))
+* **deps:** update dependency typescript-eslint to v8.7.0 ([7744222](https://github.com/phi-ag/argon2/commit/7744222b6a55d5f74962b8e07a194a5b4210c37e))
+
 ## [0.1.8](https://github.com/phi-ag/argon2/compare/v0.1.7...v0.1.8) (2024-09-23)
 
 
