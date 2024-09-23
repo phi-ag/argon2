@@ -1,6 +1,10 @@
 /// <reference types="emscripten" preserve="true" />
 import factory from "./argon2.js";
 
+// @ts-ignore Polyfill `Symbol.dispose`
+// see https://github.com/evanw/esbuild/issues/3920#issuecomment-2367183692
+Symbol.dispose ??= Symbol("Symbol.dispose");
+
 /**
  * Argon2 primitive type
  *
