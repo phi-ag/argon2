@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.5](https://github.com/phi-ag/argon2/compare/v0.1.4...v0.1.5) (2024-09-23)
+
+
+### Miscellaneous Chores
+
+* preserve reference to @types/emscripten in build output ([d00943d](https://github.com/phi-ag/argon2/commit/d00943d81eed3ce5154868587b31fdb1dfab130f))
+
 ## [0.1.4](https://github.com/phi-ag/argon2/compare/v0.1.3...v0.1.4) (2024-09-23)
 
 
