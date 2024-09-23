@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.1.10](https://github.com/phi-ag/argon2/compare/v0.1.9...v0.1.10) (2024-09-23)
+
+
+### Documentation
+
+* add deno and bun to readme ([9387b9f](https://github.com/phi-ag/argon2/commit/9387b9f4a4c308b643705c8cada91184990d9db1))
+
+
+### Miscellaneous Chores
+
+* **deps:** update eslint monorepo to v9.11.1 ([2b810b5](https://github.com/phi-ag/argon2/commit/2b810b529b79f3a207aa1d3bbcc9042b36bb0799))
+* increase initial heap size by one page ([885ea32](https://github.com/phi-ag/argon2/commit/885ea3250bf0775853069f292a0053e94099ed3e))
+
 ## [0.1.9](https://github.com/phi-ag/argon2/compare/v0.1.8...v0.1.9) (2024-09-23)
 
 
