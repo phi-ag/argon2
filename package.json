@@ -3,17 +3,22 @@
   "name": "@phi-ag/argon2",
   "version": "0.1.1",
   "license": "MIT",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "/dist"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/phi-ag/argon2.git"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./node": "./dist/node.js",
+    "./workerd": "./dist/workerd.js"
   },
   "scripts": {
     "build": "tsc && cp ./src/argon2.wasm ./dist",

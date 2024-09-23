@@ -1,7 +1,4 @@
-import { readFile } from "node:fs/promises";
-import { resolve } from "node:path";
-
-import init from "./argon2.js";
+import factory from "./argon2.js";
 
 /**
  * Argon2 primitive type
@@ -111,39 +108,7 @@ class Argon2 {
   }
 
   static initialize = async (overrides?: Partial<Argon2Module>): Promise<Argon2> =>
-    new Argon2(await init(overrides));
-
-  static initializeNode = async (
-    path?: string,
-    overrides?: Partial<Argon2Module>
-  ): Promise<Argon2> => {
-    const wasmPath = path ?? resolve(import.meta.dirname, "./argon2.wasm");
-    const wasm = await readFile(wasmPath);
-
-    return this.initialize({
-      instantiateWasm: (imports, cb) => {
-        WebAssembly.instantiate(wasm, imports).then((instance) => cb(instance.instance));
-        return {};
-      },
-      ...overrides
-    });
-  };
-
-  static initializeWorkerd = async (
-    overrides?: Partial<Argon2Module>
-  ): Promise<Argon2> => {
-    // @ts-ignore
-    const wasm = await import("@phi-ag/argon2/dist/argon2.wasm");
-
-    return this.initialize({
-      instantiateWasm: (imports, cb) => {
-        const instance = new WebAssembly.Instance(wasm, imports);
-        cb(instance);
-        return instance.exports;
-      },
-      ...overrides
-    });
-  };
+    new Argon2(await factory(overrides));
 
   #errorMessage = (error: number): string =>
     this.#module.UTF8ToString(this.#module._argon2_error_message(error));

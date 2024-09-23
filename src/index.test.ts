@@ -1,9 +1,10 @@
 import { describe, expect, test } from "vitest";
 
-import Argon2, { toHex, toUtf8Array } from ".";
+import { toHex, toUtf8Array } from "./index";
+import initializeNode from "./node";
 
 describe("argon2", async () => {
-  const argon2 = await Argon2.initializeNode();
+  const argon2 = await initializeNode();
 
   test("hash password with specific salt", () => {
     const password = "foo";
