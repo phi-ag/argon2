@@ -111,6 +111,45 @@ class Argon2 {
   static initialize = async (overrides?: Partial<Argon2Module>): Promise<Argon2> =>
     new Argon2(await factory(overrides));
 
+  static initializeModule = async (
+    module: WebAssembly.Module,
+    overrides?: Partial<Argon2Module>
+  ): Promise<Argon2> =>
+    this.initialize({
+      instantiateWasm: (imports, cb) => {
+        const instance = new WebAssembly.Instance(module, imports);
+        cb(instance);
+        return instance.exports;
+      },
+      ...overrides
+    });
+
+  static initializeBuffer = async (
+    buffer: BufferSource,
+    overrides?: Partial<Argon2Module>
+  ): Promise<Argon2> =>
+    this.initialize({
+      instantiateWasm: (imports, cb) => {
+        WebAssembly.instantiate(buffer, imports).then((module) => cb(module.instance));
+        return {};
+      },
+      ...overrides
+    });
+
+  static initializeStreaming = async (
+    response: Response | PromiseLike<Response>,
+    overrides?: Partial<Argon2Module>
+  ): Promise<Argon2> =>
+    this.initialize({
+      instantiateWasm: (imports, cb) => {
+        WebAssembly.instantiateStreaming(response, imports).then((module) =>
+          cb(module.instance)
+        );
+        return {};
+      },
+      ...overrides
+    });
+
   #errorMessage = (error: number): string =>
     this.#module.UTF8ToString(this.#module._argon2_error_message(error));
 

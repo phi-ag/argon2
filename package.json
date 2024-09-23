@@ -18,7 +18,7 @@
   "exports": {
     ".": "./dist/index.js",
     "./node": "./dist/node.js",
-    "./workerd": "./dist/workerd.js",
+    "./fetch": "./dist/fetch.js",
     "./argon2.wasm": "./dist/argon2.wasm"
   },
   "scripts": {

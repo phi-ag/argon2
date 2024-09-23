@@ -9,14 +9,7 @@ const initializeNode = async (
 ): Promise<Argon2> => {
   const wasmPath = path ?? resolve(import.meta.dirname, "./argon2.wasm");
   const wasm = await readFile(wasmPath);
-
-  return Argon2.initialize({
-    instantiateWasm: (imports, cb) => {
-      WebAssembly.instantiate(wasm, imports).then((instance) => cb(instance.instance));
-      return {};
-    },
-    ...overrides
-  });
+  return await Argon2.initializeBuffer(wasm, overrides);
 };
 
 export default initializeNode;
