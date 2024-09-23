@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.6](https://github.com/phi-ag/argon2/compare/v0.1.5...v0.1.6) (2024-09-23)
+
+
+### Miscellaneous Chores
+
+* copy declaration files after build ([c3325ab](https://github.com/phi-ag/argon2/commit/c3325abe55cdad36ad1ce8d93b1381db08e7704c))
+* reorder emcc arguments ([c3289b1](https://github.com/phi-ag/argon2/commit/c3289b136511c257150e69b9086b5dab202880c1))
+
 ## [0.1.5](https://github.com/phi-ag/argon2/compare/v0.1.4...v0.1.5) (2024-09-23)
 
 
