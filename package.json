@@ -22,7 +22,7 @@
     "./argon2.wasm": "./dist/argon2.wasm"
   },
   "scripts": {
-    "build": "tsc && cp ./src/argon2.wasm ./dist",
+    "build": "tsc && cp -f src/argon2.wasm src/*.d.ts ./dist",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "test": "vitest --run",

@@ -1,7 +1,5 @@
-import { type Argon2Module } from "./index.js";
-
 export default Argon2ModuleFactory;
 
 declare function Argon2ModuleFactory(
-  overrides?: Partial<Argon2Module>
-): Promise<Argon2Module>;
+  overrides?: Partial<import("./index.js").Argon2Module>
+): Promise<import("./index.js").Argon2Module>;
