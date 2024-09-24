@@ -66,3 +66,24 @@ argon2.tryVerify(encoded, "my secret password");
 argon2.tryVerify(encoded, "not my password");
 // => { success: false, error: "The password does not match the supplied hash" }
 ```
+
+## Benchmark
+
+See [index.bench.ts](src/index.bench.ts) for caveats
+
+    pnpm bench
+
+Results for Ryzen 9 5900X
+
+    RUN  v2.1.1
+
+    ✓ src/index.bench.ts (2) 23114ms
+      ✓ hash and verify (2) 23112ms
+        name                hz     min     max    mean     p75     p99    p995    p999     rme  samples
+      · @phi-ag/argon2  5.4920  174.15  189.89  182.08  185.94  189.89  189.89  189.89  ±0.66%       55   fastest
+      · hash-wasm       2.8805  335.22  369.88  347.16  352.52  369.88  369.88  369.88  ±0.94%       29
+
+    BENCH  Summary
+
+      @phi-ag/argon2 - src/index.bench.ts > hash and verify
+        1.91x faster than hash-wasm

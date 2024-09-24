@@ -39,6 +39,7 @@
     "test": "vitest --run",
     "test:dev": "vitest",
     "test:coverage": "vitest --run --coverage src",
+    "bench": "pnpm vitest bench --run",
     "format": "prettier --write \"**/*.{js,ts,tsx,json,css,yml,yaml}\"",
     "format:check": "prettier --check \"**/*.{js,ts,tsx,json,css,yml,yaml}\"",
     "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test"
@@ -53,6 +54,7 @@
     "@types/node": "22.6.1",
     "@vitest/coverage-v8": "2.1.1",
     "eslint": "9.11.1",
+    "hash-wasm": "4.11.0",
     "prettier": "3.3.3",
     "typescript": "5.6.2",
     "typescript-eslint": "8.7.0",
