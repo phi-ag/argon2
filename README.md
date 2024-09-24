@@ -3,6 +3,7 @@
 [![Version](https://img.shields.io/npm/v/%40phi-ag%2Fargon2?style=for-the-badge&color=blue)](https://www.npmjs.com/package/@phi-ag/argon2)
 [![Coverage](https://img.shields.io/codecov/c/github/phi-ag/argon2?style=for-the-badge)](https://app.codecov.io/github/phi-ag/argon2)
 [![Downloads](https://img.shields.io/npm/d18m/%40phi-ag%2Fargon2?style=for-the-badge)](https://www.npmjs.com/package/@phi-ag/argon2)
+[![Size](https://img.shields.io/npm/unpacked-size/%40phi-ag%2Fargon2?style=for-the-badge&label=size&color=lightgray)](https://www.npmjs.com/package/@phi-ag/argon2)
 
 Minimal Argon2 WebAssembly SIMD build for all runtimes inspired by [antelle/argon2-browser](https://github.com/antelle/argon2-browser)
 
