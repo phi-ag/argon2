@@ -10,7 +10,7 @@ Symbol.dispose ??= Symbol("Symbol.dispose");
  *
  * see https://github.com/P-H-C/phc-winner-argon2/blob/master/include/argon2.h#L220
  */
-export enum Argon2Type {
+export const enum Argon2Type {
   Argon2d = 0,
   Argon2i = 1,
   Argon2id = 2
@@ -21,7 +21,7 @@ export enum Argon2Type {
  *
  * see https://github.com/P-H-C/phc-winner-argon2/blob/master/include/argon2.h#L227
  */
-export enum Argon2Version {
+export const enum Argon2Version {
   Version10 = 0x10,
   Version13 = 0x13
 }
