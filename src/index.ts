@@ -10,18 +10,29 @@ Symbol.dispose ??= Symbol("Symbol.dispose");
  *
  * see https://github.com/P-H-C/phc-winner-argon2/blob/master/include/argon2.h#L220
  */
-export const enum Argon2Type {
+export enum Argon2Type {
   Argon2d = 0,
   Argon2i = 1,
   Argon2id = 2
 }
+
+export const typeFromEncoded = (encoded: string): Argon2Type | undefined => {
+  if (!encoded?.length) return;
+
+  const type = encoded.slice(1, encoded.indexOf("$", 1));
+  if (!type.length) return;
+
+  const key = type.charAt(0).toUpperCase() + type.slice(1).toLowerCase();
+  // @ts-expect-error
+  return Argon2Type[key];
+};
 
 /**
  * Argon2 version
  *
  * see https://github.com/P-H-C/phc-winner-argon2/blob/master/include/argon2.h#L227
  */
-export const enum Argon2Version {
+export enum Argon2Version {
   Version10 = 0x10,
   Version13 = 0x13
 }
@@ -131,6 +142,26 @@ export const defaultHashOptions: Partial<Argon2HashOptions> = {
   version: Argon2Version.Version13
 };
 
+export const validateOptions = (opts: Argon2HashOptions): string | undefined => {
+  if (!Number.isInteger(opts.hashLength)) return "Hash length must be an integer";
+  if (!Number.isInteger(opts.timeCost)) return "Time cost must be an integer";
+  if (!Number.isInteger(opts.memoryCost)) return "Memory cost must be an integer";
+  if (!Number.isInteger(opts.parallelism)) return "Parallelism must be an integer";
+
+  if (opts.hashLength < 4) return "Hash length is too small";
+  if (opts.timeCost < 1) return "Time cost is too small";
+  if (opts.memoryCost < 32) return "Memory cost is too small";
+  if (opts.parallelism < 1) return "Parallelism is too small";
+
+  if (!(opts.type in Argon2Type)) return "Invalid type";
+  if (!(opts.version in Argon2Version)) return "Invalid version";
+
+  if (opts.salt) {
+    if (!(opts.salt instanceof Uint8Array)) return "Salt must be of type Uint8Array";
+    if (opts.salt.length < 8) return "Salt length is too small";
+  }
+};
+
 class Argon2 {
   #module: Argon2Module;
 
@@ -209,6 +240,9 @@ class Argon2 {
       ...options
     } as Argon2HashOptions;
 
+    const error = validateOptions(opts);
+    if (error) return { success: false, error };
+
     const salt = opts.salt ?? generateSalt(16);
 
     const encodedLength = this.#module._argon2_encodedlen(
@@ -242,9 +276,7 @@ class Argon2 {
       opts.version
     );
 
-    if (result !== 0) {
-      return { success: false, error: this.#errorMessage(result) };
-    }
+    if (result !== 0) return { success: false, error: this.#errorMessage(result) };
 
     const hash = this.#copyFromHeap(hashPtr.ptr, opts.hashLength);
     const encoded = this.#module.UTF8ToString(encodedPtr.ptr);
@@ -261,8 +293,13 @@ class Argon2 {
   tryVerify = (
     encoded: string,
     password: string,
-    type: Argon2Type = Argon2Type.Argon2id
+    type?: Argon2Type
   ): Argon2TryVerifyResult => {
+    const $type = type ?? typeFromEncoded(encoded);
+
+    if ($type === undefined || !($type in Argon2Type))
+      return { success: false, error: "Invalid Argon2 type" };
+
     using encodedPtr = this.#copyToHeap(toCString(encoded));
     using passwordPtr = this.#copyToHeap(toCString(password));
 
@@ -270,21 +307,15 @@ class Argon2 {
       encodedPtr.ptr,
       passwordPtr.ptr,
       password.length,
-      type
+      $type
     );
 
-    if (result !== 0) {
-      return { success: false, error: this.#errorMessage(result) };
-    }
+    if (result !== 0) return { success: false, error: this.#errorMessage(result) };
 
     return { success: true };
   };
 
-  verify = (
-    encoded: string,
-    password: string,
-    type: Argon2Type = Argon2Type.Argon2id
-  ): void => {
+  verify = (encoded: string, password: string, type?: Argon2Type): void => {
     const result = this.tryVerify(encoded, password, type);
     if (!result.success) throw Error(result.error);
   };
