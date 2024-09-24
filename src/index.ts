@@ -20,7 +20,7 @@ export const typeFromEncoded = (encoded: string): Argon2Type | undefined => {
   if (!encoded?.length) return;
 
   const type = encoded.slice(1, encoded.indexOf("$", 1));
-  if (!type.length) return;
+  if (type.length < 7) return;
 
   const key = type.charAt(0).toUpperCase() + type.slice(1).toLowerCase();
   // @ts-expect-error

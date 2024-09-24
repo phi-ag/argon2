@@ -155,6 +155,7 @@ describe("argon2", async () => {
     expect(typeFromEncoded("$argon2x$v=19...")).toBeUndefined();
     expect(typeFromEncoded("")).toBeUndefined();
     expect(typeFromEncoded("$")).toBeUndefined();
+    expect(typeFromEncoded("$12")).toBeUndefined();
     // @ts-expect-error
     expect(typeFromEncoded(null)).toBeUndefined();
     // @ts-expect-error
