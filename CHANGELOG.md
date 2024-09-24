@@ -1,5 +1,38 @@
 # Changelog
 
+## [0.2.1](https://github.com/phi-ag/argon2/compare/v0.2.0...v0.2.1) (2024-09-24)
+
+
+### Bug Fixes
+
+* handle a type from encoded edge case ([83c2b3e](https://github.com/phi-ag/argon2/commit/83c2b3e17e59eccca1ac7cb58fa9e5bf274efce6))
+
+
+### Documentation
+
+* add coverage badge to readme ([b01b205](https://github.com/phi-ag/argon2/commit/b01b205b93f5c884c4ed74a3d39ffbd7f878f6ee))
+* add link to cloudflare wasm example ([05806ff](https://github.com/phi-ag/argon2/commit/05806ff7d403a8dc918036b5846966e697e3b15b))
+* document tryHash and tryVerify in readme ([4800765](https://github.com/phi-ag/argon2/commit/4800765efc8ebb074086f3fbba6f2a546b0c352f))
+
+
+### Miscellaneous Chores
+
+* add benchmark ([4770935](https://github.com/phi-ag/argon2/commit/47709357a003ed78364992da807b8ca3a0f76998))
+* add size badge ([3638e3a](https://github.com/phi-ag/argon2/commit/3638e3a18a69ffa96e6c97bd710916f5f46f4549))
+* **deps:** pin codecov/test-results-action action to 1b5b448 ([1eb35d0](https://github.com/phi-ag/argon2/commit/1eb35d0286c80d5468b137f8fcadc123c4cc0535))
+* enable emscripten strict mode ([2872929](https://github.com/phi-ag/argon2/commit/2872929ef651da8e75a47652e0610fbc1b422bab))
+
+
+### Tests
+
+* better coverage for hash and verify ([6c936cc](https://github.com/phi-ag/argon2/commit/6c936cc96666beefce51325e2c2f01b30193fcce))
+* generate coverage reports ([f7aa252](https://github.com/phi-ag/argon2/commit/f7aa25215fd3b3483524c4b73b9457cf2195765d))
+
+
+### Continuous Integration
+
+* upload test results to codecov ([b288087](https://github.com/phi-ag/argon2/commit/b2880873ef7f8ed8e1bf836e6bc5c260a16def31))
+
 ## [0.2.0](https://github.com/phi-ag/argon2/compare/v0.1.10...v0.2.0) (2024-09-24)
 
 
