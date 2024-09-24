@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.2.0](https://github.com/phi-ag/argon2/compare/v0.1.10...v0.2.0) (2024-09-24)
+
+
+### Features
+
+* add try hash and verify functions ([001c22e](https://github.com/phi-ag/argon2/commit/001c22ec8ce160d299b41df6dfc8259c535c1fa8))
+
+
+### Miscellaneous Chores
+
+* add hash and verify tests ([46ea904](https://github.com/phi-ag/argon2/commit/46ea9049dd45862c48b7c10d95851cee17dfb4dc))
+* **deps:** update dependency @types/node to v22.6.1 ([e932397](https://github.com/phi-ag/argon2/commit/e93239722dcb7919e126464edbf4ddf48dc9cbab))
+* limit emscripten js api and use const enums ([132d714](https://github.com/phi-ag/argon2/commit/132d714aa32996ce39d929d17bbf32dff7988053))
+* move emscripten cache ([9695e31](https://github.com/phi-ag/argon2/commit/9695e31a558696d2e23594ab163910d2ed97c0c5))
+
 ## [0.1.10](https://github.com/phi-ag/argon2/compare/v0.1.9...v0.1.10) (2024-09-23)
 
 
