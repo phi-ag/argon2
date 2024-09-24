@@ -103,8 +103,8 @@ export interface Argon2HashOptions {
 }
 
 export interface Argon2HashData {
-  hash: Uint8Array;
   encoded: string;
+  hash: Uint8Array;
 }
 
 export interface Argon2TryHashSuccess {
@@ -281,7 +281,7 @@ class Argon2 {
     const hash = this.#copyFromHeap(hashPtr.ptr, opts.hashLength);
     const encoded = this.#module.UTF8ToString(encodedPtr.ptr);
 
-    return { success: true, data: { hash, encoded } };
+    return { success: true, data: { encoded, hash } };
   };
 
   hash = (password: string, options?: Partial<Argon2HashOptions>): Argon2HashData => {

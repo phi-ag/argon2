@@ -48,3 +48,19 @@ export const GET = async () => {
   return new Response(encoded);
 };
 ```
+
+If you don't want to throw errors, use `tryHash` and `tryVerify`
+
+```ts
+argon2.tryHash("my secret password");
+// => { success: true; data: { encoded, hash } }
+
+argon2.tryHash("my secret password", { timeCost: 0 });
+// => { success: false; error: "Time cost is too small" }
+
+argon2.tryVerify(encoded, "my secret password");
+// => { success: true }
+
+argon2.tryVerify(encoded, "not my password");
+// => { success: false, error: "The password does not match the supplied hash" }
+```
