@@ -5,6 +5,12 @@ export default defineConfig({
     reporters: ["basic", "junit"],
     outputFile: {
       junit: "junit.xml"
+    },
+    coverage: {
+      all: true,
+      include: ["src/**"],
+      reportsDirectory: "coverage",
+      reporter: ["text", "cobertura", "html"]
     }
   }
 });

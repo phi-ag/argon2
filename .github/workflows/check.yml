@@ -34,7 +34,13 @@ jobs:
         run: pnpm typecheck
 
       - name: Test
-        run: pnpm test
+        run: pnpm test:coverage
+
+      - name: Codecov
+        uses: codecov/codecov-action@e28ff129e5465c2c0dcc6f003fc735cb6ae0c673 # v4
+        with:
+          files: ./coverage/cobertura-coverage.xml
+          token: ${{ secrets.CODECOV_TOKEN }}
 
       - name: Build
         run: pnpm build
