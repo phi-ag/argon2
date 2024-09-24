@@ -4,7 +4,7 @@
 [![Coverage](https://img.shields.io/codecov/c/github/phi-ag/argon2?style=for-the-badge)](https://app.codecov.io/github/phi-ag/argon2)
 [![Downloads](https://img.shields.io/npm/d18m/%40phi-ag%2Fargon2?style=for-the-badge)](https://www.npmjs.com/package/@phi-ag/argon2)
 
-Minimal Argon2 WebAssembly SIMD build for all runtimes inspired by [antelle/argon2-browser](https://github.com/antelle/argon2-browser).
+Minimal Argon2 WebAssembly SIMD build for all runtimes inspired by [antelle/argon2-browser](https://github.com/antelle/argon2-browser)
 
 ## Usage
 
@@ -35,12 +35,12 @@ const argon2 = await initialize(wasm);
 const { encoded } = argon2.hash("my secret password");
 ```
 
-Astro endpoint running on Cloudflare
+Astro endpoint running on [Cloudflare](https://developers.cloudflare.com/workers/runtime-apis/webassembly/javascript/#use-from-javascript)
 
 ```ts
 import Argon2 from "@phi-ag/argon2";
 // @ts-expect-error
-import wasm from "@phi-ag/argon2/argon2.wasm?module";
+import wasm from "@phi-ag/argon2/argon2.wasm";
 
 const argon2 = await Argon2.initializeModule(wasm);
 
