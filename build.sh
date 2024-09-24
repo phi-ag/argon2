@@ -11,6 +11,7 @@ set -eu
   # - Compiler settings see https://emscripten.org/docs/tools_reference/settings_reference.html
   emcc -std=c89 -Wall -Wextra -Werror -Wno-type-limits \
     -O3 -flto -msimd128 -msse4.2 -mavx \
+    -sSTRICT \
     -sNO_ASSERTIONS \
     -sWASM_BIGINT \
     -sNO_FILESYSTEM \
@@ -19,7 +20,7 @@ set -eu
     -sNO_USE_ES6_IMPORT_META \
     -sEXPORT_NAME=Argon2ModuleFactory \
     -sEXPORTED_FUNCTIONS=_malloc,_free,_argon2_hash,_argon2_verify,_argon2_error_message,_argon2_encodedlen \
-    -sEXPORTED_RUNTIME_METHODS=UTF8ToString \
+    -sEXPORTED_RUNTIME_METHODS=UTF8ToString,HEAPU8 \
     -sINCOMING_MODULE_JS_API=instantiateWasm \
     -sMALLOC=emmalloc \
     -sINITIAL_HEAP=67174400 \
