@@ -55,6 +55,8 @@ describe("argon2", async () => {
     // @ts-expect-error
     expect(argon2.tryHash(p, { hashLength: null }).error).toEqual(typeError);
     expect(argon2.tryHash(p, { hashLength: 55.2 }).error).toEqual(typeError);
+
+    expect(() => argon2.hash(p, { hashLength: 55.2 })).toThrowError(typeError);
   });
 
   test("hash password with salt", () => {
@@ -136,6 +138,11 @@ describe("argon2", async () => {
     expect(argon2.tryHash(p, { version: 69 }).error).toEqual("Invalid version");
   });
 
+  test("hash password with error returned from wasm", () => {
+    const error = "Memory cost is too small";
+    expect(argon2.tryHash(p, { parallelism: 10_000 }).error).toEqual(error);
+  });
+
   test("parse type from encoded string", () => {
     const encoded =
       "$argon2id$v=19$m=65536,t=3,p=4$YXNkZmFzZGZhc2RmYXNkZg$OccGd3NThlVvz12dshEYGyPf5b3Ut9CRIyfqcZcRw80";
@@ -147,6 +154,7 @@ describe("argon2", async () => {
 
     expect(typeFromEncoded("$argon2x$v=19...")).toBeUndefined();
     expect(typeFromEncoded("")).toBeUndefined();
+    expect(typeFromEncoded("$")).toBeUndefined();
     // @ts-expect-error
     expect(typeFromEncoded(null)).toBeUndefined();
     // @ts-expect-error
@@ -165,5 +173,9 @@ describe("argon2", async () => {
     expect(argon2.tryVerify(encoded, "foo", Argon2Type.Argon2d).error).toEqual(
       "Decoding failed"
     );
+    // @ts-expect-error
+    expect(argon2.tryVerify(encoded, "foo", -1).error).toEqual("Invalid type");
+    // @ts-expect-error
+    expect(argon2.tryVerify(encoded, "foo", "not-a-type").error).toEqual("Invalid type");
   });
 });

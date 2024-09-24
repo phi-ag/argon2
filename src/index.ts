@@ -298,7 +298,7 @@ class Argon2 {
     const $type = type ?? typeFromEncoded(encoded);
 
     if ($type === undefined || !($type in Argon2Type))
-      return { success: false, error: "Invalid Argon2 type" };
+      return { success: false, error: "Invalid type" };
 
     using encodedPtr = this.#copyToHeap(toCString(encoded));
     using passwordPtr = this.#copyToHeap(toCString(password));
