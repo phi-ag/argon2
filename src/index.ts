@@ -91,10 +91,36 @@ export interface Argon2HashOptions {
   version: Argon2Version;
 }
 
-export interface Argon2HashResult {
+export interface Argon2HashData {
   hash: Uint8Array;
   encoded: string;
 }
+
+export interface Argon2TryHashSuccess {
+  success: true;
+  error?: never;
+  data: Argon2HashData;
+}
+
+export interface Argon2TryHashError {
+  success: false;
+  error: string;
+  data?: never;
+}
+
+export type Argon2TryHashResult = Argon2TryHashSuccess | Argon2TryHashError;
+
+export interface Argon2TryVerifySuccess {
+  success: true;
+  error?: never;
+}
+
+export interface Argon2TryVerifyError {
+  success: false;
+  error: string;
+}
+
+export type Argon2TryVerifyResult = Argon2TryVerifySuccess | Argon2TryVerifyError;
 
 export const defaultHashOptions: Partial<Argon2HashOptions> = {
   hashLength: 32,
@@ -159,7 +185,6 @@ class Argon2 {
 
   #malloc = (length: number): DisposablePtr => {
     const ptr = this.#module._malloc(length);
-
     return {
       ptr,
       [Symbol.dispose]: () => this.#module._free(ptr)
@@ -175,7 +200,10 @@ class Argon2 {
   #copyFromHeap = (ptr: Ptr, length: number): Uint8Array =>
     this.#module.HEAPU8.slice(ptr, ptr + length);
 
-  hash = (password: string, options?: Partial<Argon2HashOptions>): Argon2HashResult => {
+  tryHash = (
+    password: string,
+    options?: Partial<Argon2HashOptions>
+  ): Argon2TryHashResult => {
     const opts = {
       ...defaultHashOptions,
       ...options
@@ -215,20 +243,26 @@ class Argon2 {
     );
 
     if (result !== 0) {
-      throw Error(this.#errorMessage(result));
+      return { success: false, error: this.#errorMessage(result) };
     }
 
     const hash = this.#copyFromHeap(hashPtr.ptr, opts.hashLength);
     const encoded = this.#module.UTF8ToString(encodedPtr.ptr);
 
-    return { hash, encoded };
+    return { success: true, data: { hash, encoded } };
   };
 
-  verify = (
+  hash = (password: string, options?: Partial<Argon2HashOptions>): Argon2HashData => {
+    const result = this.tryHash(password, options);
+    if (result.success) return result.data;
+    throw Error(result.error);
+  };
+
+  tryVerify = (
     encoded: string,
     password: string,
     type: Argon2Type = Argon2Type.Argon2id
-  ): void => {
+  ): Argon2TryVerifyResult => {
     using encodedPtr = this.#copyToHeap(toCString(encoded));
     using passwordPtr = this.#copyToHeap(toCString(password));
 
@@ -240,8 +274,19 @@ class Argon2 {
     );
 
     if (result !== 0) {
-      throw Error(this.#errorMessage(result));
+      return { success: false, error: this.#errorMessage(result) };
     }
+
+    return { success: true };
+  };
+
+  verify = (
+    encoded: string,
+    password: string,
+    type: Argon2Type = Argon2Type.Argon2id
+  ): void => {
+    const result = this.tryVerify(encoded, password, type);
+    if (!result.success) throw Error(result.error);
   };
 }
 

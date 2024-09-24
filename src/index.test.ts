@@ -9,7 +9,11 @@ describe("argon2", async () => {
   test("hash password with specific salt", () => {
     const password = "foo";
     const salt = toUtf8Array("asdfasdfasdfasdf");
+
     const { hash, encoded } = argon2.hash(password, { salt });
+    const result = argon2.tryHash(password, { salt });
+
+    expect(result.data?.encoded).toEqual(encoded);
 
     expect(toHex(hash)).toEqual(
       "39c70677735386556fcf5d9db211181b23dfe5bdd4b7d0912327ea719711c3cd"
@@ -24,6 +28,11 @@ describe("argon2", async () => {
     expect(() => argon2.verify(encoded, "not the password")).toThrowError(
       "The password does not match the supplied hash"
     );
+
+    expect(argon2.tryVerify(encoded, "not the password")).toEqual({
+      success: false,
+      error: "The password does not match the supplied hash"
+    });
   });
 
   test("hash password with defaults", () => {
@@ -35,5 +44,10 @@ describe("argon2", async () => {
     expect(() => argon2.verify(encoded, "not my password")).toThrowError(
       "The password does not match the supplied hash"
     );
+
+    expect(argon2.tryVerify(encoded, "not the password")).toEqual({
+      success: false,
+      error: "The password does not match the supplied hash"
+    });
   });
 });
