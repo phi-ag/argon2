@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.2](https://github.com/phi-ag/argon2/compare/v0.2.1...v0.2.2) (2024-09-25)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency @types/node to v22.7.0 ([cc0d62d](https://github.com/phi-ag/argon2/commit/cc0d62d2c260c4dad374a60ebc2103d604a8890a))
+
+
+### Continuous Integration
+
+* run benchmark action for tags ([edc9ce2](https://github.com/phi-ag/argon2/commit/edc9ce2d8d3d1781d1103ad3f0697b95d759d034))
+
 ## [0.2.1](https://github.com/phi-ag/argon2/compare/v0.2.0...v0.2.1) (2024-09-24)
 
 
