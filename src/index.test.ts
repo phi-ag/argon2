@@ -150,7 +150,6 @@ describe("argon2", async () => {
     expect(typeFromEncoded(encoded)).toEqual(Argon2Type.Argon2id);
     expect(typeFromEncoded("$argon2i$v=19...")).toEqual(Argon2Type.Argon2i);
     expect(typeFromEncoded("$argon2d$v=19...")).toEqual(Argon2Type.Argon2d);
-    expect(typeFromEncoded("$ARGON2D$v=19...")).toEqual(Argon2Type.Argon2d);
 
     expect(typeFromEncoded("$argon2x$v=19...")).toBeUndefined();
     expect(typeFromEncoded("")).toBeUndefined();

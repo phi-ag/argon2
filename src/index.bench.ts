@@ -12,9 +12,8 @@ import initialize from "./node.js";
 describe("hash and verify", async () => {
   const password = "my secret password";
 
-  // NOTE: Our initial memory size is optimized for these defaults,
+  // NOTE: Our initial memory size is optimized for the default options,
   // while `hash-wasm` probably needs to allocate more memory on the first call.
-  // Warmup should compensate for this.
   const options: Argon2HashOptions = {
     hashLength: 32,
     timeCost: 3,
@@ -32,20 +31,20 @@ describe("hash and verify", async () => {
     "@phi-ag/argon2",
     () => {
       const { encoded } = argon2.hash(password, options);
-      // NOTE: Passing type to `verify` would be unfair (skips parsing type from encoded string)
+      // NOTE: Passing type to `verify` would skip parsing type from encoded string.
       argon2.verify(encoded, password);
     },
     { time: 10_000 }
   );
 
-  // NOTE: Hash and verify functions of `hash-wasm` are async while ours are sync.
+  // NOTE: `hash-wasm` functions are async, while ours are sync.
   bench(
     "hash-wasm",
     async () => {
+      // NOTE: Identical function call in `argon2.hash`.
       const salt = generateSalt(16);
 
-      // NOTE: It's not possible to provide password and options separately,
-      // re-creating this object for every run is probably unfair.
+      // NOTE: It's not possible to provide password and options separately.
       const hash = await argon2id({
         password,
         salt,

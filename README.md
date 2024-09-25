@@ -88,4 +88,4 @@ Example results
       @phi-ag/argon2 - src/index.bench.ts > hash and verify
         1.91x faster than hash-wasm
 
-For the latest results see [Benchmark Action](https://github.com/phi-ag/argon2/actions/workflows/bench.yml)
+See [Benchmark Action](https://github.com/phi-ag/argon2/actions/workflows/bench.yml) for the latest results

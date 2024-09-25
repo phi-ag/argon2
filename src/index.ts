@@ -19,12 +19,9 @@ export enum Argon2Type {
 export const typeFromEncoded = (encoded: string): Argon2Type | undefined => {
   if (!encoded?.length) return;
 
-  const type = encoded.slice(1, encoded.indexOf("$", 1));
-  if (type.length < 7) return;
-
-  const key = type.charAt(0).toUpperCase() + type.slice(1).toLowerCase();
-  // @ts-expect-error
-  return Argon2Type[key];
+  if (encoded.startsWith("$argon2d$")) return Argon2Type.Argon2d;
+  if (encoded.startsWith("$argon2i$")) return Argon2Type.Argon2i;
+  if (encoded.startsWith("$argon2id$")) return Argon2Type.Argon2id;
 };
 
 /**
