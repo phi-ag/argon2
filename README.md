@@ -73,7 +73,7 @@ See [index.bench.ts](src/index.bench.ts) for caveats
 
     pnpm bench
 
-Results for Ryzen 9 5900X
+Example results
 
     RUN  v2.1.1
 
@@ -87,3 +87,5 @@ Results for Ryzen 9 5900X
 
       @phi-ag/argon2 - src/index.bench.ts > hash and verify
         1.91x faster than hash-wasm
+
+For the latest results see [Benchmark Action](https://github.com/phi-ag/argon2/actions/workflows/bench.yml)
