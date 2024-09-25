@@ -2,11 +2,11 @@ name: Benchmark
 
 on:
   push:
-    tags:
-      - "**"
+  workflow_dispatch:
 
 jobs:
   bench:
+    if: ${{ github.event_name == 'workflow_dispatch' || startsWith(github.event.head_commit.message, 'release:') }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
