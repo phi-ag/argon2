@@ -2,8 +2,10 @@ node_modules/
 coverage/
 dist/
 .emscripten/
+.e2e-results/
 
 junit.xml
+junit.e2e.xml
 
 src/argon2.js
 src/argon2.wasm

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Argon2 Browser Test</title>
+  </head>
+  <body>
+    <div id="encoded"></div>
+    <div id="success"></div>
+    <div id="error"></div>
+    <script type="module">
+      import initialize from "/fetch.js";
+
+      const argon2 = await initialize("/argon2.wasm");
+      const { encoded } = argon2.hash("my secret password");
+      const { success } = argon2.tryVerify(encoded, "my secret password");
+      const { error } = argon2.tryVerify(encoded, "not my password");
+
+      const setOutput = (id, value) => {
+        const encodedElement = document.getElementById(id);
+        encodedElement.innerHTML = value;
+      };
+
+      setOutput("encoded", encoded);
+      setOutput("success", success);
+      setOutput("error", error);
+    </script>
+  </body>
+</html>
