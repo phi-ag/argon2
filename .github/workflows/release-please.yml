@@ -44,7 +44,7 @@ jobs:
 
       - name: Attestation
         if: ${{ steps.release.outputs.release_created }}
-        uses: actions/attest-build-provenance@v1
+        uses: actions/attest-build-provenance@1c608d11d69870c2092266b3f9a6f3abbf17002c # v1
         with:
           subject-path: ./src/argon2.wasm
 
