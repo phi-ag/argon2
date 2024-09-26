@@ -1,7 +1,7 @@
 import { describe, expect, test } from "vitest";
 
-import { Argon2Type, Argon2Version, toHex, typeFromEncoded } from "./index";
-import initialize from "./node";
+import { Argon2Type, Argon2Version, toHex, typeFromEncoded } from "./index.js";
+import initialize from "./node.js";
 
 describe("argon2", async () => {
   const argon2 = await initialize();
