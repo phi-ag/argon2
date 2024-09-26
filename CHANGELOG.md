@@ -1,5 +1,27 @@
 # Changelog
 
+## [0.2.3](https://github.com/phi-ag/argon2/compare/v0.2.2...v0.2.3) (2024-09-26)
+
+
+### Miscellaneous Chores
+
+* **deps:** pin actions/attest-build-provenance action to 1c608d1 ([1b56826](https://github.com/phi-ag/argon2/commit/1b568268809e0bf87ea25ddbd160bbb224e1e6ff))
+* **deps:** update dependency @types/node to v22.7.1 ([a29ba5e](https://github.com/phi-ag/argon2/commit/a29ba5e63f8fff296b4cd625e26c5dfe9b3f1624))
+* **deps:** update dependency @types/node to v22.7.2 ([a8c1da8](https://github.com/phi-ag/argon2/commit/a8c1da8a8d5806238c7458c939046b1716679d74))
+* import local files with js extension ([fa23205](https://github.com/phi-ag/argon2/commit/fa232058f5928df902ca67810405b1acb071ca60))
+* simplify getting type from encoded string ([2231c87](https://github.com/phi-ag/argon2/commit/2231c873b7d2cc5c09a446cf052707202298d459))
+
+
+### Code Refactoring
+
+* standalone wasm ([b4e6c3b](https://github.com/phi-ag/argon2/commit/b4e6c3b9b32cbe36e404c431e6c994934ce5c074))
+
+
+### Continuous Integration
+
+* attest wasm and attach to release ([c18524d](https://github.com/phi-ag/argon2/commit/c18524d2edee5959c4d88ee50fe2c821619c0ebc))
+* fix workflow trigger ([de1aa57](https://github.com/phi-ag/argon2/commit/de1aa57400981f4c7eb138c3f71f277adabf4fce))
+
 ## [0.2.2](https://github.com/phi-ag/argon2/compare/v0.2.1...v0.2.2) (2024-09-25)
 
 
