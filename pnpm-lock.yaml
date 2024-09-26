@@ -7,10 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      '@types/emscripten':
-        specifier: ^1.39.13
-        version: 1.39.13
     devDependencies:
       '@eslint/js':
         specifier: 9.11.1
@@ -426,9 +422,6 @@ packages:
     peerDependenciesMeta:
       '@vue/compiler-sfc':
         optional: true
-
-  '@types/emscripten@1.39.13':
-    resolution: {integrity: sha512-cFq+fO/isvhvmuP/+Sl4K4jtU6E23DoivtbO4r50e3odaxAiVdbfSYRDdJ4gCdxx+3aRjhphS5ZMwIH4hFy/Cw==}
 
   '@types/eslint@9.6.1':
     resolution: {integrity: sha512-FXx2pKgId/WyYo2jXw63kk7/+TY7u7AziEJxJAnSFzHlqTAS3Ync6SvgYAN/k4/PQpnnVuzoMuVnByKK2qp0ag==}
@@ -1546,8 +1539,6 @@ snapshots:
       prettier: 3.3.3
     transitivePeerDependencies:
       - supports-color
-
-  '@types/emscripten@1.39.13': {}
 
   '@types/eslint@9.6.1':
     dependencies:

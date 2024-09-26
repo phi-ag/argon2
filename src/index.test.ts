@@ -1,6 +1,6 @@
 import { describe, expect, test } from "vitest";
 
-import { Argon2Type, Argon2Version, toHex, toUtf8Array, typeFromEncoded } from "./index";
+import { Argon2Type, Argon2Version, toHex, typeFromEncoded } from "./index";
 import initialize from "./node";
 
 describe("argon2", async () => {
@@ -9,7 +9,7 @@ describe("argon2", async () => {
 
   test("hash password with specific salt", () => {
     const password = "foo";
-    const salt = toUtf8Array("asdfasdfasdfasdf");
+    const salt = new TextEncoder().encode("asdfasdfasdfasdf");
 
     const { hash, encoded } = argon2.hash(password, { salt });
 

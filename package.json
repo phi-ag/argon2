@@ -3,7 +3,7 @@
   "name": "@phi-ag/argon2",
   "version": "0.2.2",
   "license": "MIT",
-  "description": "Minimal Argon2 WebAssembly SIMD build for all runtimes",
+  "description": "Minimal Argon2 WebAssembly SIMD build",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/phi-ag/argon2.git"
@@ -33,7 +33,7 @@
     "./argon2.wasm": "./dist/argon2.wasm"
   },
   "scripts": {
-    "build": "tsc && cp -f src/argon2.wasm src/*.d.ts ./dist",
+    "build": "tsc && cp -f src/argon2.wasm ./dist",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "test": "vitest --run",
@@ -43,9 +43,6 @@
     "format": "prettier --write \"**/*.{js,ts,tsx,json,css,yml,yaml}\"",
     "format:check": "prettier --check \"**/*.{js,ts,tsx,json,css,yml,yaml}\"",
     "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test"
-  },
-  "dependencies": {
-    "@types/emscripten": "^1.39.13"
   },
   "devDependencies": {
     "@eslint/js": "9.11.1",

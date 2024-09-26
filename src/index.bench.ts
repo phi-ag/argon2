@@ -12,12 +12,10 @@ import initialize from "./node.js";
 describe("hash and verify", async () => {
   const password = "my secret password";
 
-  // NOTE: Our initial memory size is optimized for the default options,
-  // while `hash-wasm` probably needs to allocate more memory on the first call.
   const options: Argon2HashOptions = {
     hashLength: 32,
     timeCost: 3,
-    memoryCost: 65536,
+    memoryCost: 65_536,
     parallelism: 4,
     type: Argon2Type.Argon2id,
     version: Argon2Version.Version13
@@ -62,4 +60,17 @@ describe("hash and verify", async () => {
     },
     { time: 10_000, warmupTime: 1_000 }
   );
+});
+
+describe.skip("memory view", async () => {
+  const buffer = new ArrayBuffer(128 * 1024 * 1024);
+  const fixed = new Uint8Array(buffer);
+
+  bench("fixed", () => {
+    fixed.subarray(65_536, 65_536 + 100);
+  });
+
+  bench("recreate", () => {
+    new Uint8Array(buffer).subarray(65_536, 65_536 + 100);
+  });
 });

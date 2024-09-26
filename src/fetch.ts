@@ -1,11 +1,10 @@
-import Argon2, { type Argon2Module } from "./index.js";
+import Argon2 from "./index.js";
 
-const initializeFetch = async (
-  url: string,
-  overrides?: Partial<Argon2Module>
-): Promise<Argon2> => {
-  const response = await fetch(url);
-  return await Argon2.initializeStreaming(response, overrides);
-};
+const initializeFetch = async (url: string): Promise<Argon2> =>
+  Argon2.initialize(async (imports) => {
+    const response = await fetch(url);
+    const { instance } = await WebAssembly.instantiateStreaming(response, imports);
+    return instance;
+  });
 
 export default initializeFetch;
