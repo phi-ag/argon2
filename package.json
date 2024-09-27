@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "@phi-ag/argon2",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "license": "MIT",
   "description": "Minimal Argon2 WebAssembly SIMD build",
   "repository": {

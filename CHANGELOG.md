@@ -1,5 +1,37 @@
 # Changelog
 
+## [0.3.0](https://github.com/phi-ag/argon2/compare/v0.2.3...v0.3.0) (2024-09-27)
+
+
+### Features
+
+* generate custom sbom ([acffc2d](https://github.com/phi-ag/argon2/commit/acffc2ddb2007f81335e194915b68c6fc8d1d435))
+
+
+### Documentation
+
+* add vanilla js example and links to implementations ([70589ac](https://github.com/phi-ag/argon2/commit/70589ace8b82e3fd529048036f9e3c5a1d24f4e8))
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency @types/node to v22.7.3 ([8fcaed9](https://github.com/phi-ag/argon2/commit/8fcaed9be2b2ab37c28acab5507959c3eff78cd4))
+* link to clang cli flags reference ([18f8e48](https://github.com/phi-ag/argon2/commit/18f8e4888dad526c679d911def4472558453042e))
+* nicer e2e test server ([bfd1c95](https://github.com/phi-ag/argon2/commit/bfd1c95ff741844005dbc44134b1ebff28781bcb))
+* node version shipped with playwright doesn't support strip-types ([ad168df](https://github.com/phi-ag/argon2/commit/ad168dff47637cb2dc97742a1f51b0cc48f52869))
+* remove unused e2e utils ([16e8f2d](https://github.com/phi-ag/argon2/commit/16e8f2d4f2b872e28c355f6ac230a0ddb575ee0f))
+
+
+### Tests
+
+* add e2e test ([fbd7d7c](https://github.com/phi-ag/argon2/commit/fbd7d7cce608fbe31570f73659b4d4e7cc8716c6))
+* add second benchmark with fast options ([45e85eb](https://github.com/phi-ag/argon2/commit/45e85ebed2c1eaae934543030ed8005512d342a1))
+
+
+### Continuous Integration
+
+* run e2e tests in check pipeline ([1891094](https://github.com/phi-ag/argon2/commit/1891094290df0e6cdb99a1fa443f2b118598953d))
+
 ## [0.2.3](https://github.com/phi-ag/argon2/compare/v0.2.2...v0.2.3) (2024-09-26)
 
 
