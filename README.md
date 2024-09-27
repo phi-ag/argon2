@@ -13,7 +13,7 @@ Minimal Argon2 WebAssembly SIMD build for all runtimes inspired by [antelle/argo
 
 ### Examples
 
-Node.js / Deno / Bun
+Node.js / Deno / Bun (see [node.ts](src/node.ts))
 
 ```ts
 import initialize from "@phi-ag/argon2/node";
@@ -26,13 +26,22 @@ const { encoded } = argon2.hash(password);
 argon2.verify(encoded, password);
 ```
 
-Browser
+Browser (Vite, see [fetch.ts](src/fetch.ts))
 
 ```ts
 import wasm from "@phi-ag/argon2/argon2.wasm?url";
 import initialize from "@phi-ag/argon2/fetch";
 
 const argon2 = await initialize(wasm);
+const { encoded } = argon2.hash("my secret password");
+```
+
+Browser (Vanilla, see [e2e/index.html](e2e/index.html))
+
+```ts
+import initialize from "/fetch.js";
+
+const argon2 = await initialize("/argon2.wasm");
 const { encoded } = argon2.hash("my secret password");
 ```
 
