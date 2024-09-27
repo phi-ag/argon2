@@ -9,7 +9,7 @@ export default defineConfig({
   retries: process.env.CI ? 1 : 0,
   workers: process.env.CI ? 1 : undefined,
   webServer: {
-    command: "node --experimental-strip-types e2e/server.ts",
+    command: "node e2e/server.js",
     reuseExistingServer: !process.env.CI,
     stdout: "pipe",
     stderr: "pipe"

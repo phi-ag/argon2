@@ -1,4 +1,4 @@
-import { type ReadStream, createReadStream } from "node:fs";
+import { createReadStream } from "node:fs";
 import http from "node:http";
 import { resolve } from "node:path";
 
@@ -6,10 +6,9 @@ const port = process.env.PORT ?? 3001;
 
 const htmlPath = resolve(import.meta.dirname, "index.html");
 
-const distPath = (url: string): string =>
-  resolve(import.meta.dirname, "..", "dist", url.slice(1));
+const distPath = (url) => resolve(import.meta.dirname, "..", "dist", url.slice(1));
 
-const distFile = (url: string): ReadStream => createReadStream(distPath(url));
+const distFile = (url) => createReadStream(distPath(url));
 
 http
   .createServer(async (req, res) => {
