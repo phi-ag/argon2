@@ -2,6 +2,7 @@ import { resolve } from "node:path";
 
 import { Enums, Factories, Models, Serialize, Spec } from "@cyclonedx/cyclonedx-library";
 import { PackageURL } from "packageurl-js";
+import { v7 as uuidv7 } from "uuid";
 
 import {
   argon2GitSubmodule,
@@ -13,10 +14,18 @@ import {
 
 const lFac = new Factories.LicenseFactory();
 
+const { SOURCE_DATE_EPOCH } = process.env;
+
+const sourceDateEpoch = SOURCE_DATE_EPOCH
+  ? new Date(Number(SOURCE_DATE_EPOCH) * 1000)
+  : new Date(0);
+
 const bom = new Models.Bom();
-bom.serialNumber = `urn:uuid:${crypto.randomUUID()}`;
+bom.serialNumber = `urn:uuid:${uuidv7({ msecs: sourceDateEpoch })}`;
 
 const purl = PackageURL.fromString(`pkg:npm/${packageJson.name}@${packageJson.version}`);
+
+bom.metadata.timestamp = sourceDateEpoch;
 
 bom.metadata.component = new Models.Component(
   Enums.ComponentType.Library,

@@ -13,6 +13,9 @@ jobs:
         with:
           submodules: recursive
 
+      - name: Export commit timestamp
+        run: echo "SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct)" >> $GITHUB_ENV
+
       - name: Emscripten
         uses: ./.github/actions/emscripten
 

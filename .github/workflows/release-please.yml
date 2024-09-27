@@ -24,6 +24,10 @@ jobs:
         with:
           submodules: recursive
 
+      - name: Export commit timestamp
+        if: ${{ steps.release.outputs.release_created }}
+        run: echo "SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct)" >> $GITHUB_ENV
+
       - name: Emscripten
         if: ${{ steps.release.outputs.release_created }}
         uses: ./.github/actions/emscripten
