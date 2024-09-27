@@ -19,7 +19,7 @@ set -eu
     -sNO_FILESYSTEM \
     -sMALLOC=emmalloc \
     -sALLOW_MEMORY_GROWTH \
-    -sEXPORTED_FUNCTIONS=_malloc,_free,_argon2_hash,_argon2_verify,_argon2_error_message,_argon2_encodedlen \
+    -sEXPORTED_FUNCTIONS=_malloc,_free,_argon2_hash,_argon2_verify,_argon2_error_message \
     -DARGON2_NO_THREADS \
     --cache=../.emscripten \
     -Iinclude \
