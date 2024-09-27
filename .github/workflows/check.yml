@@ -57,5 +57,8 @@ jobs:
           files: ./coverage/cobertura-coverage.xml
           token: ${{ secrets.CODECOV_TOKEN }}
 
+      - name: Generate SBOM
+        run: pnpm --reporter=silent sbom | tee sbom.cdx.json | jq
+
       - name: Publish dry-run
         run: npm publish --dry-run

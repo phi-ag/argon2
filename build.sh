@@ -26,6 +26,7 @@ set -eu
     -o ../src/argon2.wasm \
     src/argon2.c src/core.c src/blake2/blake2b.c src/encoding.c src/opt.c
 
-  shasum ../src/argon2.wasm
+  sha1sum ../src/argon2.wasm
+  sha256sum ../src/argon2.wasm
   stat -c "%n %s" ../src/argon2.wasm
 )

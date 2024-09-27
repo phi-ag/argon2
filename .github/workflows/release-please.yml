@@ -42,11 +42,15 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npm publish --provenance --access public
 
-      - name: Attestation
+      - name: Generate SBOM
+        run: pnpm --reporter=silent sbom | tee sbom.cdx.json | jq
+
+      - name: Attest
         if: ${{ steps.release.outputs.release_created }}
-        uses: actions/attest-build-provenance@1c608d11d69870c2092266b3f9a6f3abbf17002c # v1
+        uses: actions/attest-sbom@v1
         with:
           subject-path: ./src/argon2.wasm
+          sbom-path: sbom.cdx.json
 
       - name: Upload Release Artifact
         if: ${{ steps.release.outputs.release_created }}
