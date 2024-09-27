@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.3.1](https://github.com/phi-ag/argon2/compare/v0.3.0...v0.3.1) (2024-09-27)
+
+
+### Miscellaneous Chores
+
+* add node and pnpm to sbom ([eb1b969](https://github.com/phi-ag/argon2/commit/eb1b96919a9a3b8bc750a73279dbc7178b2bf404))
+* add node executable hashes to sbom ([46ef133](https://github.com/phi-ag/argon2/commit/46ef1332129e6818b5aa64aca85c55761834029a))
+* allow reading c-string from heap with specific length ([f071116](https://github.com/phi-ag/argon2/commit/f07111657ddf3faabb82837fce612a0b96875133))
+* remove skipped benchmark output from readme ([1815db5](https://github.com/phi-ag/argon2/commit/1815db5a31c94a2457d3bd47baae389a2ef5b546))
+* rename some variables in e2e test ([fa01b01](https://github.com/phi-ag/argon2/commit/fa01b01cdb8955e7a9fadce1430b07f3774842b0))
+* set sbom timestamp ([ed1d2f0](https://github.com/phi-ag/argon2/commit/ed1d2f059ac61a679b3e012b9404f7beec21eab0))
+
+
+### Continuous Integration
+
+* use specific ubuntu version for actions ([f0622cc](https://github.com/phi-ag/argon2/commit/f0622cc6793df48707f163690aa72f0ce596eedf))
+
 ## [0.3.0](https://github.com/phi-ag/argon2/compare/v0.2.3...v0.3.0) (2024-09-27)
 
 
