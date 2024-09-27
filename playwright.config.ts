@@ -10,7 +10,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   webServer: {
     command: "node e2e/server.js",
-    reuseExistingServer: true,
+    reuseExistingServer: !process.env.CI,
     stdout: "pipe",
     stderr: "pipe"
   },
