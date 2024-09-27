@@ -138,7 +138,6 @@ describe("argon2", async () => {
 
   test("hash password with type", () => {
     expect(argon2.tryHash(p, { type: Argon2Type.Argon2i }).success).toBeTruthy();
-    expect(argon2.tryHash(p, { type: Argon2Type.Argon2d }).success).toBeTruthy();
     expect(argon2.tryHash(p, { type: Argon2Type.Argon2id }).success).toBeTruthy();
 
     // @ts-expect-error
@@ -170,7 +169,6 @@ describe("argon2", async () => {
 
     expect(typeFromEncoded(encoded)).toEqual(Argon2Type.Argon2id);
     expect(typeFromEncoded("$argon2i$v=19...")).toEqual(Argon2Type.Argon2i);
-    expect(typeFromEncoded("$argon2d$v=19...")).toEqual(Argon2Type.Argon2d);
 
     expect(typeFromEncoded("$argon2x$v=19...")).toBeUndefined();
     expect(typeFromEncoded("")).toBeUndefined();
@@ -189,9 +187,6 @@ describe("argon2", async () => {
     expect(argon2.tryVerify(encoded, "foo").success).toBeTruthy();
     expect(argon2.tryVerify(encoded, "foo", Argon2Type.Argon2id).success).toBeTruthy();
     expect(argon2.tryVerify(encoded, "foo", Argon2Type.Argon2i).error).toEqual(
-      "Decoding failed"
-    );
-    expect(argon2.tryVerify(encoded, "foo", Argon2Type.Argon2d).error).toEqual(
       "Decoding failed"
     );
     // @ts-expect-error
