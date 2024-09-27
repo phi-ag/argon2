@@ -9,17 +9,29 @@ import {
 } from "./index.js";
 import initialize from "./node.js";
 
-describe("hash and verify", async () => {
-  const password = "my secret password";
+const defaults: Argon2HashOptions = {
+  hashLength: 32,
+  timeCost: 3,
+  memoryCost: 65_536,
+  parallelism: 4,
+  type: Argon2Type.Argon2id,
+  version: Argon2Version.Version13
+};
 
-  const options: Argon2HashOptions = {
-    hashLength: 32,
-    timeCost: 3,
-    memoryCost: 65_536,
-    parallelism: 4,
-    type: Argon2Type.Argon2id,
-    version: Argon2Version.Version13
-  };
+const fast: Argon2HashOptions = {
+  hashLength: 32,
+  timeCost: 8,
+  memoryCost: 512,
+  parallelism: 1,
+  type: Argon2Type.Argon2id,
+  version: Argon2Version.Version13
+};
+
+describe.each([
+  { name: "defaults", options: defaults },
+  { name: "fast", options: fast }
+])("hash and verify $name", async ({ options }) => {
+  const password = "my secret password";
 
   // NOTE: `hash-wasm` doesn't provide a initialize function,
   // using 1 second warmup time trying to compensate for this.
@@ -35,7 +47,7 @@ describe("hash and verify", async () => {
     { time: 10_000 }
   );
 
-  // NOTE: `hash-wasm` functions are async, while ours are sync.
+  // NOTE: `hash-wasm` doesn't provide sync hash and verify functions.
   bench(
     "hash-wasm",
     async () => {

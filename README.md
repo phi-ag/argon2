@@ -84,17 +84,25 @@ See [index.bench.ts](src/index.bench.ts) for caveats
 
 Example results
 
-    RUN  v2.1.1
+    RUN  v2.1.1 /projects/phi-ag/argon2
 
-    ✓ src/index.bench.ts (2) 23114ms
-      ✓ hash and verify (2) 23112ms
+    ✓ src/index.bench.ts (6) 44543ms
+      ✓ hash and verify 'defaults' (2) 23411ms
         name                hz     min     max    mean     p75     p99    p995    p999     rme  samples
-      · @phi-ag/argon2  5.4920  174.15  189.89  182.08  185.94  189.89  189.89  189.89  ±0.66%       55   fastest
-      · hash-wasm       2.8805  335.22  369.88  347.16  352.52  369.88  369.88  369.88  ±0.94%       29
+      · @phi-ag/argon2  5.5338  178.39  185.45  180.71  180.96  185.45  185.45  185.45  ±0.15%       56   fastest
+      · hash-wasm       2.9151  339.32  359.78  343.04  344.10  359.78  359.78  359.78  ±0.44%       30
+      ✓ hash and verify 'fast' (2) 21129ms
+        name                hz     min     max    mean     p75     p99    p995    p999     rme  samples
+      · @phi-ag/argon2  330.82  2.9909  3.7024  3.0228  3.0351  3.1311  3.1985  3.3719  ±0.03%     3309   fastest
+      · hash-wasm       158.71  5.9113  8.4492  6.3007  6.3645  7.7453  7.8111  7.9284  ±0.38%     1588
+      ↓ memory view (2) [skipped]
 
     BENCH  Summary
 
-      @phi-ag/argon2 - src/index.bench.ts > hash and verify
-        1.91x faster than hash-wasm
+      @phi-ag/argon2 - src/index.bench.ts > hash and verify 'defaults'
+        1.90x faster than hash-wasm
+
+      @phi-ag/argon2 - src/index.bench.ts > hash and verify 'fast'
+        2.08x faster than hash-wasm
 
 See [Benchmark Action](https://github.com/phi-ag/argon2/actions/workflows/bench.yml) for the latest results
