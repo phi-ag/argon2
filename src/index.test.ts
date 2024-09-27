@@ -28,6 +28,22 @@ describe("argon2", async () => {
     );
   });
 
+  test("hash password with specific salt and length", () => {
+    const salt = new TextEncoder().encode("asdfasdfasdfasdf");
+    const { hash, encoded } = argon2.hash(p, { salt, hashLength: 15 });
+
+    expect(hash).toHaveLength(15);
+    expect(toHex(hash)).toEqual("1908ebc5dc17bf3adea6a4bfd4bc1d");
+    expect(encoded).toEqual(
+      "$argon2id$v=19$m=65536,t=3,p=4$YXNkZmFzZGZhc2RmYXNkZg$GQjrxdwXvzrepqS/1Lwd"
+    );
+
+    expect(argon2.verify(encoded, p));
+    expect(() => argon2.verify(encoded, "not the password")).toThrowError(
+      "The password does not match the supplied hash"
+    );
+  });
+
   test("hash password with defaults", () => {
     const { encoded } = argon2.hash(p);
     expect(argon2.verify(encoded, p));
@@ -43,8 +59,13 @@ describe("argon2", async () => {
   });
 
   test("hash password with hash length", () => {
-    expect(argon2.tryHash(p, { hashLength: 4 }).success).toBeTruthy();
-    expect(argon2.tryHash(p, { hashLength: 1000 }).success).toBeTruthy();
+    expect(argon2.hash(p, { hashLength: 4 }).hash).toHaveLength(4);
+    expect(argon2.hash(p, { hashLength: 5 }).hash).toHaveLength(5);
+    expect(argon2.hash(p, { hashLength: 1000 }).hash).toHaveLength(1000);
+
+    expect(argon2.hash(p, { hashLength: 4 }).encoded).toHaveLength(60);
+    expect(argon2.hash(p, { hashLength: 5 }).encoded).toHaveLength(61);
+    expect(argon2.hash(p, { hashLength: 6 }).encoded).toHaveLength(62);
 
     const error = "Hash length is too small";
     expect(argon2.tryHash(p, { hashLength: -1 }).error).toEqual(error);

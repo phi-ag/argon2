@@ -173,12 +173,12 @@ class Argon2 {
 
   #toCString = (value: string): Uint8Array => this.#encoder.encode(value + "\0");
 
-  #fromCString = (ptr: Ptr): string => {
+  #fromCString = (ptr: Ptr, length?: number): string => {
     const heap = this.#heap();
+    if (length) return this.#decoder.decode(heap.subarray(ptr, ptr + length));
 
     let end = ptr;
     while (heap[end]) ++end;
-
     return this.#decoder.decode(heap.subarray(ptr, end));
   };
 
@@ -232,7 +232,7 @@ class Argon2 {
     using saltPtr = this.#copyToHeap(salt);
 
     using hashPtr = this.#malloc(opts.hashLength + 1);
-    using encodedPtr = this.#malloc(encodedLength + 1);
+    using encodedPtr = this.#malloc(encodedLength);
 
     const result = this.#exports.argon2_hash(
       opts.timeCost,
@@ -253,7 +253,7 @@ class Argon2 {
     if (result !== 0) return { success: false, error: this.#errorMessage(result) };
 
     const hash = this.#copyFromHeap(hashPtr.ptr, opts.hashLength);
-    const encoded = this.#fromCString(encodedPtr.ptr);
+    const encoded = this.#fromCString(encodedPtr.ptr, encodedLength - 1);
 
     return { success: true, data: { encoded, hash } };
   };
