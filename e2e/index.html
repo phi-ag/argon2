@@ -17,14 +17,14 @@
       const { success } = argon2.tryVerify(encoded, "my secret password");
       const { error } = argon2.tryVerify(encoded, "not my password");
 
-      const setOutput = (id, value) => {
-        const encodedElement = document.getElementById(id);
-        encodedElement.innerHTML = value;
+      const setValue = (id, value) => {
+        const element = document.getElementById(id);
+        element.innerHTML = value;
       };
 
-      setOutput("encoded", encoded);
-      setOutput("success", success);
-      setOutput("error", error);
+      setValue("encoded", encoded);
+      setValue("success", success);
+      setValue("error", error);
     </script>
   </body>
 </html>
