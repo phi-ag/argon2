@@ -66,14 +66,18 @@ bom.metadata.component.externalReferences.add(
 const argon2Git = argon2GitSubmodule();
 
 const argon2Purl = PackageURL.fromString(
-  `pkg:git/${argon2Git.name}@${argon2Git.version}`
+  `pkg:generic/P-H-C/phc-winner-argon2@${argon2Git.version}`
 );
 
-const argon2 = new Models.Component(Enums.ComponentType.Library, argon2Git.name, {
-  version: argon2Git.version,
-  bomRef: argon2Purl.toString(),
-  purl: argon2Purl
-});
+const argon2 = new Models.Component(
+  Enums.ComponentType.Library,
+  "P-H-C/phc-winner-argon2",
+  {
+    version: argon2Git.version,
+    bomRef: argon2Purl.toString(),
+    purl: argon2Purl
+  }
+);
 
 argon2.externalReferences.add(
   new Models.ExternalReference(
@@ -87,7 +91,7 @@ bom.components.add(argon2);
 const em = await emscriptenContainer();
 
 const emPurl = PackageURL.fromString(
-  `pkg:container/${em.name}@${em.version.slice(0, em.version.indexOf("@"))}`
+  `pkg:generic/${em.name}@${em.version.slice(0, em.version.indexOf("@"))}`
 );
 
 const emscripten = new Models.Component(Enums.ComponentType.Container, em.name, {
@@ -111,6 +115,50 @@ emscripten.externalReferences.add(
 );
 
 bom.components.add(emscripten);
+
+const nodePurl = PackageURL.fromString(`pkg:generic/node@${process.version.slice(1)}`);
+
+const node = new Models.Component(Enums.ComponentType.Application, "node", {
+  version: process.version.slice(1),
+  bomRef: nodePurl.toString(),
+  purl: nodePurl
+});
+
+node.externalReferences.add(
+  new Models.ExternalReference("https://nodejs.org/", Enums.ExternalReferenceType.Website)
+);
+
+node.externalReferences.add(
+  new Models.ExternalReference(
+    "git+https://github.com/nodejs/node.git",
+    Enums.ExternalReferenceType.VCS
+  )
+);
+
+bom.components.add(node);
+
+const pnpmPurl = PackageURL.fromString(
+  `pkg:generic/${packageJson.packageManager.slice(0, packageJson.packageManager.indexOf("+"))}`
+);
+
+const pnpm = new Models.Component(Enums.ComponentType.Application, "pnpm", {
+  version: packageJson.packageManager.slice(packageJson.packageManager.indexOf("@") + 1),
+  bomRef: pnpmPurl.toString(),
+  purl: pnpmPurl
+});
+
+pnpm.externalReferences.add(
+  new Models.ExternalReference("https://pnpm.io/", Enums.ExternalReferenceType.Website)
+);
+
+pnpm.externalReferences.add(
+  new Models.ExternalReference(
+    "git+https://github.com/pnpm/pnpm.git",
+    Enums.ExternalReferenceType.VCS
+  )
+);
+
+bom.components.add(pnpm);
 
 const jsonSerializer = new Serialize.JsonSerializer(
   new Serialize.JSON.Normalize.Factory(Spec.Spec1dot6)
