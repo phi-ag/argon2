@@ -54,6 +54,16 @@ export interface Argon2TryVerifyError {
 
 export type Argon2TryVerifyResult = Argon2TryVerifySuccess | Argon2TryVerifyError;
 
+export const typeStringLength = (type: Argon2Type): number => {
+  switch (type) {
+    case Argon2Type.Argon2d:
+    case Argon2Type.Argon2i:
+      return 7;
+    case Argon2Type.Argon2id:
+      return 8;
+  }
+};
+
 export const typeFromEncoded = (encoded: string): Argon2Type | undefined => {
   if (!encoded?.length) return;
   if (encoded.startsWith("$argon2d$")) return Argon2Type.Argon2d;
@@ -145,6 +155,23 @@ export const generateSalt = (length: number): Uint8Array => {
 // eslint-disable-next-line @typescript-eslint/no-empty-function
 const noop = () => {};
 
+const numberLength = (value: number) => Math.ceil(Math.log10(value + 1));
+
+const base64Length = (len: number) => Math.trunc((len * 4 + 3 - 1) / 3);
+
+const encodedConstantLength = "$$v=$m=,t=,p=$$".length;
+
+const encodedLength = (opts: Argon2HashOptions, saltLength: number) =>
+  encodedConstantLength +
+  typeStringLength(opts.type) +
+  numberLength(opts.timeCost) +
+  numberLength(opts.memoryCost) +
+  numberLength(opts.parallelism) +
+  base64Length(saltLength) +
+  base64Length(opts.hashLength) +
+  numberLength(opts.version) +
+  1;
+
 class Argon2 {
   readonly #exports: Argon2Exports;
   readonly #encoder = new TextEncoder();
@@ -214,25 +241,18 @@ class Argon2 {
       ...options
     };
 
+    const salt = options?.salt ?? generateSalt(16);
+
     const error = validateHashOptions(opts);
     if (error) return { success: false, error };
 
-    const salt = opts.salt ?? generateSalt(16);
-
-    const encodedLength = this.#exports.argon2_encodedlen(
-      opts.timeCost,
-      opts.memoryCost,
-      opts.parallelism,
-      salt.length,
-      opts.hashLength,
-      opts.type
-    );
+    const $encodedLength = encodedLength(opts, salt.length);
 
     using passwordPtr = this.#copyStringToHeap(password);
     using saltPtr = this.#copyToHeap(salt);
 
-    using hashPtr = this.#malloc(opts.hashLength + 1);
-    using encodedPtr = this.#malloc(encodedLength);
+    using hashPtr = this.#malloc(opts.hashLength);
+    using encodedPtr = this.#malloc($encodedLength);
 
     const result = this.#exports.argon2_hash(
       opts.timeCost,
@@ -245,7 +265,7 @@ class Argon2 {
       hashPtr.ptr,
       opts.hashLength,
       encodedPtr.ptr,
-      encodedLength,
+      $encodedLength,
       opts.type,
       opts.version
     );
@@ -253,7 +273,7 @@ class Argon2 {
     if (result !== 0) return { success: false, error: this.#errorMessage(result) };
 
     const hash = this.#copyFromHeap(hashPtr.ptr, opts.hashLength);
-    const encoded = this.#fromCString(encodedPtr.ptr, encodedLength - 1);
+    const encoded = this.#fromCString(encodedPtr.ptr, $encodedLength - 1);
 
     return { success: true, data: { encoded, hash } };
   };
