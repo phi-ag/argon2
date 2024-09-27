@@ -42,14 +42,18 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npm publish --provenance --access public
 
-      - name: Attestation
+      - name: Generate SBOM
+        run: pnpm --reporter=silent sbom | tee sbom.cdx.json | jq
+
+      - name: Attest
         if: ${{ steps.release.outputs.release_created }}
-        uses: actions/attest-build-provenance@1c608d11d69870c2092266b3f9a6f3abbf17002c # v1
+        uses: actions/attest-sbom@5026d3663739160db546203eeaffa6aa1c51a4d6 # v1
         with:
-          subject-path: ./src/argon2.wasm
+          subject-path: src/argon2.wasm
+          sbom-path: sbom.cdx.json
 
       - name: Upload Release Artifact
         if: ${{ steps.release.outputs.release_created }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release upload ${{ steps.release.outputs.tag_name }} ./src/argon2.wasm
+        run: gh release upload ${{ steps.release.outputs.tag_name }} src/argon2.wasm sbom.cdx.json

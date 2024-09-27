@@ -44,9 +44,11 @@
     "bench": "pnpm vitest bench --run",
     "format": "prettier --write \"**/*.{js,ts,tsx,json,css,yml,yaml}\"",
     "format:check": "prettier --check \"**/*.{js,ts,tsx,json,css,yml,yaml}\"",
-    "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test"
+    "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test",
+    "sbom": "node --experimental-strip-types utils/sbom.ts"
   },
   "devDependencies": {
+    "@cyclonedx/cyclonedx-library": "6.11.0",
     "@eslint/js": "9.11.1",
     "@playwright/test": "1.47.2",
     "@trivago/prettier-plugin-sort-imports": "4.3.0",
@@ -56,10 +58,17 @@
     "eslint": "9.11.1",
     "globals": "15.9.0",
     "hash-wasm": "4.11.0",
+    "packageurl-js": "2.0.1",
     "prettier": "3.3.3",
     "typescript": "5.6.2",
     "typescript-eslint": "8.7.0",
     "vitest": "2.1.1"
+  },
+  "pnpm": {
+    "ignoredOptionalDependencies": [
+      "fsevents",
+      "@pkgjs/parseargs"
+    ]
   },
   "packageManager": "pnpm@9.11.0+sha512.0a203ffaed5a3f63242cd064c8fb5892366c103e328079318f78062f24ea8c9d50bc6a47aa3567cabefd824d170e78fa2745ed1f16b132e16436146b7688f19b"
 }

@@ -18,7 +18,6 @@
     { "type": "test", "section": "Tests" },
     { "type": "build", "section": "Build System" },
     { "type": "ci", "section": "Continuous Integration" },
-    { "type": "infra", "section": "Infrastructure" },
     { "type": "release", "section": "Releases", "hidden": true }
   ],
   "packages": {
