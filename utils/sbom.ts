@@ -125,6 +125,15 @@ const node = new Models.Component(Enums.ComponentType.Application, "node", {
 });
 
 node.externalReferences.add(
+  new Models.ExternalReference(process.execPath, Enums.ExternalReferenceType.Other, {
+    hashes: new Models.HashDictionary([
+      [Enums.HashAlgorithm["SHA-1"], await sha1File(process.execPath)],
+      [Enums.HashAlgorithm["SHA-256"], await sha256File(process.execPath)]
+    ])
+  })
+);
+
+node.externalReferences.add(
   new Models.ExternalReference("https://nodejs.org/", Enums.ExternalReferenceType.Website)
 );
 
