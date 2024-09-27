@@ -231,7 +231,7 @@ class Argon2 {
     using passwordPtr = this.#copyStringToHeap(password);
     using saltPtr = this.#copyToHeap(salt);
 
-    using hashPtr = this.#malloc(opts.hashLength + 1);
+    using hashPtr = this.#malloc(opts.hashLength);
     using encodedPtr = this.#malloc(encodedLength);
 
     const result = this.#exports.argon2_hash(
