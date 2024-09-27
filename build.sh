@@ -9,6 +9,7 @@ set -eu
   # - Optimizations see https://emscripten.org/docs/optimizing/Optimizing-Code.html
   # - SIMD see https://emscripten.org/docs/porting/simd.html
   # - Compiler settings see https://emscripten.org/docs/tools_reference/settings_reference.html
+  # - Clang CLI flags see https://clang.llvm.org/docs/ClangCommandLineReference.html#webassembly
   emcc -std=c89 -Wall -Wextra -Werror -Wno-type-limits \
     -O3 -flto -msimd128 -msse4.2 -mavx \
     --no-entry \
