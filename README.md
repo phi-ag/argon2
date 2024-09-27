@@ -95,7 +95,6 @@ Example results
         name                hz     min     max    mean     p75     p99    p995    p999     rme  samples
       · @phi-ag/argon2  330.82  2.9909  3.7024  3.0228  3.0351  3.1311  3.1985  3.3719  ±0.03%     3309   fastest
       · hash-wasm       158.71  5.9113  8.4492  6.3007  6.3645  7.7453  7.8111  7.9284  ±0.38%     1588
-      ↓ memory view (2) [skipped]
 
     BENCH  Summary
 
