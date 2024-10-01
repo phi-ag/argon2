@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.3.2](https://github.com/phi-ag/argon2/compare/v0.3.1...v0.3.2) (2024-10-01)
+
+
+### Miscellaneous Chores
+
+* allocate hash with correct length ([6c871af](https://github.com/phi-ag/argon2/commit/6c871aff0e8f0923d2a25e44164c5295143670ce))
+* **deps:** pin phi-ag/run-playwright action to 5f961ef ([4260e42](https://github.com/phi-ag/argon2/commit/4260e42b8a26af3a5ee6bd0023e69bc60306c7b9))
+* **deps:** update dependency @types/node to v22.7.4 ([29a4d99](https://github.com/phi-ag/argon2/commit/29a4d9911fd76ca648fb7d3abdb17f5fd028f4a3))
+* **deps:** update dependency typescript-eslint to v8.8.0 ([9684f59](https://github.com/phi-ag/argon2/commit/9684f59ca0f2917d4077fd45b1a3796c03bd6c7a))
+* **deps:** update emscripten/emsdk docker tag to v3.1.68 ([603091f](https://github.com/phi-ag/argon2/commit/603091f4646de883e6101fc084b6c0544fcf90d1))
+
+
+### Continuous Integration
+
+* use phi-ag/run-playwright for e2e tests ([652ac78](https://github.com/phi-ag/argon2/commit/652ac780811109fb6a1ee5218d1da7c9633e3f11))
+
 ## [0.3.1](https://github.com/phi-ag/argon2/compare/v0.3.0...v0.3.1) (2024-09-27)
 
 
