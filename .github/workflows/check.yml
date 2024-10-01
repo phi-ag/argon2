@@ -44,9 +44,14 @@ jobs:
         run: pnpm build
 
       - name: End-to-End
-        uses: docker://mcr.microsoft.com/playwright:v1.47.2-noble@sha256:f640d04686ef8fcca228955dc73f36b86ccd2228eda488fb2b32f3f037639f09
+        uses: phi-ag/run-playwright@v0
         with:
-          args: ./e2e/run.sh
+          run: |
+            corepack enable
+            corepack prepare --activate
+            pnpm config set store-dir .pnpm-store
+            pnpm install --frozen-lockfile
+            HOME=/root pnpm test:e2e
 
       - name: Codecov test results
         uses: codecov/test-results-action@1b5b448b98e58ba90d1a1a1d9fcb72ca2263be46 # v1
