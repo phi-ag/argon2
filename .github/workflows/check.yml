@@ -44,7 +44,7 @@ jobs:
         run: pnpm build
 
       - name: End-to-End
-        uses: phi-ag/run-playwright@5f961ef3fb2cb1736ca14a68250ff2a9ab34a46c # v1
+        uses: phi-ag/run-playwright@1e142a602651d31ec87721c724d3987ea2d952a2 # v1
         with:
           run: |
             corepack enable
