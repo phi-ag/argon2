@@ -51,7 +51,7 @@ jobs:
             corepack prepare --activate
             pnpm config set store-dir .pnpm-store
             pnpm install --frozen-lockfile
-            HOME=/root pnpm test:e2e
+            pnpm test:e2e
 
       - name: Codecov test results
         uses: codecov/test-results-action@1b5b448b98e58ba90d1a1a1d9fcb72ca2263be46 # v1
