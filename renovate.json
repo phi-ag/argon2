@@ -16,6 +16,11 @@
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "matchCurrentVersion": "!/^0/",
       "automerge": true
+    },
+    {
+      "groupName": "playwright",
+      "matchPackageNames": ["phi-ag/run-playwright", "@playwright/test"],
+      "minimumReleaseAge": "1 day"
     }
   ]
 }
