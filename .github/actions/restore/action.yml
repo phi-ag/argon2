@@ -21,7 +21,7 @@ runs:
         echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
 
     - name: Setup pnpm cache
-      uses: actions/cache@2cdf405574d6ef1f33a1d12acccd3ae82f47b3f2 # v4
+      uses: actions/cache@3624ceb22c1c5a301c8db4169662070a689d9ea8 # v4
       with:
         path: ${{ env.STORE_PATH }}
         key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
