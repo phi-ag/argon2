@@ -1,5 +1,33 @@
 # Changelog
 
+## [0.3.3](https://github.com/phi-ag/argon2/compare/v0.3.2...v0.3.3) (2024-10-12)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/cache digest to 2cdf405 ([68cbedb](https://github.com/phi-ag/argon2/commit/68cbedb62907f1d92af3b5412770b4157f4de68b))
+* **deps:** update actions/cache digest to 3624ceb ([486b71d](https://github.com/phi-ag/argon2/commit/486b71d6a1ffe684b56d22b09d2ab771bd91a8b3))
+* **deps:** update actions/checkout digest to eef6144 ([40eac57](https://github.com/phi-ag/argon2/commit/40eac57f3b3d5f930a5e81926c5ed85cdd64ec94))
+* **deps:** update codecov/codecov-action digest to b9fd7d1 ([e5e9837](https://github.com/phi-ag/argon2/commit/e5e98377708989072d61778456fcc9a74232bdf0))
+* **deps:** update dependency @types/node to v22.7.5 ([faf9764](https://github.com/phi-ag/argon2/commit/faf9764e838f502340dab9d17ee11fd0f0d0441b))
+* **deps:** update dependency globals to v15.10.0 ([afe4b47](https://github.com/phi-ag/argon2/commit/afe4b4719e0d5e4061b9b60c0a843efeacbf0ffe))
+* **deps:** update dependency globals to v15.11.0 ([cbda302](https://github.com/phi-ag/argon2/commit/cbda3021ceada998749a7583c5f0786ac52c9fd3))
+* **deps:** update dependency typescript to v5.6.3 ([f06a893](https://github.com/phi-ag/argon2/commit/f06a89391152e004fa283dd9790269a039b76c49))
+* **deps:** update dependency typescript-eslint to v8.8.1 ([7ec88ba](https://github.com/phi-ag/argon2/commit/7ec88ba4e51b5dec3973148d18e9d8ba36abbb06))
+* **deps:** update emscripten/emsdk docker tag to v3.1.69 ([dd6dd9e](https://github.com/phi-ag/argon2/commit/dd6dd9e32b9e3745a00d809582703d2bc365517a))
+* **deps:** update eslint monorepo to v9.12.0 ([39d424d](https://github.com/phi-ag/argon2/commit/39d424d908669644b443e1c60b1e7ac83f83043c))
+* **deps:** update phi-ag/run-playwright digest to 1e142a6 ([d88c8e5](https://github.com/phi-ag/argon2/commit/d88c8e5202469181a47391e511d73e28a2edb87e))
+* **deps:** update playwright ([c966638](https://github.com/phi-ag/argon2/commit/c966638e90c49861662e23f792a39c2cc01e333d))
+* **deps:** update pnpm to v9.12.0 ([5b11f5a](https://github.com/phi-ag/argon2/commit/5b11f5af21914f7f6246d65403b3db7183c93b61))
+* **deps:** update pnpm to v9.12.1 ([7e59ae6](https://github.com/phi-ag/argon2/commit/7e59ae67a13c46e79a4463f847e46bc7643b858b))
+* **deps:** update vitest monorepo to v2.1.2 ([0dd69f7](https://github.com/phi-ag/argon2/commit/0dd69f7ccaf8903a132c0da92f582ff46203f689))
+* remove env from e2e test ([deb65dc](https://github.com/phi-ag/argon2/commit/deb65dcfd34d9ea5d905a146b7bb7b7ee54d5524))
+
+
+### Continuous Integration
+
+* group playwright updates ([1743401](https://github.com/phi-ag/argon2/commit/17434012f335f907aa74ee0504286235b4e892a5))
+
 ## [0.3.2](https://github.com/phi-ag/argon2/compare/v0.3.1...v0.3.2) (2024-10-01)
 
 
