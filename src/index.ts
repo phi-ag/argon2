@@ -3,7 +3,6 @@
 Symbol.dispose ??= Symbol("Symbol.dispose");
 
 export enum Argon2Type {
-  Argon2d = 0,
   Argon2i = 1,
   Argon2id = 2
 }
@@ -56,9 +55,17 @@ export type Argon2TryVerifyResult = Argon2TryVerifySuccess | Argon2TryVerifyErro
 
 export const typeFromEncoded = (encoded: string): Argon2Type | undefined => {
   if (!encoded?.length) return;
-  if (encoded.startsWith("$argon2d$")) return Argon2Type.Argon2d;
   if (encoded.startsWith("$argon2i$")) return Argon2Type.Argon2i;
   if (encoded.startsWith("$argon2id$")) return Argon2Type.Argon2id;
+};
+
+export const typeToString = (type: Argon2Type): string => {
+  switch (type) {
+    case Argon2Type.Argon2i:
+      return "argon2i";
+    case Argon2Type.Argon2id:
+      return "argon2id";
+  }
 };
 
 export const defaultHashOptions: Argon2HashOptions = {
@@ -129,6 +136,8 @@ interface Argon2Exports extends WebAssembly.Exports {
     hashLength: number,
     type: Argon2Type
   ): number;
+  _crypto_pwhash_argon2_pick_best_implementation: () => void;
+  _crypto_generichash_blake2b_pick_best_implementation: () => void;
 }
 
 export const toHex = (array: Uint8Array): string =>
@@ -145,6 +154,156 @@ export const generateSalt = (length: number): Uint8Array => {
 // eslint-disable-next-line @typescript-eslint/no-empty-function
 const noop = () => {};
 
+const errorCode = {
+  ARGON2_OK: 0,
+  ARGON2_OUTPUT_PTR_NULL: -1,
+
+  ARGON2_OUTPUT_TOO_SHORT: -2,
+  ARGON2_OUTPUT_TOO_LONG: -3,
+
+  ARGON2_PWD_TOO_SHORT: -4,
+  ARGON2_PWD_TOO_LONG: -5,
+
+  ARGON2_SALT_TOO_SHORT: -6,
+  ARGON2_SALT_TOO_LONG: -7,
+
+  ARGON2_AD_TOO_SHORT: -8,
+  ARGON2_AD_TOO_LONG: -9,
+
+  ARGON2_SECRET_TOO_SHORT: -10,
+  ARGON2_SECRET_TOO_LONG: -11,
+
+  ARGON2_TIME_TOO_SMALL: -12,
+  ARGON2_TIME_TOO_LARGE: -13,
+
+  ARGON2_MEMORY_TOO_LITTLE: -14,
+  ARGON2_MEMORY_TOO_MUCH: -15,
+
+  ARGON2_LANES_TOO_FEW: -16,
+  ARGON2_LANES_TOO_MANY: -17,
+
+  ARGON2_PWD_PTR_MISMATCH: -18 /* NULL ptr with non-zero length */,
+  ARGON2_SALT_PTR_MISMATCH: -19 /* NULL ptr with non-zero length */,
+  ARGON2_SECRET_PTR_MISMATCH: -20 /* NULL ptr with non-zero length */,
+  ARGON2_AD_PTR_MISMATCH: -21 /* NULL ptr with non-zero length */,
+
+  ARGON2_MEMORY_ALLOCATION_ERROR: -22,
+
+  ARGON2_FREE_MEMORY_CBK_NULL: -23,
+  ARGON2_ALLOCATE_MEMORY_CBK_NULL: -24,
+
+  ARGON2_INCORRECT_PARAMETER: -25,
+  ARGON2_INCORRECT_TYPE: -26,
+
+  ARGON2_OUT_PTR_MISMATCH: -27,
+
+  ARGON2_THREADS_TOO_FEW: -28,
+  ARGON2_THREADS_TOO_MANY: -29,
+
+  ARGON2_MISSING_ARGS: -30,
+
+  ARGON2_ENCODING_FAIL: -31,
+
+  ARGON2_DECODING_FAIL: -32,
+
+  ARGON2_THREAD_FAIL: -33,
+
+  ARGON2_DECODING_LENGTH_FAIL: -34,
+
+  ARGON2_VERIFY_MISMATCH: -35
+};
+
+const errorMessage = (error: number) => {
+  switch (error) {
+    case errorCode.ARGON2_OK:
+      return "OK";
+    case errorCode.ARGON2_OUTPUT_PTR_NULL:
+      return "Output pointer is NULL";
+    case errorCode.ARGON2_OUTPUT_TOO_SHORT:
+      return "Output is too short";
+    case errorCode.ARGON2_OUTPUT_TOO_LONG:
+      return "Output is too long";
+    case errorCode.ARGON2_PWD_TOO_SHORT:
+      return "Password is too short";
+    case errorCode.ARGON2_PWD_TOO_LONG:
+      return "Password is too long";
+    case errorCode.ARGON2_SALT_TOO_SHORT:
+      return "Salt is too short";
+    case errorCode.ARGON2_SALT_TOO_LONG:
+      return "Salt is too long";
+    case errorCode.ARGON2_AD_TOO_SHORT:
+      return "Associated data is too short";
+    case errorCode.ARGON2_AD_TOO_LONG:
+      return "Associated data is too long";
+    case errorCode.ARGON2_SECRET_TOO_SHORT:
+      return "Secret is too short";
+    case errorCode.ARGON2_SECRET_TOO_LONG:
+      return "Secret is too long";
+    case errorCode.ARGON2_TIME_TOO_SMALL:
+      return "Time cost is too small";
+    case errorCode.ARGON2_TIME_TOO_LARGE:
+      return "Time cost is too large";
+    case errorCode.ARGON2_MEMORY_TOO_LITTLE:
+      return "Memory cost is too small";
+    case errorCode.ARGON2_MEMORY_TOO_MUCH:
+      return "Memory cost is too large";
+    case errorCode.ARGON2_LANES_TOO_FEW:
+      return "Too few lanes";
+    case errorCode.ARGON2_LANES_TOO_MANY:
+      return "Too many lanes";
+    case errorCode.ARGON2_PWD_PTR_MISMATCH:
+      return "Password pointer is NULL, but password length is not 0";
+    case errorCode.ARGON2_SALT_PTR_MISMATCH:
+      return "Salt pointer is NULL, but salt length is not 0";
+    case errorCode.ARGON2_SECRET_PTR_MISMATCH:
+      return "Secret pointer is NULL, but secret length is not 0";
+    case errorCode.ARGON2_AD_PTR_MISMATCH:
+      return "Associated data pointer is NULL, but ad length is not 0";
+    case errorCode.ARGON2_MEMORY_ALLOCATION_ERROR:
+      return "Memory allocation error";
+    case errorCode.ARGON2_FREE_MEMORY_CBK_NULL:
+      return "The free memory callback is NULL";
+    case errorCode.ARGON2_ALLOCATE_MEMORY_CBK_NULL:
+      return "The allocate memory callback is NULL";
+    case errorCode.ARGON2_INCORRECT_PARAMETER:
+      return "Argon2_Context context is NULL";
+    case errorCode.ARGON2_INCORRECT_TYPE:
+      return "There is no such version of Argon2";
+    case errorCode.ARGON2_OUT_PTR_MISMATCH:
+      return "Output pointer mismatch";
+    case errorCode.ARGON2_THREADS_TOO_FEW:
+      return "Not enough threads";
+    case errorCode.ARGON2_THREADS_TOO_MANY:
+      return "Too many threads";
+    case errorCode.ARGON2_MISSING_ARGS:
+      return "Missing arguments";
+    case errorCode.ARGON2_ENCODING_FAIL:
+      return "Encoding failed";
+    case errorCode.ARGON2_DECODING_FAIL:
+      return "Decoding failed";
+    case errorCode.ARGON2_THREAD_FAIL:
+      return "Threading failure";
+    case errorCode.ARGON2_DECODING_LENGTH_FAIL:
+      return "Some of encoded parameters are too long or too short";
+    case errorCode.ARGON2_VERIFY_MISMATCH:
+      return "The password does not match the supplied hash";
+    default:
+      return "Unknown error code";
+  }
+};
+
+const base64Length = (len: number) => {
+  return Math.trunc((len * 4 + 3 - 1) / 3);
+  const olen = Math.trunc(len / 3) << 2;
+  //const olen = Math.trunc(len / 3) * 4;
+
+  const mod3 = len % 3;
+  if (mod3 === 1) return olen + 2;
+  if (mod3 === 2) return olen + 3;
+
+  return olen;
+};
+
 class Argon2 {
   readonly #exports: Argon2Exports;
   readonly #encoder = new TextEncoder();
@@ -153,6 +312,8 @@ class Argon2 {
   constructor(instance: WebAssembly.Instance) {
     this.#exports = instance.exports as Argon2Exports;
     this.#exports._initialize();
+    this.#exports._crypto_pwhash_argon2_pick_best_implementation();
+    this.#exports._crypto_generichash_blake2b_pick_best_implementation();
   }
 
   static initialize = async (
@@ -160,7 +321,13 @@ class Argon2 {
       imports: WebAssembly.Imports
     ) => WebAssembly.Instance | PromiseLike<WebAssembly.Instance>
   ): Promise<Argon2> => {
-    const imports = { emscripten_notify_memory_growth: noop };
+    const imports = {
+      emscripten_notify_memory_growth: noop,
+      emscripten_asm_const_int: noop,
+      fd_close: noop,
+      fd_write: noop,
+      fd_seek: noop
+    };
     const $imports = { env: imports, wasi_snapshot_preview1: imports };
     return new Argon2(await create($imports));
   };
@@ -202,8 +369,10 @@ class Argon2 {
   #copyStringToHeap = (value: string): DisposablePtr =>
     this.#copyToHeap(this.#toCString(value));
 
+  /*
   #errorMessage = (error: number): string =>
     this.#fromCString(this.#exports.argon2_error_message(error));
+    */
 
   tryHash = (
     password: string,
@@ -219,6 +388,35 @@ class Argon2 {
 
     const salt = opts.salt ?? generateSalt(16);
 
+    /*
+    const b64len = (len: number) => {
+      let olen = Math.floor(len / 3) << 2;
+
+      switch (len % 3) {
+        case 2:
+          olen++;
+        // fall through
+        case 1:
+          olen += 2;
+          break;
+      }
+
+      return olen;
+    };
+*/
+
+    const encodedLength =
+      "$$v=$m=,t=,p=$$".length +
+      typeToString(opts.type).length +
+      String(opts.timeCost).length +
+      String(opts.memoryCost).length +
+      String(opts.parallelism).length +
+      base64Length(salt.length) +
+      base64Length(opts.hashLength) +
+      String(opts.version).length +
+      1;
+
+    /*
     const encodedLength = this.#exports.argon2_encodedlen(
       opts.timeCost,
       opts.memoryCost,
@@ -227,6 +425,7 @@ class Argon2 {
       opts.hashLength,
       opts.type
     );
+    */
 
     using passwordPtr = this.#copyStringToHeap(password);
     using saltPtr = this.#copyToHeap(salt);
@@ -250,7 +449,7 @@ class Argon2 {
       opts.version
     );
 
-    if (result !== 0) return { success: false, error: this.#errorMessage(result) };
+    if (result !== 0) return { success: false, error: errorMessage(result) };
 
     const hash = this.#copyFromHeap(hashPtr.ptr, opts.hashLength);
     const encoded = this.#fromCString(encodedPtr.ptr, encodedLength - 1);
@@ -284,7 +483,7 @@ class Argon2 {
       $type
     );
 
-    if (result !== 0) return { success: false, error: this.#errorMessage(result) };
+    if (result !== 0) return { success: false, error: errorMessage(result) };
 
     return { success: true };
   };
