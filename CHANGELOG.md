@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.4](https://github.com/phi-ag/argon2/compare/v0.3.3...v0.3.4) (2024-10-17)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency @playwright/test to v1.48.1 ([34a0059](https://github.com/phi-ag/argon2/commit/34a005930902b20db9eb5d07e420adc6459cc700))
+* **deps:** update dependency node to v22.10.0 ([5742d60](https://github.com/phi-ag/argon2/commit/5742d609c1c18e124aa1364182c96ca5e9083ff8))
+* **deps:** update dependency typescript-eslint to v8.10.0 ([43724dc](https://github.com/phi-ag/argon2/commit/43724dcf453e6376a3838c75a5cec3467957bc08))
+* **deps:** update dependency typescript-eslint to v8.9.0 ([8dd4c90](https://github.com/phi-ag/argon2/commit/8dd4c906889fc495b27a97825f479e914a0fd073))
+* **deps:** update phi-ag/run-playwright digest to 09e3017 ([e486f1f](https://github.com/phi-ag/argon2/commit/e486f1fff67253b6c4d0e585e1e61be0091285e1))
+* **deps:** update pnpm to v9.12.2 ([68a99e0](https://github.com/phi-ag/argon2/commit/68a99e0275efe096eff65ccba19b41c8a693e80f))
+* **deps:** update vitest monorepo to v2.1.3 ([4ba3564](https://github.com/phi-ag/argon2/commit/4ba3564a40ef6499a7e3b38cbf5d629db0c1ac2b))
+
 ## [0.3.3](https://github.com/phi-ag/argon2/compare/v0.3.2...v0.3.3) (2024-10-12)
 
 
