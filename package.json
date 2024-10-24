@@ -48,7 +48,7 @@
     "sbom": "node --experimental-strip-types utils/sbom.ts"
   },
   "devDependencies": {
-    "@cyclonedx/cyclonedx-library": "6.11.0",
+    "@cyclonedx/cyclonedx-library": "6.11.1",
     "@eslint/js": "9.13.0",
     "@playwright/test": "1.48.1",
     "@trivago/prettier-plugin-sort-imports": "4.3.0",
