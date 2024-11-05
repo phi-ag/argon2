@@ -10,6 +10,15 @@
     "enabled": true
   },
   "postUpdateOptions": ["pnpmDedupe"],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["^build_docker\\.sh$"],
+      "matchStrings": ["VERSION=(?<currentValue>[^@\\s]+)(@(?<currentDigest>[^\\s]+))?"],
+      "packageNameTemplate": "emscripten/emsdk",
+      "datasourceTemplate": "docker"
+    }
+  ],
   "packageRules": [
     { "matchDepNames": ["node", "@types/node"], "ignoreUnstable": false },
     {
