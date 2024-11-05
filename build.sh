@@ -21,6 +21,7 @@ set -eu
     -sALLOW_MEMORY_GROWTH \
     -sEXPORTED_FUNCTIONS=_malloc,_free,_argon2_hash,_argon2_verify,_argon2_error_message,_argon2_encodedlen \
     -DARGON2_NO_THREADS \
+    -D__AVX2__ \
     --cache=../.emscripten \
     -Iinclude \
     -o ../src/argon2.wasm \
