@@ -1,0 +1,8 @@
+name: sbom
+
+runs:
+  using: composite
+  steps:
+    - name: Generate SBOM
+      shell: bash
+      run: pnpm --reporter=silent sbom | tee sbom.cdx.json | jq -C

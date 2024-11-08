@@ -1,0 +1,8 @@
+name: source-date-epoch
+
+runs:
+  using: composite
+  steps:
+    - name: Export commit timestamp
+      shell: bash
+      run: echo "SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct)" >> $GITHUB_ENV

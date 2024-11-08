@@ -26,7 +26,7 @@ jobs:
 
       - name: Export commit timestamp
         if: ${{ steps.release.outputs.release_created }}
-        run: echo "SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct)" >> $GITHUB_ENV
+        uses: ./.github/actions/source-date-epoch
 
       - name: Emscripten
         if: ${{ steps.release.outputs.release_created }}
@@ -47,7 +47,8 @@ jobs:
         run: npm publish --provenance --access public
 
       - name: Generate SBOM
-        run: pnpm --reporter=silent sbom | tee sbom.cdx.json | jq
+        if: ${{ steps.release.outputs.release_created }}
+        uses: ./.github/actions/sbom
 
       - name: Attest
         if: ${{ steps.release.outputs.release_created }}
