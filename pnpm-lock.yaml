@@ -53,8 +53,8 @@ importers:
         specifier: 8.13.0
         version: 8.13.0(eslint@9.14.0)(typescript@5.6.3)
       uuid:
-        specifier: 11.0.2
-        version: 11.0.2
+        specifier: 11.0.3
+        version: 11.0.3
       vitest:
         specifier: 2.1.4
         version: 2.1.4(@types/node@22.9.0)
@@ -1202,8 +1202,8 @@ packages:
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
 
-  uuid@11.0.2:
-    resolution: {integrity: sha512-14FfcOJmqdjbBPdDjFQyk/SdT4NySW4eM0zcG+HqbHP5jzuH56xO3J1DGhgs/cEMCfwYi3HQI1gnTO62iaG+tQ==}
+  uuid@11.0.3:
+    resolution: {integrity: sha512-d0z310fCWv5dJwnX1Y/MncBAqGMKEzlBb1AOf7z9K8ALnd0utBX/msg/fA0+sbyN1ihbMsLhrBlnl1ak7Wa0rg==}
     hasBin: true
 
   vite-node@2.1.4:
@@ -2383,7 +2383,7 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
-  uuid@11.0.2: {}
+  uuid@11.0.3: {}
 
   vite-node@2.1.4(@types/node@22.9.0):
     dependencies:
