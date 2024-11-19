@@ -17,6 +17,13 @@
       "matchStrings": ["VERSION=(?<currentValue>[^@\\s]+)(@(?<currentDigest>[^\\s]+))?"],
       "packageNameTemplate": "emscripten/emsdk",
       "datasourceTemplate": "docker"
+    },
+    {
+      "customType": "regex",
+      "fileMatch": ["^\\.github/actions/e2e/action\\.yml$"],
+      "matchStrings": ["version: (?<currentValue>[^@\\s]+)(@(?<currentDigest>[^\\s]+))?"],
+      "packageNameTemplate": "mcr.microsoft.com/playwright",
+      "datasourceTemplate": "docker"
     }
   ],
   "packageRules": [
@@ -28,8 +35,11 @@
     },
     {
       "groupName": "playwright",
-      "matchPackageNames": ["phi-ag/run-playwright", "@playwright/test"],
-      "minimumReleaseAge": "1 day"
+      "matchPackageNames": [
+        "phi-ag/run-playwright",
+        "mcr.microsoft.com/playwright",
+        "@playwright/test"
+      ]
     }
   ]
 }

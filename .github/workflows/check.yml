@@ -42,14 +42,7 @@ jobs:
         run: pnpm build
 
       - name: End-to-End
-        uses: phi-ag/run-playwright@59bf640412ac96309bb6c357ed0c6fdc52d3365d # v1
-        with:
-          run: |
-            corepack enable
-            corepack prepare --activate
-            pnpm config set store-dir .pnpm-store
-            pnpm install --frozen-lockfile
-            pnpm test:e2e
+        uses: ./.github/actions/e2e
 
       - name: Codecov test results
         uses: codecov/test-results-action@9739113ad922ea0a9abb4b2c0f8bf6a4aa8ef820 # v1
