@@ -50,7 +50,7 @@
   "devDependencies": {
     "@cyclonedx/cyclonedx-library": "6.13.0",
     "@eslint/js": "9.15.0",
-    "@playwright/test": "1.48.2",
+    "@playwright/test": "1.49.0",
     "@trivago/prettier-plugin-sort-imports": "4.3.0",
     "@types/eslint__js": "8.42.3",
     "@types/node": "22.9.0",
