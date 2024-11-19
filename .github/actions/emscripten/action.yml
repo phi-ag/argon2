@@ -7,7 +7,7 @@ runs:
       uses: actions/cache@6849a6489940f00c2f30c0fb92c6274307ccb58a # v4
       with:
         path: ./.emscripten
-        key: ${{ runner.os }}-emscripten
+        key: ${{ runner.os }}-emscripten-${{ hashFiles('build_docker.sh') }}
         restore-keys: |
           ${{ runner.os }}-emscripten
 
