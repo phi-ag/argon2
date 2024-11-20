@@ -51,7 +51,7 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
 
       - name: Codecov coverage
-        uses: codecov/codecov-action@985343d70564a82044c1b7fcb84c2fa05405c1a2 # v5
+        uses: codecov/codecov-action@d168679d447a7d9f9917d4b26caf2cfbf080cfb4 # v5
         with:
           files: ./coverage/cobertura-coverage.xml
           token: ${{ secrets.CODECOV_TOKEN }}
