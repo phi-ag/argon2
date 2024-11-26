@@ -11,8 +11,8 @@ importers:
   .:
     devDependencies:
       '@cyclonedx/cyclonedx-library':
-        specifier: 6.13.0
-        version: 6.13.0
+        specifier: 7.0.0
+        version: 7.0.0
       '@eslint/js':
         specifier: 9.15.0
         version: 9.15.0
@@ -129,8 +129,8 @@ packages:
   '@bcoe/v8-coverage@0.2.3':
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
 
-  '@cyclonedx/cyclonedx-library@6.13.0':
-    resolution: {integrity: sha512-/Wl1j56XPAFwOne2xZdYOOf8tFLwnwgWCFiXVbPNfnYZncuoLhVAEFDHbrJKSvvVwMRwTCoIugDvUJSIfPksiA==}
+  '@cyclonedx/cyclonedx-library@7.0.0':
+    resolution: {integrity: sha512-jFb+UXtpPce9inHTeidCpn7Y6ewXW19Z4GYbrSbspyI/o8PEj3R89Z3SP7qYGxgIJaNnbdGVEyNxnvc9QUul+w==}
     engines: {node: '>=14.0.0'}
 
   '@esbuild/aix-ppc64@0.21.5':
@@ -994,9 +994,6 @@ packages:
   package-json-from-dist@1.0.0:
     resolution: {integrity: sha512-dATvCeZN/8wQsGywez1mzHtTlP22H8OEfPrVMLNr4/eGa+ijtLn/6M5f0dY8UKNrC2O9UCU6SSoG3qRKnt7STw==}
 
-  packageurl-js@1.2.1:
-    resolution: {integrity: sha512-cZ6/MzuXaoFd16/k0WnwtI298UCaDHe/XlSh85SeOKbGZ1hq0xvNbx3ILyCMyk7uFQxl6scF3Aucj6/EO9NwcA==}
-
   packageurl-js@2.0.1:
     resolution: {integrity: sha512-N5ixXjzTy4QDQH0Q9YFjqIWd6zH6936Djpl2m9QNFmDv5Fum8q8BjkpAcHNMzOFE0IwQrFhJWex3AN6kS0OSwg==}
 
@@ -1394,9 +1391,9 @@ snapshots:
 
   '@bcoe/v8-coverage@0.2.3': {}
 
-  '@cyclonedx/cyclonedx-library@6.13.0':
+  '@cyclonedx/cyclonedx-library@7.0.0':
     dependencies:
-      packageurl-js: 1.2.1
+      packageurl-js: 2.0.1
       spdx-expression-parse: 4.0.0
 
   '@esbuild/aix-ppc64@0.21.5':
@@ -2206,8 +2203,6 @@ snapshots:
       p-limit: 3.1.0
 
   package-json-from-dist@1.0.0: {}
-
-  packageurl-js@1.2.1: {}
 
   packageurl-js@2.0.1: {}
 
