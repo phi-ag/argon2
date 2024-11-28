@@ -1,5 +1,30 @@
 # Changelog
 
+## [0.3.7](https://github.com/phi-ag/argon2/compare/v0.3.6...v0.3.7) (2024-11-28)
+
+
+### Miscellaneous Chores
+
+* **deps:** update codecov/codecov-action digest to 015f24e ([68f4c95](https://github.com/phi-ag/argon2/commit/68f4c9555ebb190b8325753491aa5a8eef60f6be))
+* **deps:** update codecov/codecov-action digest to 05f5a9c ([da28d4f](https://github.com/phi-ag/argon2/commit/da28d4fda3cd432b7116adb838ce24f59b4bd996))
+* **deps:** update codecov/codecov-action digest to 985343d ([2c8fa29](https://github.com/phi-ag/argon2/commit/2c8fa29917edb9713b0052aba2c369da0cb59828))
+* **deps:** update codecov/codecov-action digest to d168679 ([7d8c7d4](https://github.com/phi-ag/argon2/commit/7d8c7d484e678681c43e23e21c3be14d0574b12b))
+* **deps:** update dependency @cyclonedx/cyclonedx-library to v7 ([5ba244b](https://github.com/phi-ag/argon2/commit/5ba244ba3419ad801da5f225d2def80d2bf60d8d))
+* **deps:** update dependency @types/node to v22.10.0 ([1df3491](https://github.com/phi-ag/argon2/commit/1df3491602249eb04b25ed67358c40b991089ff9))
+* **deps:** update dependency @types/node to v22.10.1 ([4e93fe2](https://github.com/phi-ag/argon2/commit/4e93fe27374cb4bd0688ebe85fe12aaa01cd67a8))
+* **deps:** update dependency @types/node to v22.9.1 ([584cecd](https://github.com/phi-ag/argon2/commit/584cecd2ffa4c4378b6dc1ff5368eb7d2186e7d3))
+* **deps:** update dependency @types/node to v22.9.3 ([c66e5c2](https://github.com/phi-ag/argon2/commit/c66e5c2f691db02cd9c419f80aa741f60483792b))
+* **deps:** update dependency @types/node to v22.9.4 ([f362ca6](https://github.com/phi-ag/argon2/commit/f362ca617ba66d35d15974da58017202d5e6642a))
+* **deps:** update dependency hash-wasm to v4.12.0 ([ea6c532](https://github.com/phi-ag/argon2/commit/ea6c532e34d6fb556bb3a1c4e2b754f555cc0d74))
+* **deps:** update dependency prettier to v3.4.0 ([47c65a7](https://github.com/phi-ag/argon2/commit/47c65a7e9919181744fc439dbb4e0cbcfd8b6046))
+* **deps:** update dependency prettier to v3.4.1 ([665ab14](https://github.com/phi-ag/argon2/commit/665ab1457b61346ea4c21146422744e40191ba30))
+* **deps:** update dependency typescript to v5.7.2 ([06a52af](https://github.com/phi-ag/argon2/commit/06a52af6f577a4d61f7e6a2cfa3962ec9fafaa29))
+* **deps:** update dependency typescript-eslint to v8.16.0 ([d4659ea](https://github.com/phi-ag/argon2/commit/d4659ea8eae42ed8dbfd5cefde260369b61ebae1))
+* **deps:** update emscripten/emsdk docker tag to v3.1.73 ([3f1d7ff](https://github.com/phi-ag/argon2/commit/3f1d7ffba2efbbec07404ab655401d14bab2e45c))
+* **deps:** update node.js to v23.3.0 ([1f67519](https://github.com/phi-ag/argon2/commit/1f67519cc6ee5547aa0ac204695f34e60f22590c))
+* **deps:** update pnpm to v9.14.2 ([bd080e3](https://github.com/phi-ag/argon2/commit/bd080e395f6a5344694eb690f57144b870f8e166))
+* **deps:** update vitest monorepo to v2.1.6 ([16280fd](https://github.com/phi-ag/argon2/commit/16280fd8cd96ba7c98dfeaeb5814e96500223203))
+
 ## [0.3.6](https://github.com/phi-ag/argon2/compare/v0.3.5...v0.3.6) (2024-11-19)
 
 
