@@ -51,7 +51,7 @@
     "@cyclonedx/cyclonedx-library": "7.0.0",
     "@eslint/js": "9.16.0",
     "@playwright/test": "1.49.0",
-    "@trivago/prettier-plugin-sort-imports": "4.3.0",
+    "@trivago/prettier-plugin-sort-imports": "5.2.0",
     "@types/eslint__js": "8.42.3",
     "@types/node": "22.10.1",
     "@vitest/coverage-v8": "2.1.8",
