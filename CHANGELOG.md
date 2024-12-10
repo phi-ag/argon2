@@ -1,5 +1,26 @@
 # Changelog
 
+## [0.3.8](https://github.com/phi-ag/argon2/compare/v0.3.7...v0.3.8) (2024-12-10)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/attest-sbom action to v2 ([82a2007](https://github.com/phi-ag/argon2/commit/82a2007c543a5a14fe8c32d4a3d87733a9d43129))
+* **deps:** update actions/attest-sbom digest to cbfd002 ([21433e1](https://github.com/phi-ag/argon2/commit/21433e10f8c1d22b5fb9beb24427c69fa6afd775))
+* **deps:** update actions/cache digest to 1bd1e32 ([b1ac837](https://github.com/phi-ag/argon2/commit/b1ac837fb454839fa8f1761f3ffe3ff434600930))
+* **deps:** update codecov/codecov-action digest to 7f8b4b4 ([41b2e95](https://github.com/phi-ag/argon2/commit/41b2e9573978a2baad810988f347f6e664fbc655))
+* **deps:** update dependency @trivago/prettier-plugin-sort-imports to v5 ([a346bb3](https://github.com/phi-ag/argon2/commit/a346bb31bb59cbdc5542e9141b98eeaeb7a2f313))
+* **deps:** update dependency globals to v15.13.0 ([3581917](https://github.com/phi-ag/argon2/commit/35819173b0d990f83dc51054a778e74e9d2a58bf))
+* **deps:** update dependency prettier to v3.4.2 ([95e6d60](https://github.com/phi-ag/argon2/commit/95e6d60353dbbbce373d27e5d9cd1dd5381d9ca7))
+* **deps:** update dependency typescript-eslint to v8.17.0 ([36a47e6](https://github.com/phi-ag/argon2/commit/36a47e69314be1f91e1e6c3886db72db2bf3087f))
+* **deps:** update dependency typescript-eslint to v8.18.0 ([bf497a4](https://github.com/phi-ag/argon2/commit/bf497a48c930933a4a5b18d1e2eebeacb08104c2))
+* **deps:** update eslint monorepo to v9.16.0 ([267a93d](https://github.com/phi-ag/argon2/commit/267a93db6ded01021d980aa25188154c53407ae9))
+* **deps:** update pnpm to v9.14.3 ([d9d9bf5](https://github.com/phi-ag/argon2/commit/d9d9bf5b5c7c60faefd526b9146050bd0df3e9d2))
+* **deps:** update pnpm to v9.14.4 ([627065e](https://github.com/phi-ag/argon2/commit/627065ee3ccabf192b1fe3121bab093de88ed8cc))
+* **deps:** update pnpm to v9.15.0 ([80bff29](https://github.com/phi-ag/argon2/commit/80bff29b7214fd7f891ecbb78eb45c3ed67497db))
+* **deps:** update vitest monorepo to v2.1.7 ([9654bf8](https://github.com/phi-ag/argon2/commit/9654bf80d6d13acba8f01cf1fc307d88d167e69b))
+* **deps:** update vitest monorepo to v2.1.8 ([7dc750b](https://github.com/phi-ag/argon2/commit/7dc750bb58f0d93a7d87afd94b13b7961f1ca57f))
+
 ## [0.3.7](https://github.com/phi-ag/argon2/compare/v0.3.6...v0.3.7) (2024-11-28)
 
 
