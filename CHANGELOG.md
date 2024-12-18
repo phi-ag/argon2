@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.3.9](https://github.com/phi-ag/argon2/compare/v0.3.8...v0.3.9) (2024-12-18)
+
+
+### Miscellaneous Chores
+
+* **deps:** update codecov/codecov-action digest to 1e68e06 ([9286be0](https://github.com/phi-ag/argon2/commit/9286be00555f123b8f5d46be1ac745f1f4e07767))
+* **deps:** update dependency globals to v15.14.0 ([9731a02](https://github.com/phi-ag/argon2/commit/9731a029efce4cb2078f051f9d6bad7b07d79a61))
+* **deps:** update dependency typescript-eslint to v8.18.1 ([89a9097](https://github.com/phi-ag/argon2/commit/89a909765bc6acccfca6ce219648ad66f4e37335))
+
 ## [0.3.8](https://github.com/phi-ag/argon2/compare/v0.3.7...v0.3.8) (2024-12-14)
 
 
