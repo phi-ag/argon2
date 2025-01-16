@@ -2,7 +2,7 @@ import { defineConfig } from "vitest/config";
 
 export default defineConfig({
   test: {
-    reporters: ["basic", "junit"],
+    reporters: ["default", "junit"],
     outputFile: {
       junit: "junit.xml"
     },
