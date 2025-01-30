@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.3.11](https://github.com/phi-ag/argon2/compare/v0.3.10...v0.3.11) (2025-01-30)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/setup-node digest to 1d0ff46 ([3ed9b38](https://github.com/phi-ag/argon2/commit/3ed9b38db642fd9526f967c80ec978b5f4b8f837))
+* **deps:** update dependency @trivago/prettier-plugin-sort-imports to v5.2.2 ([c8d5f84](https://github.com/phi-ag/argon2/commit/c8d5f8487da8f6342d426e87bc08940c3eaced17))
+* **deps:** update dependency @types/node to v22.12.0 ([def67b3](https://github.com/phi-ag/argon2/commit/def67b3e626d6b561a2c988f79793990fbeb35e0))
+* **deps:** update dependency typescript-eslint to v8.22.0 ([e88a5bd](https://github.com/phi-ag/argon2/commit/e88a5bd3cc0ee04e704bd2c8034a7852ce456124))
+* **deps:** update emscripten/emsdk docker tag to v4.0.2 ([d2cdb67](https://github.com/phi-ag/argon2/commit/d2cdb674a9abdf6584c077b0d1f37ed771e0c243))
+
 ## [0.3.10](https://github.com/phi-ag/argon2/compare/v0.3.9...v0.3.10) (2025-01-25)
 
 
