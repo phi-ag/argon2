@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.4.0](https://github.com/phi-ag/argon2/compare/v0.3.11...v0.4.0) (2025-01-31)
+
+
+### Features
+
+* compile with emulated 256-bit wide intrinsics ([9e87bf4](https://github.com/phi-ag/argon2/commit/9e87bf440d4a3dbb862a6820847cb51e99c0edf6))
+
+
+### Miscellaneous Chores
+
+* **deps:** update node.js to v23.7.0 ([e6120cd](https://github.com/phi-ag/argon2/commit/e6120cdf90170bc985d3193548fc43a365139866))
+
 ## [0.3.11](https://github.com/phi-ag/argon2/compare/v0.3.10...v0.3.11) (2025-01-30)
 
 
