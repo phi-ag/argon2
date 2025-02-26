@@ -1,5 +1,38 @@
 # Changelog
 
+## [0.4.2](https://github.com/phi-ag/argon2/compare/v0.4.1...v0.4.2) (2025-02-26)
+
+
+### Miscellaneous Chores
+
+* **deps:** ignore esbuild postinstall ([500a190](https://github.com/phi-ag/argon2/commit/500a190f2b739b8682822fa18e0acbe47c3dbc4f))
+* **deps:** remove dependency @types/eslint__js ([dccdab0](https://github.com/phi-ag/argon2/commit/dccdab0a623e500e9454f60c6e5e1191f696862b))
+* **deps:** update actions/cache digest to 0c907a7 ([5fe2186](https://github.com/phi-ag/argon2/commit/5fe21869a7fe7bcaffb3a193a8750202e0302755))
+* **deps:** update codecov/test-results-action digest to 5c441a7 ([743c1ee](https://github.com/phi-ag/argon2/commit/743c1ee67ef417971ef94cdc00cbcb93fd95c7df))
+* **deps:** update dependency @types/eslint__js to v9 ([ab31879](https://github.com/phi-ag/argon2/commit/ab318792219ffe81c595b342b27895da7e38c3c7))
+* **deps:** update dependency @types/node to v22.13.2 ([b3c7cb9](https://github.com/phi-ag/argon2/commit/b3c7cb9f286b117e5481c2c0584b1a2b5e103089))
+* **deps:** update dependency @types/node to v22.13.4 ([6735321](https://github.com/phi-ag/argon2/commit/673532146ff3f97b54065c09c841a0ace9ca702e))
+* **deps:** update dependency @types/node to v22.13.5 ([d4f27ff](https://github.com/phi-ag/argon2/commit/d4f27ff0789ea5cb4f19ebd5f0031c3a1f21d738))
+* **deps:** update dependency eslint to v9.20.1 ([64138c4](https://github.com/phi-ag/argon2/commit/64138c4897931ca669f62aff5c6c4dd2319e9b9d))
+* **deps:** update dependency globals to v15.15.0 ([293951b](https://github.com/phi-ag/argon2/commit/293951b727a843f682749fb239ed71f900e3f79d))
+* **deps:** update dependency globals to v16 ([3a35071](https://github.com/phi-ag/argon2/commit/3a35071877d57b6858ccb094d64198bf3e1ea55e))
+* **deps:** update dependency prettier to v3.5.0 ([d851644](https://github.com/phi-ag/argon2/commit/d85164491691ce1bf3a39032a0fdffd40125c6fd))
+* **deps:** update dependency prettier to v3.5.1 ([ad4d3fb](https://github.com/phi-ag/argon2/commit/ad4d3fbda9127f627ffc3e78b3917a8718ce3248))
+* **deps:** update dependency prettier to v3.5.2 ([64ec68d](https://github.com/phi-ag/argon2/commit/64ec68d906afcce2346ea5a3005091fc164167b7))
+* **deps:** update dependency typescript-eslint to v8.24.0 ([04e40eb](https://github.com/phi-ag/argon2/commit/04e40eb4a4b425d2ba6f5d5c0fb784557afc70e9))
+* **deps:** update dependency typescript-eslint to v8.24.1 ([ba08fa2](https://github.com/phi-ag/argon2/commit/ba08fa24bee1155e305af7f9777121163293f895))
+* **deps:** update dependency typescript-eslint to v8.25.0 ([6a8fce3](https://github.com/phi-ag/argon2/commit/6a8fce387d5a6bd039b23dc41b8c9064047d5c65))
+* **deps:** update dependency uuid to v11.1.0 ([0acd8c3](https://github.com/phi-ag/argon2/commit/0acd8c364df8d25154d327515c70fa78a0470e48))
+* **deps:** update emscripten/emsdk docker tag to v4.0.4 ([f40b7a6](https://github.com/phi-ag/argon2/commit/f40b7a646a967b9cb0d053b7126ece5de458fe1d))
+* **deps:** update eslint monorepo to v9.21.0 ([aa83536](https://github.com/phi-ag/argon2/commit/aa83536c255fbd95cea4122ef2a14448f32b849c))
+* **deps:** update node.js to v23.8.0 ([f9f0a83](https://github.com/phi-ag/argon2/commit/f9f0a83f42939a1836d8934e61a289eed1069aa5))
+* **deps:** update pnpm to v10.3.0 ([0c7fbaa](https://github.com/phi-ag/argon2/commit/0c7fbaa25daf6132f73f4fa51fc9adfc448c134f))
+* **deps:** update pnpm to v10.4.0 ([2467735](https://github.com/phi-ag/argon2/commit/24677358e773e202cc32825df9f0f8adaf2cf4dd))
+* **deps:** update pnpm to v10.4.1 ([bb5be05](https://github.com/phi-ag/argon2/commit/bb5be059d0ac7dc7a5db6d9f141354a5a5694090))
+* **deps:** update pnpm to v10.5.0 ([fb6014a](https://github.com/phi-ag/argon2/commit/fb6014a4f4894a17e6b1e482784cc62a3143f205))
+* **deps:** update vitest monorepo to v3.0.6 ([d754297](https://github.com/phi-ag/argon2/commit/d7542974e3aed3af36b2c5e2798c70b6eefd206d))
+* **deps:** update vitest monorepo to v3.0.7 ([975f7e1](https://github.com/phi-ag/argon2/commit/975f7e18954c815926dfd9401f0491620f9d4f97))
+
 ## [0.4.1](https://github.com/phi-ag/argon2/compare/v0.4.0...v0.4.1) (2025-02-08)
 
 
