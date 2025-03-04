@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.4.3](https://github.com/phi-ag/argon2/compare/v0.4.2...v0.4.3) (2025-03-04)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/cache digest to d4323d4 ([16b6d84](https://github.com/phi-ag/argon2/commit/16b6d84e9a44a0a4eddd6f8af38c208c284dc279))
+* **deps:** update codecov/codecov-action digest to 0565863 ([22c80c5](https://github.com/phi-ag/argon2/commit/22c80c51f9c2d22ddbc5652d2fdd7f54f23a9751))
+* **deps:** update dependency @types/node to v22.13.8 ([ad06313](https://github.com/phi-ag/argon2/commit/ad06313aa19a327f6bcd6760b82a06287519a761))
+* **deps:** update dependency @types/node to v22.13.9 ([c46af67](https://github.com/phi-ag/argon2/commit/c46af675366f9e7776226ae593c62c541965db6f))
+* **deps:** update dependency prettier to v3.5.3 ([979dbbf](https://github.com/phi-ag/argon2/commit/979dbbf111b3cd805b91b4c7ca890288c853517d))
+* **deps:** update dependency typescript to v5.8.2 ([f616f64](https://github.com/phi-ag/argon2/commit/f616f648d609e46480e787aec537f723ba207210))
+* **deps:** update dependency typescript-eslint to v8.26.0 ([ebf8ad7](https://github.com/phi-ag/argon2/commit/ebf8ad75b245ec159ec21deaadd284105403ce98))
+* **deps:** update node.js to v23.9.0 ([8107b3b](https://github.com/phi-ag/argon2/commit/8107b3bb86ba211b213a5e5ba6526179ad79be9f))
+* **deps:** update pnpm to v10.5.1 ([c0a91f5](https://github.com/phi-ag/argon2/commit/c0a91f53fc130864b149837ec9adf083bfa18a72))
+* **deps:** update pnpm to v10.5.2 ([743c801](https://github.com/phi-ag/argon2/commit/743c801db789dff73735fb010d4e1d996c45c646))
+
 ## [0.4.2](https://github.com/phi-ag/argon2/compare/v0.4.1...v0.4.2) (2025-02-26)
 
 
