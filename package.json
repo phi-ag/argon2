@@ -45,7 +45,7 @@
     "format": "prettier --write \"**/*.{js,ts,tsx,json,css,yml,yaml}\"",
     "format:check": "prettier --check \"**/*.{js,ts,tsx,json,css,yml,yaml}\"",
     "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test",
-    "sbom": "node --experimental-strip-types utils/sbom.ts"
+    "sbom": "node utils/sbom.ts"
   },
   "devDependencies": {
     "@cyclonedx/cyclonedx-library": "7.1.0",
