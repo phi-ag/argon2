@@ -1,5 +1,37 @@
 # Changelog
 
+## [0.4.3](https://github.com/phi-ag/argon2/compare/v0.4.2...v0.4.3) (2025-03-13)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/cache digest to d4323d4 ([16b6d84](https://github.com/phi-ag/argon2/commit/16b6d84e9a44a0a4eddd6f8af38c208c284dc279))
+* **deps:** update codecov/codecov-action digest to 0565863 ([22c80c5](https://github.com/phi-ag/argon2/commit/22c80c51f9c2d22ddbc5652d2fdd7f54f23a9751))
+* **deps:** update codecov/test-results-action digest to f2dba72 ([d70a8f6](https://github.com/phi-ag/argon2/commit/d70a8f63a4d99e453b492a377f1a5d65a20c6cd2))
+* **deps:** update dependency @types/node to v22.13.10 ([3c6f6d0](https://github.com/phi-ag/argon2/commit/3c6f6d068fa423cc8532cb05d1199cc3985fe0d8))
+* **deps:** update dependency @types/node to v22.13.8 ([ad06313](https://github.com/phi-ag/argon2/commit/ad06313aa19a327f6bcd6760b82a06287519a761))
+* **deps:** update dependency @types/node to v22.13.9 ([c46af67](https://github.com/phi-ag/argon2/commit/c46af675366f9e7776226ae593c62c541965db6f))
+* **deps:** update dependency prettier to v3.5.3 ([979dbbf](https://github.com/phi-ag/argon2/commit/979dbbf111b3cd805b91b4c7ca890288c853517d))
+* **deps:** update dependency typescript to v5.8.2 ([f616f64](https://github.com/phi-ag/argon2/commit/f616f648d609e46480e787aec537f723ba207210))
+* **deps:** update dependency typescript-eslint to v8.26.0 ([ebf8ad7](https://github.com/phi-ag/argon2/commit/ebf8ad75b245ec159ec21deaadd284105403ce98))
+* **deps:** update dependency typescript-eslint to v8.26.1 ([7844b7b](https://github.com/phi-ag/argon2/commit/7844b7b1834a957299b5ebf3e1bdfa52aad90ed4))
+* **deps:** update emscripten/emsdk docker tag to v4.0.5 ([fc30d98](https://github.com/phi-ag/argon2/commit/fc30d9836f7f236542023341633c8669b4d7beb2))
+* **deps:** update eslint monorepo to v9.22.0 ([f11884c](https://github.com/phi-ag/argon2/commit/f11884caa00cbfc28968fb49f9a689ff24b11866))
+* **deps:** update googleapis/release-please-action digest to 26ac09b ([2a55908](https://github.com/phi-ag/argon2/commit/2a55908fefc20c391dea1b6a4575fbe6827a56d6))
+* **deps:** update googleapis/release-please-action digest to a02a34c ([f6479b8](https://github.com/phi-ag/argon2/commit/f6479b89844216e024ba23b5f63e6e654f1d066f))
+* **deps:** update node.js to v23.9.0 ([8107b3b](https://github.com/phi-ag/argon2/commit/8107b3bb86ba211b213a5e5ba6526179ad79be9f))
+* **deps:** update playwright ([51b3bb6](https://github.com/phi-ag/argon2/commit/51b3bb66ac695bb09f347dd0dea352e5b9e25474))
+* **deps:** update pnpm to v10.5.1 ([c0a91f5](https://github.com/phi-ag/argon2/commit/c0a91f53fc130864b149837ec9adf083bfa18a72))
+* **deps:** update pnpm to v10.5.2 ([743c801](https://github.com/phi-ag/argon2/commit/743c801db789dff73735fb010d4e1d996c45c646))
+* **deps:** update pnpm to v10.6.0 ([862391b](https://github.com/phi-ag/argon2/commit/862391b0a4aac44ab9b8fb46d2bd58f7558cad89))
+* **deps:** update pnpm to v10.6.1 ([a3f2477](https://github.com/phi-ag/argon2/commit/a3f2477dbc84b6232834f722dc03a82a9e2ab14b))
+* **deps:** update pnpm to v10.6.2 ([0b1dfd3](https://github.com/phi-ag/argon2/commit/0b1dfd3b0991a5b6de950eeaf23d0f0a386e0241))
+* **deps:** update vitest monorepo to v3.0.8 ([7ade619](https://github.com/phi-ag/argon2/commit/7ade619f22c856692a3f2b4e69a8e00cb9f95127))
+* fix some types and simplify generate salt ([ee66970](https://github.com/phi-ag/argon2/commit/ee669708f5f33addf031ddacec7f63bd8e89d70d))
+* move hex function to tests ([5d17722](https://github.com/phi-ag/argon2/commit/5d177223c28c1a49ae5a3ffd6e1710b676cddf53))
+* remove strip-types experimental flag ([3f1c8a6](https://github.com/phi-ag/argon2/commit/3f1c8a612180174c75a78f139d3fab300ef7b1be))
+* **sbom:** import package.json directly ([ff2ab35](https://github.com/phi-ag/argon2/commit/ff2ab35973256dbcbf8b2dc482ae8517a3d53a68))
+
 ## [0.4.2](https://github.com/phi-ag/argon2/compare/v0.4.1...v0.4.2) (2025-02-26)
 
 
