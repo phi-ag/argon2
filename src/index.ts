@@ -97,7 +97,7 @@ type DisposablePtr = Disposable & { ptr: Ptr };
 interface Argon2Exports extends WebAssembly.Exports {
   memory: WebAssembly.Memory;
   _initialize: () => void;
-  malloc(length: number): number;
+  malloc(length: number): Ptr;
   free(ptr: Ptr): void;
   argon2_hash(
     timeCost: number,
@@ -120,7 +120,7 @@ interface Argon2Exports extends WebAssembly.Exports {
     passwordLength: number,
     type: Argon2Type
   ): number;
-  argon2_error_message(error: Ptr): number;
+  argon2_error_message(error: number): Ptr;
   argon2_encodedlen(
     timeCost: number,
     memoryCost: number,
@@ -131,11 +131,8 @@ interface Argon2Exports extends WebAssembly.Exports {
   ): number;
 }
 
-export const generateSalt = (length: number): Uint8Array => {
-  const array = new Uint8Array(length);
-  crypto.getRandomValues(array);
-  return array;
-};
+export const generateSalt = (length: number): Uint8Array =>
+  crypto.getRandomValues(new Uint8Array(length));
 
 // eslint-disable-next-line @typescript-eslint/no-empty-function
 const noop = () => {};
