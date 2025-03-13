@@ -131,11 +131,6 @@ interface Argon2Exports extends WebAssembly.Exports {
   ): number;
 }
 
-export const toHex = (array: Uint8Array): string =>
-  Array.from(array)
-    .map((b) => b.toString(16).padStart(2, "0"))
-    .join("");
-
 export const generateSalt = (length: number): Uint8Array => {
   const array = new Uint8Array(length);
   crypto.getRandomValues(array);

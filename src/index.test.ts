@@ -1,7 +1,15 @@
 import { describe, expect, test } from "vitest";
 
-import { Argon2Type, Argon2Version, toHex, typeFromEncoded } from "./index.js";
+import { Argon2Type, Argon2Version, typeFromEncoded } from "./index.js";
 import initialize from "./node.js";
+
+const toHex = (array: Uint8Array): string => {
+  let result = "";
+  for (const value of array) {
+    result += value.toString(16).padStart(2, "0");
+  }
+  return result;
+};
 
 describe("argon2", async () => {
   const argon2 = await initialize();
