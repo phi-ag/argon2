@@ -4,10 +4,10 @@ import { Enums, Factories, Models, Serialize, Spec } from "@cyclonedx/cyclonedx-
 import { PackageURL } from "packageurl-js";
 import { v7 as uuidv7 } from "uuid";
 
+import packageJson from "../package.json" with { type: "json" };
 import {
   argon2GitSubmodule,
   emscriptenContainer,
-  packageJson,
   sha1File,
   sha256File
 } from "./utils.ts";
@@ -21,7 +21,7 @@ const sourceDateEpoch = SOURCE_DATE_EPOCH
   : new Date(0);
 
 const bom = new Models.Bom();
-bom.serialNumber = `urn:uuid:${uuidv7({ msecs: sourceDateEpoch })}`;
+bom.serialNumber = `urn:uuid:${uuidv7({ msecs: sourceDateEpoch.getTime() })}`;
 
 const purl = PackageURL.fromString(`pkg:npm/${packageJson.name}@${packageJson.version}`);
 

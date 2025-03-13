@@ -1,16 +1,9 @@
 import { execSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { createReadStream } from "node:fs";
-import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import readline from "node:readline/promises";
 import { pipeline } from "node:stream/promises";
-
-// NOTE: should be `import packageJson from "../package.json" with { type: "json" };`
-// see https://github.com/trivago/prettier-plugin-sort-imports/issues/270
-export const packageJson = await JSON.parse(
-  String(await readFile(resolve(import.meta.dirname, "..", "package.json")))
-);
 
 export const argon2GitSubmodule = () => {
   const result = execSync("git submodule status phc-winner-argon2").toString().trim();
