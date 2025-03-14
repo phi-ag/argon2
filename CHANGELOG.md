@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.4](https://github.com/phi-ag/argon2/compare/v0.4.3...v0.4.4) (2025-03-14)
+
+
+### Miscellaneous Chores
+
+* **deps:** update node.js to v23.10.0 ([cc0d592](https://github.com/phi-ag/argon2/commit/cc0d592535a23d0a00e9c9975558f4ce71110ca4))
+* **deps:** update pnpm to v10.6.3 ([64618e5](https://github.com/phi-ag/argon2/commit/64618e5741e8e2f8a3eb5725c9764608933d5c7a))
+
 ## [0.4.3](https://github.com/phi-ag/argon2/compare/v0.4.2...v0.4.3) (2025-03-13)
 
 
