@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.4.5](https://github.com/phi-ag/argon2/compare/v0.4.4...v0.4.5) (2025-04-05)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency @types/node to v22.13.17 ([c113086](https://github.com/phi-ag/argon2/commit/c1130861ccd9314e7bde2e5436083b1daac774bc))
+* **deps:** update dependency @types/node to v22.14.0 ([01b428c](https://github.com/phi-ag/argon2/commit/01b428c93c48df66596aa40da649f180e52822d5))
+* **deps:** update dependency typescript to v5.8.3 ([90a0a63](https://github.com/phi-ag/argon2/commit/90a0a63842eaddaaf94ee28f61dab08cd299cc67))
+* **deps:** update dependency typescript-eslint to v8.29.0 ([c0aa46a](https://github.com/phi-ag/argon2/commit/c0aa46a2c8c83957e44e24d35d0ef948a282daae))
+* **deps:** update eslint monorepo to v9.24.0 ([dd395cf](https://github.com/phi-ag/argon2/commit/dd395cf033915786195af7d083aa182a273548db))
+* **deps:** update node.js to v23.11.0 ([3e80fbf](https://github.com/phi-ag/argon2/commit/3e80fbf4ed0bb71265ee5f982037844af1f96a05))
+* **deps:** update pnpm to v10.7.1 ([147f9ee](https://github.com/phi-ag/argon2/commit/147f9eed9e822cfd8f13f071c94bb61e7568b5ca))
+* **deps:** update vitest monorepo to v3.1.1 ([667994a](https://github.com/phi-ag/argon2/commit/667994a41dbb6624e92d74d5324cd35580a28a1c))
+
 ## [0.4.4](https://github.com/phi-ag/argon2/compare/v0.4.3...v0.4.4) (2025-03-27)
 
 
