@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 set -eu
 
-VERSION=4.0.6@sha256:a73e14e25eac4d15d094a9688438ba0ea84e79867ab42365e14abec3a36635bf
+VERSION=4.0.7@sha256:8acec700a48dbff5250afc1e3ee545b7c002b689043ee82c277de6481a237fd7
 
 docker run -it --rm \
   --workdir /workdir \
