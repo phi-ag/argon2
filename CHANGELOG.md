@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.6](https://github.com/phi-ag/argon2/compare/v0.4.5...v0.4.6) (2025-04-18)
+
+
+### Miscellaneous Chores
+
+* **deps:** update eslint monorepo to v9.25.0 ([b16cb99](https://github.com/phi-ag/argon2/commit/b16cb99277663f88a73ef623ed492dc7b60ec88d))
+* **deps:** update playwright ([0dbb3e4](https://github.com/phi-ag/argon2/commit/0dbb3e4de28341b7d6a33a76ed83336f59c49b91))
+
 ## [0.4.5](https://github.com/phi-ag/argon2/compare/v0.4.4...v0.4.5) (2025-04-16)
 
 
