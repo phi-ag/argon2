@@ -13,14 +13,14 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["^build_docker\\.sh$"],
+      "managerFilePatterns": ["build_docker.sh"],
       "matchStrings": ["VERSION=(?<currentValue>[^@\\s]+)(@(?<currentDigest>[^\\s]+))?"],
       "packageNameTemplate": "emscripten/emsdk",
       "datasourceTemplate": "docker"
     },
     {
       "customType": "regex",
-      "fileMatch": ["^\\.github/actions/e2e/action\\.yml$"],
+      "managerFilePatterns": [".github/actions/e2e/action.yml"],
       "matchStrings": ["version: (?<currentValue>[^@\\s]+)(@(?<currentDigest>[^\\s]+))?"],
       "packageNameTemplate": "mcr.microsoft.com/playwright",
       "datasourceTemplate": "docker"
