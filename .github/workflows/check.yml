@@ -60,4 +60,4 @@ jobs:
         uses: ./.github/actions/sbom
 
       - name: Publish dry-run
-        run: npm publish --dry-run
+        run: npm pack --dry-run
