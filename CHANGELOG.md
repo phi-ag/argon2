@@ -1,5 +1,54 @@
 # Changelog
 
+## [0.4.6](https://github.com/phi-ag/argon2/compare/v0.4.5...v0.4.6) (2025-05-23)
+
+
+### Miscellaneous Chores
+
+* **config:** migrate renovate config ([6abaa43](https://github.com/phi-ag/argon2/commit/6abaa43f37f532caf27ab255fa7c2e9575abf7cb))
+* **deps:** update codecov/codecov-action digest to 18283e0 ([9405bac](https://github.com/phi-ag/argon2/commit/9405bac439cf339f03f785c351e22d72e2edfaa6))
+* **deps:** update codecov/test-results-action digest to 47f89e9 ([b6c31b1](https://github.com/phi-ag/argon2/commit/b6c31b117c75d8411284e40818ed836f4bb9f419))
+* **deps:** update dependency @types/node to v22.15.11 ([dc71e4b](https://github.com/phi-ag/argon2/commit/dc71e4b6ac50a7007c207578f9756f24c2d1e5f9))
+* **deps:** update dependency @types/node to v22.15.12 ([e23066f](https://github.com/phi-ag/argon2/commit/e23066f77e942208993de686a737dece3b753d6f))
+* **deps:** update dependency @types/node to v22.15.14 ([76e36b4](https://github.com/phi-ag/argon2/commit/76e36b4f213c446705d6f475916807fd888f80c5))
+* **deps:** update dependency @types/node to v22.15.15 ([2fd1002](https://github.com/phi-ag/argon2/commit/2fd1002f40871547574dce64068452c407e26aa8))
+* **deps:** update dependency @types/node to v22.15.16 ([8e53810](https://github.com/phi-ag/argon2/commit/8e5381002ac9115f16d25c2d0e33a6142937876a))
+* **deps:** update dependency @types/node to v22.15.17 ([501eb83](https://github.com/phi-ag/argon2/commit/501eb83c61fc8494f8e28b9a14b680bedbe29261))
+* **deps:** update dependency @types/node to v22.15.18 ([3b795c5](https://github.com/phi-ag/argon2/commit/3b795c531a80e0de547951d585c2cebaae02105f))
+* **deps:** update dependency @types/node to v22.15.2 ([2e56de8](https://github.com/phi-ag/argon2/commit/2e56de8052ac99371a85ca97f3290d383e625610))
+* **deps:** update dependency @types/node to v22.15.21 ([f950c8a](https://github.com/phi-ag/argon2/commit/f950c8a924fd8e6834879b0e09e48b0f2d1939f7))
+* **deps:** update dependency @types/node to v22.15.3 ([51a57f3](https://github.com/phi-ag/argon2/commit/51a57f354ff6489ac2e3d4db06a6d05f14e5dcd4))
+* **deps:** update dependency globals to v16.1.0 ([6bc888f](https://github.com/phi-ag/argon2/commit/6bc888f9d46f86103fa338008e80019fdcaa5721))
+* **deps:** update dependency typescript-eslint to v8.31.0 ([ce0ce30](https://github.com/phi-ag/argon2/commit/ce0ce30c6b98ce61e01f9401d15b7abb5ea4d791))
+* **deps:** update dependency typescript-eslint to v8.31.1 ([a761724](https://github.com/phi-ag/argon2/commit/a761724b243af1a13cd21545471ee4c2dcf319e5))
+* **deps:** update dependency typescript-eslint to v8.32.0 ([b598258](https://github.com/phi-ag/argon2/commit/b59825862419202f942f0abfc599da40bf357804))
+* **deps:** update dependency typescript-eslint to v8.32.1 ([1f2f43b](https://github.com/phi-ag/argon2/commit/1f2f43b6cbeda1a017279796b469325ef787f1c7))
+* **deps:** update emscripten/emsdk docker tag to v4.0.8 ([f8c5e77](https://github.com/phi-ag/argon2/commit/f8c5e77d3df79fc6f73d818af14f45ad1f9e6692))
+* **deps:** update emscripten/emsdk docker tag to v4.0.9 ([27a2466](https://github.com/phi-ag/argon2/commit/27a24666a378bc36d562742717d7eb8b76edf9fb))
+* **deps:** update eslint monorepo to v9.25.0 ([b16cb99](https://github.com/phi-ag/argon2/commit/b16cb99277663f88a73ef623ed492dc7b60ec88d))
+* **deps:** update eslint monorepo to v9.25.1 ([c25731a](https://github.com/phi-ag/argon2/commit/c25731a97cd32ca3f38e62aad23b0d0fb409365a))
+* **deps:** update eslint monorepo to v9.26.0 ([21b519a](https://github.com/phi-ag/argon2/commit/21b519a466af2056b111771972ca5be7f7a8f4eb))
+* **deps:** update eslint monorepo to v9.27.0 ([68ce8fa](https://github.com/phi-ag/argon2/commit/68ce8fa30be3b6b57a5a577ff657bbb48acd2266))
+* **deps:** update node.js to v24 ([01ba832](https://github.com/phi-ag/argon2/commit/01ba832e7ccc712cc560d70ca5283b6ea45e32eb))
+* **deps:** update node.js to v24.0.1 ([af43628](https://github.com/phi-ag/argon2/commit/af43628c94434f00e7d8efdf9e122fa76ad984ee))
+* **deps:** update node.js to v24.0.2 ([b23152e](https://github.com/phi-ag/argon2/commit/b23152e7b57d6323a0a57475075acb30b2443a5a))
+* **deps:** update node.js to v24.1.0 ([c487a43](https://github.com/phi-ag/argon2/commit/c487a43dee208b6a6fb1dd5b8beced90db162d36))
+* **deps:** update playwright ([0dbb3e4](https://github.com/phi-ag/argon2/commit/0dbb3e4de28341b7d6a33a76ed83336f59c49b91))
+* **deps:** update pnpm to v10.10.0 ([cb15420](https://github.com/phi-ag/argon2/commit/cb15420a857bfa811ea0efc240e9fc90d79d1a5d))
+* **deps:** update pnpm to v10.11.0 ([f1f00a2](https://github.com/phi-ag/argon2/commit/f1f00a284a91c42e3cc44ac8674bd112a01c7567))
+* **deps:** update pnpm to v10.9.0 ([9123e90](https://github.com/phi-ag/argon2/commit/9123e90d575e23bdff94cd8d6257e29446f0acf9))
+* **deps:** update vitest monorepo to v3.1.2 ([4ad491f](https://github.com/phi-ag/argon2/commit/4ad491fe17e8ae7a4a85800324fc89eb34d63660))
+* **deps:** update vitest monorepo to v3.1.3 ([f84efec](https://github.com/phi-ag/argon2/commit/f84efec0ca0df274c5fde36ad2b74997ee3b16a4))
+* **deps:** update vitest monorepo to v3.1.4 ([87d148f](https://github.com/phi-ag/argon2/commit/87d148fc2ce874d5d3bd08aac887ec14c91c6591))
+* move pnpm settings ([b6f2309](https://github.com/phi-ag/argon2/commit/b6f2309ec38f815aae56bcf4d4000002eb0b4568))
+* move pnpm settings from package.json ([b285417](https://github.com/phi-ag/argon2/commit/b28541781996346ca3e01fdff229c3d16e34a26f))
+* remove publish config from package.json ([631d791](https://github.com/phi-ag/argon2/commit/631d791dcf328b7d71af48e2b4a7a8ffbd801ce7))
+
+
+### Continuous Integration
+
+* use npm pack for publish dry-run ([e737186](https://github.com/phi-ag/argon2/commit/e7371860bf5663c467d96ade53cdd74cbb252c92))
+
 ## [0.4.5](https://github.com/phi-ag/argon2/compare/v0.4.4...v0.4.5) (2025-04-16)
 
 
