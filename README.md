@@ -84,24 +84,33 @@ See [index.bench.ts](src/index.bench.ts) for caveats
 
 Example results
 
-    RUN  v2.1.1 /projects/phi-ag/argon2
+    RUN  v3.1.4 /projects/phi-ag/argon2
 
-    ✓ src/index.bench.ts (6) 44543ms
-      ✓ hash and verify 'defaults' (2) 23411ms
+
+    ✓ src/index.bench.ts > hash and verify 'defaults' 23092ms
         name                hz     min     max    mean     p75     p99    p995    p999     rme  samples
-      · @phi-ag/argon2  5.5338  178.39  185.45  180.71  180.96  185.45  185.45  185.45  ±0.15%       56   fastest
-      · hash-wasm       2.9151  339.32  359.78  343.04  344.10  359.78  359.78  359.78  ±0.44%       30
-      ✓ hash and verify 'fast' (2) 21129ms
+      · @phi-ag/argon2  5.6066  175.24  186.84  178.36  179.25  186.84  186.84  186.84  ±0.33%       57   fastest
+      · hash-wasm       3.3434  292.47  327.23  299.10  299.20  327.23  327.23  327.23  ±0.84%       34
+
+    ✓ src/index.bench.ts > hash and verify 'fast' 21120ms
         name                hz     min     max    mean     p75     p99    p995    p999     rme  samples
-      · @phi-ag/argon2  330.82  2.9909  3.7024  3.0228  3.0351  3.1311  3.1985  3.3719  ±0.03%     3309   fastest
-      · hash-wasm       158.71  5.9113  8.4492  6.3007  6.3645  7.7453  7.8111  7.9284  ±0.38%     1588
+      · @phi-ag/argon2  330.46  2.9892  4.1449  3.0261  3.0320  3.1223  3.2020  3.6069  ±0.04%     3305   fastest
+      · hash-wasm       159.50  5.8934  9.6542  6.2696  6.2504  7.7307  8.1197  9.4353  ±0.35%     1595
+
+    ✓ src/index.bench.ts > hash and verify 'libsodium' 24191ms
+        name                hz     min     max    mean     p75     p99    p995    p999     rme  samples
+      · @phi-ag/argon2  4.3063  226.39  247.57  232.22  234.18  247.57  247.57  247.57  ±0.68%       44   fastest
+      · libsodium.js    3.1743  312.12  321.69  315.03  315.26  321.69  321.69  321.69  ±0.28%       32
 
     BENCH  Summary
 
       @phi-ag/argon2 - src/index.bench.ts > hash and verify 'defaults'
-        1.90x faster than hash-wasm
+        1.68x faster than hash-wasm
 
       @phi-ag/argon2 - src/index.bench.ts > hash and verify 'fast'
-        2.08x faster than hash-wasm
+        2.07x faster than hash-wasm
+
+      @phi-ag/argon2 - src/index.bench.ts > hash and verify 'libsodium'
+        1.36x faster than libsodium.js
 
 See [Benchmark Action](https://github.com/phi-ag/argon2/actions/workflows/bench.yml) for the latest results
