@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.4.7](https://github.com/phi-ag/argon2/compare/v0.4.6...v0.4.7) (2025-05-24)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([464ba8d](https://github.com/phi-ag/argon2/commit/464ba8d7fb439503d8c7aadbde81e6e8f18e75dd))
+* **renovate:** enable lock file maintenance ([87daae2](https://github.com/phi-ag/argon2/commit/87daae2b61a24543c4469b678664cd6c95108b6f))
+
+
+### Tests
+
+* add libsodium benchmark ([25e8b21](https://github.com/phi-ag/argon2/commit/25e8b2126f9936a2f70d37572eb82e118c2553cb))
+
 ## [0.4.6](https://github.com/phi-ag/argon2/compare/v0.4.5...v0.4.6) (2025-05-23)
 
 
