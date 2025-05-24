@@ -22,6 +22,9 @@ importers:
       '@trivago/prettier-plugin-sort-imports':
         specifier: 5.2.2
         version: 5.2.2(prettier@3.5.3)
+      '@types/libsodium-wrappers-sumo':
+        specifier: 0.7.8
+        version: 0.7.8
       '@types/node':
         specifier: 22.15.21
         version: 22.15.21
@@ -37,6 +40,9 @@ importers:
       hash-wasm:
         specifier: 4.12.0
         version: 4.12.0
+      libsodium-wrappers-sumo:
+        specifier: 0.7.15
+        version: 0.7.15
       packageurl-js:
         specifier: 2.0.1
         version: 2.0.1
@@ -446,6 +452,12 @@ packages:
 
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
+
+  '@types/libsodium-wrappers-sumo@0.7.8':
+    resolution: {integrity: sha512-N2+df4MB/A+W0RAcTw7A5oxKgzD+Vh6Ye7lfjWIi5SdTzVLfHPzxUjhwPqHLO5Ev9fv/+VHl+sUaUuTg4fUPqw==}
+
+  '@types/libsodium-wrappers@0.7.14':
+    resolution: {integrity: sha512-5Kv68fXuXK0iDuUir1WPGw2R9fOZUlYlSAa0ztMcL0s0BfIDTqg9GXz8K30VJpPP3sxWhbolnQma2x+/TfkzDQ==}
 
   '@types/node@22.15.21':
     resolution: {integrity: sha512-EV/37Td6c+MgKAbkcLG6vqZ2zEYHD7bvSrzqqs2RIhbA6w3x+Dqz8MZM3sP6kGTeLrdoOgKZe+Xja7tUB2DNkQ==}
@@ -872,6 +884,12 @@ packages:
   levn@0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
+
+  libsodium-sumo@0.7.15:
+    resolution: {integrity: sha512-5tPmqPmq8T8Nikpm1Nqj0hBHvsLFCXvdhBFV7SGOitQPZAA6jso8XoL0r4L7vmfKXr486fiQInvErHtEvizFMw==}
+
+  libsodium-wrappers-sumo@0.7.15:
+    resolution: {integrity: sha512-aSWY8wKDZh5TC7rMvEdTHoyppVq/1dTSAeAR7H6pzd6QRT3vQWcT5pGwCotLcpPEOLXX6VvqihSPkpEhYAjANA==}
 
   locate-path@6.0.0:
     resolution: {integrity: sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==}
@@ -1541,6 +1559,12 @@ snapshots:
 
   '@types/json-schema@7.0.15': {}
 
+  '@types/libsodium-wrappers-sumo@0.7.8':
+    dependencies:
+      '@types/libsodium-wrappers': 0.7.14
+
+  '@types/libsodium-wrappers@0.7.14': {}
+
   '@types/node@22.15.21':
     dependencies:
       undici-types: 6.21.0
@@ -2022,6 +2046,12 @@ snapshots:
     dependencies:
       prelude-ls: 1.2.1
       type-check: 0.4.0
+
+  libsodium-sumo@0.7.15: {}
+
+  libsodium-wrappers-sumo@0.7.15:
+    dependencies:
+      libsodium-sumo: 0.7.15
 
   locate-path@6.0.0:
     dependencies:
