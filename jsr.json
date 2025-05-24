@@ -1,0 +1,14 @@
+{
+  "name": "@peterhirn/test",
+  "version": "0.0.5",
+  "exports": {
+    ".": "./src/index.ts",
+    "./node": "./src/node.ts",
+    "./fetch": "./src/fetch.ts",
+    "./argon2.wasm": "./src/argon2.wasm"
+  },
+  "publish": {
+    "include": ["LICENSE", "README.md", "src/*.ts", "src/argon2.wasm"],
+    "exclude": ["src/*.test.ts", "src/*.bench.ts"]
+  }
+}
