@@ -24,8 +24,11 @@
     },
     {
       "customType": "regex",
-      "managerFilePatterns": [".github/actions/e2e/action.yml"],
-      "matchStrings": ["version: (?<currentValue>[^@\\s]+)(@(?<currentDigest>[^\\s]+))?"],
+      "managerFilePatterns": ["e2e_docker.sh", ".github/actions/e2e/action.yml"],
+      "matchStrings": [
+        "VERSION=(?<currentValue>[^@\\s]+)(@(?<currentDigest>[^\\s]+))?",
+        "version: (?<currentValue>[^@\\s]+)(@(?<currentDigest>[^\\s]+))?"
+      ],
       "packageNameTemplate": "mcr.microsoft.com/playwright",
       "datasourceTemplate": "docker"
     }
