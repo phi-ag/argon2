@@ -52,7 +52,7 @@ import Argon2 from "@phi-ag/argon2";
 // @ts-expect-error
 import wasm from "@phi-ag/argon2/argon2.wasm";
 
-const argon2 = Argon2.initializeModule(wasm);
+const argon2 = new Argon2(await WebAssembly.instantiate(wasm));
 
 export const GET = async () => {
   const { encoded } = argon2.hash("my secret password");

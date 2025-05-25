@@ -144,9 +144,6 @@ class Argon2 {
     this.#exports._initialize();
   }
 
-  static initializeModule = (module: WebAssembly.Module): Argon2 =>
-    new Argon2(new WebAssembly.Instance(module));
-
   // see https://github.com/WebAssembly/design/issues/1296
   #heap = () => new Uint8Array(this.#exports.memory.buffer);
 
