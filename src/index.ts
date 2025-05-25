@@ -134,9 +134,6 @@ interface Argon2Exports extends WebAssembly.Exports {
 export const generateSalt = (length: number): Uint8Array =>
   crypto.getRandomValues(new Uint8Array(length));
 
-// eslint-disable-next-line @typescript-eslint/no-empty-function
-const noop = () => {};
-
 class Argon2 {
   readonly #exports: Argon2Exports;
   readonly #encoder = new TextEncoder();
@@ -147,18 +144,8 @@ class Argon2 {
     this.#exports._initialize();
   }
 
-  static initialize = async (
-    create: (
-      imports: WebAssembly.Imports
-    ) => WebAssembly.Instance | PromiseLike<WebAssembly.Instance>
-  ): Promise<Argon2> => {
-    const imports = { emscripten_notify_memory_growth: noop };
-    const $imports = { env: imports, wasi_snapshot_preview1: imports };
-    return new Argon2(await create($imports));
-  };
-
-  static initializeModule = async (module: WebAssembly.Module): Promise<Argon2> =>
-    this.initialize((imports) => new WebAssembly.Instance(module, imports));
+  static initializeModule = (module: WebAssembly.Module): Argon2 =>
+    new Argon2(new WebAssembly.Instance(module));
 
   // see https://github.com/WebAssembly/design/issues/1296
   #heap = () => new Uint8Array(this.#exports.memory.buffer);

@@ -1,10 +1,7 @@
 import Argon2 from "./index.js";
 
-const initializeFetch = async (url: string): Promise<Argon2> =>
-  Argon2.initialize(async (imports) => {
-    const response = await fetch(url);
-    const { instance } = await WebAssembly.instantiateStreaming(response, imports);
-    return instance;
-  });
-
-export default initializeFetch;
+export default async function initialize(url: string): Promise<Argon2> {
+  const response = await fetch(url);
+  const { instance } = await WebAssembly.instantiateStreaming(response);
+  return new Argon2(instance);
+}

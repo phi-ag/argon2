@@ -14,6 +14,7 @@ set -eu
     -O3 -flto -msimd128 -mavx2 \
     --no-entry \
     -sSTRICT \
+    -sPURE_WASI \
     -sWASM_BIGINT \
     -sNO_ASSERTIONS \
     -sNO_FILESYSTEM \
