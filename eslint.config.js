@@ -5,17 +5,15 @@ import tseslint from "typescript-eslint";
 
 export default tseslint.config(
   {
-    ignores: ["dist/**", "src/argon2.js", "phc-winner-argon2/**"]
+    ignores: ["dist/**", "phc-winner-argon2/**"]
   },
   eslint.configs.recommended,
-  ...tseslint.configs.strict,
-  ...tseslint.configs.stylistic,
+  tseslint.configs.strict,
+  tseslint.configs.stylistic,
   {
     files: ["**/*.js"],
     languageOptions: {
-      globals: {
-        ...globals.node
-      }
+      globals: globals.node
     }
   },
   {
