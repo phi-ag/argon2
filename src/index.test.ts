@@ -118,7 +118,8 @@ describe("argon2", async () => {
   });
 
   test("hash password with memorycost", () => {
-    expect(argon2.tryHash(p, { memoryCost: 32 }).success).toBeTruthy();
+    expect(argon2.tryHash(p, { memoryCost: 32 }).error).toBeUndefined();
+    expect(argon2.tryHash(p, { memoryCost: 1_048_576 }).error).toBeUndefined();
 
     const error = "Memory cost is too small";
     expect(argon2.tryHash(p, { memoryCost: 0 }).error).toEqual(error);
