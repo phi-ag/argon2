@@ -1,5 +1,34 @@
 # Changelog
 
+## [0.5.0](https://github.com/phi-ag/argon2/compare/v0.4.6...v0.5.0) (2025-05-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove initialize module function
+
+### Documentation
+
+* update astro cloudflare example ([6a0c2ef](https://github.com/phi-ag/argon2/commit/6a0c2ef8e909b5185aea157c379d502f0ba39407))
+
+
+### Miscellaneous Chores
+
+* build module as pure wasi and remove unnecessary wasm imports ([f0c7d0d](https://github.com/phi-ag/argon2/commit/f0c7d0d0a341fee9890603fe20242cb43bfdf835))
+* **config:** move pnpm save-prefix ([bb96cff](https://github.com/phi-ag/argon2/commit/bb96cff6c4c554c302c3354233cd5151d783d0a3))
+* **config:** update eslint config and prettier ignore ([7e27b90](https://github.com/phi-ag/argon2/commit/7e27b902c5f9776720826c0b67ce62e8e0a5a2ce))
+* **deps:** lock file maintenance ([464ba8d](https://github.com/phi-ag/argon2/commit/464ba8d7fb439503d8c7aadbde81e6e8f18e75dd))
+* remove initialize module function ([24588b7](https://github.com/phi-ag/argon2/commit/24588b7ae604c6cdc52e755c7891797cda6da314))
+* **renovate:** enable lock file maintenance ([87daae2](https://github.com/phi-ag/argon2/commit/87daae2b61a24543c4469b678664cd6c95108b6f))
+* **renovate:** manage playwright version in e2e docker script ([7647096](https://github.com/phi-ag/argon2/commit/764709683a26877d0c8359b68e718e7eea750e7b))
+
+
+### Tests
+
+* add e2e docker script ([cfe3098](https://github.com/phi-ag/argon2/commit/cfe3098f4d19f0e2406cfd5bc234fbc9151157dc))
+* add libsodium benchmark ([25e8b21](https://github.com/phi-ag/argon2/commit/25e8b2126f9936a2f70d37572eb82e118c2553cb))
+* add test with high memory cost ([ca97aa3](https://github.com/phi-ag/argon2/commit/ca97aa399b88698c21a1b44f8d9bf544becdc010))
+
 ## [0.4.6](https://github.com/phi-ag/argon2/compare/v0.4.5...v0.4.6) (2025-05-23)
 
 
