@@ -1,0 +1,37 @@
+package phi-ag:argon2;
+
+interface types {
+  enum argon2-type {
+    argon2d,
+    argon2i,
+    argon2id
+  }
+
+  enum argon2-version {
+    version10,
+    version13,
+  }
+
+  record options {
+    hash-length: option<u32>,
+    time-cost: option<u32>,
+    memory-cost: option<u32>,
+    parallelism: option<u32>,
+    argon2-type: option<argon2-type>,
+    argon2-version: option<argon2-version>
+  }
+
+  record data {
+    encoded: string,
+    // TODO: Use fixed size lists, see https://github.com/bytecodealliance/wit-bindgen/pull/1277
+    hash: tuple<u8, u8, u8, u8, u8, u8, u8, u8, u8, u8, u8, u8, u8, u8, u8, u8>
+  }
+}
+
+world argon2 {
+  use types.{argon2-type, options, data};
+
+  export initialize: func();
+  export hash: func(password: string, salt: list<u8>, options: option<options>) -> result<data, string>;
+  export verify: func(encoded: string, password: string, argon2-type: option<argon2-type>) -> result<bool, string>;
+}
