@@ -52,7 +52,7 @@ jobs:
 
       - name: Attest
         if: ${{ steps.release.outputs.release_created }}
-        uses: actions/attest-sbom@115c3be05ff3974bcbd596578934b3f9ce39bf68 # v2
+        uses: actions/attest-sbom@bd218ad0dbcb3e146bd073d1d9c6d78e08aa8a0b # v2
         with:
           subject-path: src/argon2.wasm
           sbom-path: sbom.cdx.json
