@@ -13,7 +13,6 @@
     "enabled": true,
     "automerge": true
   },
-  "postUpdateOptions": ["pnpmDedupe"],
   "customManagers": [
     {
       "customType": "regex",
@@ -34,7 +33,8 @@
     }
   ],
   "packageRules": [
-    { "matchDepNames": ["node", "@types/node"], "ignoreUnstable": false },
+    { "matchPackageNames": ["!pnpm"], "postUpdateOptions": ["pnpmDedupe"] },
+    { "matchDepNames": ["node"], "ignoreUnstable": false },
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "matchCurrentVersion": "!/^0/",
