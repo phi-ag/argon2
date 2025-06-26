@@ -47,7 +47,7 @@
   "devDependencies": {
     "@cyclonedx/cyclonedx-library": "8.3.0",
     "@eslint/js": "9.29.0",
-    "@playwright/test": "1.53.0",
+    "@playwright/test": "1.53.1",
     "@trivago/prettier-plugin-sort-imports": "5.2.2",
     "@types/libsodium-wrappers-sumo": "0.7.8",
     "@types/node": "22.15.33",
