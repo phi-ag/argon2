@@ -1,5 +1,52 @@
 # Changelog
 
+## [0.5.1](https://github.com/phi-ag/argon2/compare/v0.5.0...v0.5.1) (2025-07-09)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([ac57b4c](https://github.com/phi-ag/argon2/commit/ac57b4c61b61bb3235bba3eb3397ccf0f232e253))
+* **deps:** lock file maintenance ([271178a](https://github.com/phi-ag/argon2/commit/271178ac8768f2f42e0720c28ce1cd11901e923c))
+* **deps:** lock file maintenance ([79b39f1](https://github.com/phi-ag/argon2/commit/79b39f19be12ed07ef5755e68e2eeef5f14eb8ac))
+* **deps:** update actions/attest-sbom digest to bd218ad ([3a57889](https://github.com/phi-ag/argon2/commit/3a57889682f1e42b272b3527f757603e9c79eaa6))
+* **deps:** update dependency @cyclonedx/cyclonedx-library to v8.3.0 ([90fd891](https://github.com/phi-ag/argon2/commit/90fd891a0167aebc4ab00d737ec5553aa8af872e))
+* **deps:** update dependency @cyclonedx/cyclonedx-library to v8.4.0 ([06f8b01](https://github.com/phi-ag/argon2/commit/06f8b01f9cbd222ecc85d4359f3191e717727453))
+* **deps:** update dependency @types/node to v22.15.23 ([a18e67c](https://github.com/phi-ag/argon2/commit/a18e67c046d0fd440690bc5c8a3dd64c0d1491e4))
+* **deps:** update dependency @types/node to v22.15.24 ([5d43983](https://github.com/phi-ag/argon2/commit/5d4398304c4191e67c3f0e374439235db7d5e6a9))
+* **deps:** update dependency @types/node to v22.15.27 ([c7c6177](https://github.com/phi-ag/argon2/commit/c7c61777d17e313a9bb219a1a49946f5e7d460dd))
+* **deps:** update dependency @types/node to v22.15.29 ([c4063b9](https://github.com/phi-ag/argon2/commit/c4063b9483324032e94c310b648097c2be869172))
+* **deps:** update dependency @types/node to v22.15.30 ([df0eaec](https://github.com/phi-ag/argon2/commit/df0eaec8c3a6a3576630331ad4b9dfc8fb246b52))
+* **deps:** update dependency @types/node to v22.15.31 ([9767788](https://github.com/phi-ag/argon2/commit/97677883193f91f56501967b09442b7d3f3c4506))
+* **deps:** update dependency @types/node to v22.15.33 ([5737a1b](https://github.com/phi-ag/argon2/commit/5737a1bbbe392c4a4843d2e6bcd70825686a4523))
+* **deps:** update dependency @types/node to v24.0.10 ([ac42ba6](https://github.com/phi-ag/argon2/commit/ac42ba6d99d0ec740885c5c7cf1cb4d1cb288539))
+* **deps:** update dependency @types/node to v24.0.11 ([ff90efe](https://github.com/phi-ag/argon2/commit/ff90efe055a6e25b12af2ed279c9035ada0a5f04))
+* **deps:** update dependency @types/node to v24.0.12 ([c9c5953](https://github.com/phi-ag/argon2/commit/c9c5953f6c7751e354a5aa4e7f1c293db4cc85ac))
+* **deps:** update dependency @types/node to v24.0.8 ([840dbc0](https://github.com/phi-ag/argon2/commit/840dbc00d3f3038c947a6f3be269b15ebebda8b9))
+* **deps:** update dependency globals to v16.2.0 ([41d5651](https://github.com/phi-ag/argon2/commit/41d5651ae989cb44ecb078db0724e0f48f634494))
+* **deps:** update dependency globals to v16.3.0 ([e63da5f](https://github.com/phi-ag/argon2/commit/e63da5fba85d5aeb45ea2ad7b15c7d55a5ae23e9))
+* **deps:** update dependency prettier to v3.6.1 ([f249f0f](https://github.com/phi-ag/argon2/commit/f249f0f7f5f0ab1e74656b3b8f05ed4413666610))
+* **deps:** update dependency prettier to v3.6.2 ([2084912](https://github.com/phi-ag/argon2/commit/208491298f78069b390ec9b8978b3c4aa870d075))
+* **deps:** update dependency typescript-eslint to v8.33.0 ([5458794](https://github.com/phi-ag/argon2/commit/54587943cafa3c343dd826b294caa467e71c5b97))
+* **deps:** update dependency typescript-eslint to v8.33.1 ([3e89401](https://github.com/phi-ag/argon2/commit/3e8940129959e7324af0817b9108976c9ddc569f))
+* **deps:** update dependency typescript-eslint to v8.34.0 ([a0ce680](https://github.com/phi-ag/argon2/commit/a0ce680af292bce52d42988ba3e919df7bb240bb))
+* **deps:** update dependency typescript-eslint to v8.35.1 ([4a2e71b](https://github.com/phi-ag/argon2/commit/4a2e71b380e590f6263738a53dbb8a15351b0fa5))
+* **deps:** update dependency typescript-eslint to v8.36.0 ([eb8f1c5](https://github.com/phi-ag/argon2/commit/eb8f1c5d8bb09185e54ca1e3f830923dfb65c93d))
+* **deps:** update emscripten/emsdk docker tag to v4.0.10 ([9ac1f2d](https://github.com/phi-ag/argon2/commit/9ac1f2defef056ef376bc87c39a32a42d96ec18d))
+* **deps:** update eslint monorepo to v9.28.0 ([dda28ab](https://github.com/phi-ag/argon2/commit/dda28ab7f7963c2c9950ee31f771ae4e55a5f9df))
+* **deps:** update eslint monorepo to v9.29.0 ([b741249](https://github.com/phi-ag/argon2/commit/b741249c038e3eb0688956502b071849b59fccee))
+* **deps:** update eslint monorepo to v9.30.0 ([91bcdb8](https://github.com/phi-ag/argon2/commit/91bcdb8b73783c82e0c995533a5d9723f6539693))
+* **deps:** update eslint monorepo to v9.30.1 ([48fb10e](https://github.com/phi-ag/argon2/commit/48fb10ea480b7d04b24cdfd4443df773b2c97047))
+* **deps:** update node.js to v24.3.0 ([d300991](https://github.com/phi-ag/argon2/commit/d30099197bb9629a5e7cd765f90497b741bd2452))
+* **deps:** update node.js to v24.4.0 ([5e0594a](https://github.com/phi-ag/argon2/commit/5e0594a0ccac65aca200f514931ef6b9ea8f93ed))
+* **deps:** update playwright ([9dacb0b](https://github.com/phi-ag/argon2/commit/9dacb0ba6bf35a4dcf31b7574997f3dfeb76387d))
+* **deps:** update playwright ([964e5e4](https://github.com/phi-ag/argon2/commit/964e5e49c940f863e0d52d9770212a9efea1bd2c))
+* **deps:** update playwright to v1.53.2 ([998ff88](https://github.com/phi-ag/argon2/commit/998ff88f4ef66ea70d8369c5eef5658299cb0093))
+* **deps:** update pnpm to v10.12.4 ([a16eb92](https://github.com/phi-ag/argon2/commit/a16eb920340c83fc226c6d4177350203dffb23c2))
+* **deps:** update pnpm to v10.13.1 ([dd9133f](https://github.com/phi-ag/argon2/commit/dd9133f071d9f94e6db7100add3a3f6697d6973c))
+* **deps:** update vitest monorepo to v3.2.4 ([17f4daa](https://github.com/phi-ag/argon2/commit/17f4daaec2b42ead38ecf11e07563a6bafe7018f))
+* **renovate:** allow non-lts upgrades for @types/node ([1834de4](https://github.com/phi-ag/argon2/commit/1834de4d12cb729937bc2920144d6cd84cc7c5fc))
+* **renovate:** pnpm dedupe workaround ([9080b07](https://github.com/phi-ag/argon2/commit/9080b07e6efb8fd6a6dc04a36756288205e938b4))
+
 ## [0.5.0](https://github.com/phi-ag/argon2/compare/v0.4.6...v0.5.0) (2025-05-25)
 
 
