@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.5.2](https://github.com/phi-ag/argon2/compare/v0.5.1...v0.5.2) (2025-07-12)
+
+
+### Reverts
+
+* **renovate:** pnpm dedupe workaround ([f2f3efc](https://github.com/phi-ag/argon2/commit/f2f3efc0ae4e8a754704218afaaadd49b8f91490))
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([b8e88bc](https://github.com/phi-ag/argon2/commit/b8e88bcb415a35d918a7bdedbe4d10af6221f235))
+* **deps:** update dependency @types/node to v24.0.13 ([2ca4efc](https://github.com/phi-ag/argon2/commit/2ca4efccc56c66375c78aae177b52d78f0634f81))
+* **deps:** update eslint monorepo to v9.31.0 ([0404e29](https://github.com/phi-ag/argon2/commit/0404e29b2f63ec08f68ffe6f4c50711d4e6b7c0b))
+* **deps:** update phi-ag/run-playwright digest to 450bb31 ([b53f693](https://github.com/phi-ag/argon2/commit/b53f693cefba658e72edb00ba516a49e03666267))
+* **deps:** update playwright ([eeaa501](https://github.com/phi-ag/argon2/commit/eeaa5015ead007edc8e4c9698e87d21331c37c11))
+* **deps:** update playwright to v1.54.1 ([1b9f56b](https://github.com/phi-ag/argon2/commit/1b9f56b5679a811b94f1ef3f342cd1a3531cbae8))
+
 ## [0.5.1](https://github.com/phi-ag/argon2/compare/v0.5.0...v0.5.1) (2025-07-09)
 
 
