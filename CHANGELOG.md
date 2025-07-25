@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.5.3](https://github.com/phi-ag/argon2/compare/v0.5.2...v0.5.3) (2025-07-25)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([d85cd56](https://github.com/phi-ag/argon2/commit/d85cd5622e1dd1e47727d39ddf40dc6dd2cfcd5d))
+* **deps:** update dependency @types/node to v24.0.14 ([4292603](https://github.com/phi-ag/argon2/commit/4292603bcbea2637eb39fe2f3e37aaed21d90f96))
+* **deps:** update dependency @types/node to v24.0.15 ([df029fe](https://github.com/phi-ag/argon2/commit/df029fe8c30e6fffd4ca659948872dcad71fe9f7))
+* **deps:** update dependency @types/node to v24.1.0 ([e13bd37](https://github.com/phi-ag/argon2/commit/e13bd376c3e80c8215c8737757b3175c49339cb3))
+* **deps:** update dependency typescript-eslint to v8.38.0 ([0be6115](https://github.com/phi-ag/argon2/commit/0be6115d4ecbac4d97f092cda12d0449e5920961))
+* **deps:** update eslint monorepo to v9.32.0 ([ee37e34](https://github.com/phi-ag/argon2/commit/ee37e34c3a828d54e724e2fb66a59419e4ba0aa3))
+* **deps:** update node.js to v24.4.1 ([39afe60](https://github.com/phi-ag/argon2/commit/39afe60124e9e6ecea64df91cff47b4356c6dcb7))
+* **deps:** update phi-ag/run-playwright digest to fa6033d ([21a58dc](https://github.com/phi-ag/argon2/commit/21a58dc33a3745fefc86f5c0673c080a0ed9bd4f))
+
 ## [0.5.2](https://github.com/phi-ag/argon2/compare/v0.5.1...v0.5.2) (2025-07-15)
 
 
