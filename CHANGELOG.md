@@ -1,5 +1,27 @@
 # Changelog
 
+## [0.5.3](https://github.com/phi-ag/argon2/compare/v0.5.2...v0.5.3) (2025-08-05)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([7aadffd](https://github.com/phi-ag/argon2/commit/7aadffd8c52e19f87c9faa150e8f05c6c63a61e9))
+* **deps:** lock file maintenance ([8e35273](https://github.com/phi-ag/argon2/commit/8e3527384fe9afc631f0be3eef7221f2dcfc0363))
+* **deps:** lock file maintenance ([d85cd56](https://github.com/phi-ag/argon2/commit/d85cd5622e1dd1e47727d39ddf40dc6dd2cfcd5d))
+* **deps:** update dependency @types/node to v24.0.14 ([4292603](https://github.com/phi-ag/argon2/commit/4292603bcbea2637eb39fe2f3e37aaed21d90f96))
+* **deps:** update dependency @types/node to v24.0.15 ([df029fe](https://github.com/phi-ag/argon2/commit/df029fe8c30e6fffd4ca659948872dcad71fe9f7))
+* **deps:** update dependency @types/node to v24.1.0 ([e13bd37](https://github.com/phi-ag/argon2/commit/e13bd376c3e80c8215c8737757b3175c49339cb3))
+* **deps:** update dependency @types/node to v24.2.0 ([5f6f399](https://github.com/phi-ag/argon2/commit/5f6f39939d9a4e5f04f85be11ca228ef7fc8a8c6))
+* **deps:** update dependency typescript-eslint to v8.38.0 ([0be6115](https://github.com/phi-ag/argon2/commit/0be6115d4ecbac4d97f092cda12d0449e5920961))
+* **deps:** update dependency typescript-eslint to v8.39.0 ([3f8e5c5](https://github.com/phi-ag/argon2/commit/3f8e5c57136a2f1529d9562d71a66167f3138c28))
+* **deps:** update emscripten/emsdk docker tag to v4.0.12 ([1c5b119](https://github.com/phi-ag/argon2/commit/1c5b119e8197ffd49a6ad2f1886105560576fee2))
+* **deps:** update eslint monorepo to v9.32.0 ([ee37e34](https://github.com/phi-ag/argon2/commit/ee37e34c3a828d54e724e2fb66a59419e4ba0aa3))
+* **deps:** update node.js to v24.4.1 ([39afe60](https://github.com/phi-ag/argon2/commit/39afe60124e9e6ecea64df91cff47b4356c6dcb7))
+* **deps:** update node.js to v24.5.0 ([eea51e6](https://github.com/phi-ag/argon2/commit/eea51e671188a6eacdabe217b076abc4ffc2aa6b))
+* **deps:** update phi-ag/run-playwright digest to fa6033d ([21a58dc](https://github.com/phi-ag/argon2/commit/21a58dc33a3745fefc86f5c0673c080a0ed9bd4f))
+* **deps:** update playwright ([c061324](https://github.com/phi-ag/argon2/commit/c061324dde2e1aaf8f230e77c5f2aa5674266462))
+* **deps:** update pnpm to v10.14.0 ([1bf0569](https://github.com/phi-ag/argon2/commit/1bf056913c83430c8332bdeb39807d73402ca832))
+
 ## [0.5.2](https://github.com/phi-ag/argon2/compare/v0.5.1...v0.5.2) (2025-07-15)
 
 
