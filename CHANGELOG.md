@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.5.4](https://github.com/phi-ag/argon2/compare/v0.5.3...v0.5.4) (2025-08-09)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/cache digest to 0400d5f ([12ba561](https://github.com/phi-ag/argon2/commit/12ba5612e62088c53a4a0707d7e772920e0b46f1))
+* **deps:** update dependency @types/node to v24.2.1 ([84e8520](https://github.com/phi-ag/argon2/commit/84e8520107cca847c300484d38bee90c1241c8d0))
+* **deps:** update eslint monorepo to v9.33.0 ([0b2d39d](https://github.com/phi-ag/argon2/commit/0b2d39da1328fc43d4d35c42daa7fed57df377c1))
+
 ## [0.5.3](https://github.com/phi-ag/argon2/compare/v0.5.2...v0.5.3) (2025-08-05)
 
 
