@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.5.4](https://github.com/phi-ag/argon2/compare/v0.5.3...v0.5.4) (2025-08-15)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([b7884d9](https://github.com/phi-ag/argon2/commit/b7884d93fee8a866c66b0e16d0b5f02c49007606))
+* **deps:** update actions/cache digest to 0400d5f ([12ba561](https://github.com/phi-ag/argon2/commit/12ba5612e62088c53a4a0707d7e772920e0b46f1))
+* **deps:** update actions/checkout action to v5 ([a4c5686](https://github.com/phi-ag/argon2/commit/a4c5686a4ba563465ae193a15905bcb12a87b8b1))
+* **deps:** update actions/checkout digest to 08eba0b ([edc62de](https://github.com/phi-ag/argon2/commit/edc62de6e3a7e986870a04bd70306323e4f1ebc2))
+* **deps:** update dependency @types/node to v24.2.1 ([84e8520](https://github.com/phi-ag/argon2/commit/84e8520107cca847c300484d38bee90c1241c8d0))
+* **deps:** update dependency @types/node to v24.3.0 ([5e6c93b](https://github.com/phi-ag/argon2/commit/5e6c93bfa1c3f3821e664ec2e6b80b623811755b))
+* **deps:** update dependency typescript to v5.9.2 ([6b4f22b](https://github.com/phi-ag/argon2/commit/6b4f22b79b193f5a43c6dc2636dc4e0f380b1044))
+* **deps:** update dependency typescript-eslint to v8.39.1 ([8d537bc](https://github.com/phi-ag/argon2/commit/8d537bc699289c941fcb02dabec940684e966eaa))
+* **deps:** update emscripten/emsdk docker tag to v4.0.13 ([c173db7](https://github.com/phi-ag/argon2/commit/c173db74c14ec58f8545e0f3a39064cdbe6425b3))
+* **deps:** update eslint monorepo to v9.33.0 ([0b2d39d](https://github.com/phi-ag/argon2/commit/0b2d39da1328fc43d4d35c42daa7fed57df377c1))
+* **deps:** update node.js to v24.6.0 ([b93b37a](https://github.com/phi-ag/argon2/commit/b93b37a7eeeff0c28a7bd5b2490970b1a2e549a0))
+
 ## [0.5.3](https://github.com/phi-ag/argon2/compare/v0.5.2...v0.5.3) (2025-08-05)
 
 
