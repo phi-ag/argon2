@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.5.5](https://github.com/phi-ag/argon2/compare/v0.5.4...v0.5.5) (2025-08-26)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([558d70a](https://github.com/phi-ag/argon2/commit/558d70a135c5c79a6788864f00a0284f50edf8a1))
+* **deps:** lock file maintenance ([cb535f3](https://github.com/phi-ag/argon2/commit/cb535f3a9caa58b8239a5a2f5732c66398bb6273))
+* **deps:** update codecov/codecov-action digest to fdcc847 ([2df1d71](https://github.com/phi-ag/argon2/commit/2df1d714459e7157d3a97fc906e6d965992e87e3))
+* **deps:** update dependency typescript-eslint to v8.40.0 ([b9f9e11](https://github.com/phi-ag/argon2/commit/b9f9e115e310efbe640345fe2abb38c4146c8fd3))
+* **deps:** update dependency typescript-eslint to v8.41.0 ([8060e18](https://github.com/phi-ag/argon2/commit/8060e186ccff4fb2999c4e2671c3b0ce5725527c))
+* **deps:** update eslint monorepo to v9.34.0 ([0e1302b](https://github.com/phi-ag/argon2/commit/0e1302bd9c4cebad22b9ef221fcbd432551f111c))
+* **deps:** update googleapis/release-please-action digest to c2a5a2b ([f6447ba](https://github.com/phi-ag/argon2/commit/f6447badebb76f767b17dfd732513c54aabcac32))
+* **deps:** update playwright ([0d10cc3](https://github.com/phi-ag/argon2/commit/0d10cc3d921435c390fd87eaf40d421718d2a3eb))
+* **deps:** update pnpm to v10.15.0 ([6c188dd](https://github.com/phi-ag/argon2/commit/6c188dd59afa6bfe1b86483642d355edac0a4a5e))
+
 ## [0.5.4](https://github.com/phi-ag/argon2/compare/v0.5.3...v0.5.4) (2025-08-15)
 
 
