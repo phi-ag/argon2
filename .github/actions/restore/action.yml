@@ -8,6 +8,7 @@ runs:
       with:
         node-version-file: .nvmrc
         package-manager-cache: false
+        registry-url: https://registry.npmjs.org
 
     - name: Install pnpm
       shell: bash
