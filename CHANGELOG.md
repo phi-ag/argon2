@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.6](https://github.com/phi-ag/argon2/compare/v0.5.5...v0.5.6) (2025-09-09)
+
+
+### Continuous Integration
+
+* fix npm registry auth ([162b9eb](https://github.com/phi-ag/argon2/commit/162b9eb28f49a166f597b9283818ca5d0f5bb16a))
+
 ## [0.5.5](https://github.com/phi-ag/argon2/compare/v0.5.4...v0.5.5) (2025-09-09)
 
 
