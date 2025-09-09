@@ -1,5 +1,39 @@
 # Changelog
 
+## [0.5.5](https://github.com/phi-ag/argon2/compare/v0.5.4...v0.5.5) (2025-09-09)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([55c84fb](https://github.com/phi-ag/argon2/commit/55c84fbbda34867462df39d16f6aff67b96e4234))
+* **deps:** lock file maintenance ([558d70a](https://github.com/phi-ag/argon2/commit/558d70a135c5c79a6788864f00a0284f50edf8a1))
+* **deps:** lock file maintenance ([cb535f3](https://github.com/phi-ag/argon2/commit/cb535f3a9caa58b8239a5a2f5732c66398bb6273))
+* **deps:** update actions/attest-sbom action to v3 ([0c7a38d](https://github.com/phi-ag/argon2/commit/0c7a38db792b5b926e1476c080c8221f87393c0d))
+* **deps:** update actions/setup-node action to v5 ([f1b71c2](https://github.com/phi-ag/argon2/commit/f1b71c2202f6ff607885885a1f3cfc5019132e78))
+* **deps:** update codecov/codecov-action digest to 5a10915 ([6da9229](https://github.com/phi-ag/argon2/commit/6da9229e334efc80744c55b387e43a5e49caa4c1))
+* **deps:** update codecov/codecov-action digest to fdcc847 ([2df1d71](https://github.com/phi-ag/argon2/commit/2df1d714459e7157d3a97fc906e6d965992e87e3))
+* **deps:** update dependency @cyclonedx/cyclonedx-library to v8.5.1 ([bf24408](https://github.com/phi-ag/argon2/commit/bf244088f379351338dad8f999b44f25dc8bdb1b))
+* **deps:** update dependency @types/node to v24.3.1 ([458975c](https://github.com/phi-ag/argon2/commit/458975c9c2ac3ee202dc0cfcfb57f0f8f14d9ac5))
+* **deps:** update dependency typescript-eslint to v8.40.0 ([b9f9e11](https://github.com/phi-ag/argon2/commit/b9f9e115e310efbe640345fe2abb38c4146c8fd3))
+* **deps:** update dependency typescript-eslint to v8.41.0 ([8060e18](https://github.com/phi-ag/argon2/commit/8060e186ccff4fb2999c4e2671c3b0ce5725527c))
+* **deps:** update dependency typescript-eslint to v8.42.0 ([59c550d](https://github.com/phi-ag/argon2/commit/59c550de99696e563fe9d15be22585c71f2c43be))
+* **deps:** update dependency typescript-eslint to v8.43.0 ([1057fb0](https://github.com/phi-ag/argon2/commit/1057fb0ed51a5da813b919f55060b7205e391f46))
+* **deps:** update dependency uuid to v12 ([cc86002](https://github.com/phi-ag/argon2/commit/cc86002959db9a6f2bb79a5c7a699bea501e7993))
+* **deps:** update dependency uuid to v13 ([48e0194](https://github.com/phi-ag/argon2/commit/48e01944d106a7924f3b0ea4d46d13d7b60954ec))
+* **deps:** update emscripten/emsdk docker tag to v4.0.14 ([7929543](https://github.com/phi-ag/argon2/commit/792954379c257c09321874d7503322df01c61b51))
+* **deps:** update eslint monorepo to v9.34.0 ([0e1302b](https://github.com/phi-ag/argon2/commit/0e1302bd9c4cebad22b9ef221fcbd432551f111c))
+* **deps:** update eslint monorepo to v9.35.0 ([815e249](https://github.com/phi-ag/argon2/commit/815e2495f85622bc75e4d5cdf38cf001f2ee2409))
+* **deps:** update googleapis/release-please-action digest to c2a5a2b ([f6447ba](https://github.com/phi-ag/argon2/commit/f6447badebb76f767b17dfd732513c54aabcac32))
+* **deps:** update node.js to v24.7.0 ([1e4fe0d](https://github.com/phi-ag/argon2/commit/1e4fe0dfafd488ea3b63ae3a360b98323a88cda6))
+* **deps:** update playwright ([0d10cc3](https://github.com/phi-ag/argon2/commit/0d10cc3d921435c390fd87eaf40d421718d2a3eb))
+* **deps:** update pnpm to v10.15.0 ([6c188dd](https://github.com/phi-ag/argon2/commit/6c188dd59afa6bfe1b86483642d355edac0a4a5e))
+* **deps:** update pnpm to v10.15.1 ([bbe0dd6](https://github.com/phi-ag/argon2/commit/bbe0dd64d730b1ff0efbdcd860dd626ca53af46e))
+
+
+### Continuous Integration
+
+* disable package manager cache for setup-node ([003bfe4](https://github.com/phi-ag/argon2/commit/003bfe4bd86befc5055ded9d7781670dbe4d27ba))
+
 ## [0.5.4](https://github.com/phi-ag/argon2/compare/v0.5.3...v0.5.4) (2025-08-15)
 
 
