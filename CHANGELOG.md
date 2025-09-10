@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.5.7](https://github.com/phi-ag/argon2/compare/v0.5.6...v0.5.7) (2025-09-10)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency @cyclonedx/cyclonedx-library to v8.6.0 ([391d707](https://github.com/phi-ag/argon2/commit/391d7077e8afbe26d2d6eb1f47ea0abbf69599b7))
+* **deps:** update dependency globals to v16.4.0 ([a004cd1](https://github.com/phi-ag/argon2/commit/a004cd1f86a1478c78333629c0467e5ba63d4664))
+* **deps:** update node.js to v24.8.0 ([829d17d](https://github.com/phi-ag/argon2/commit/829d17d0fa9bd3caf1bd2b11e56b259688892546))
+
 ## [0.5.6](https://github.com/phi-ag/argon2/compare/v0.5.5...v0.5.6) (2025-09-09)
 
 
