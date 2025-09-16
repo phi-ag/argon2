@@ -11,8 +11,8 @@ importers:
   .:
     devDependencies:
       '@cyclonedx/cyclonedx-library':
-        specifier: 8.6.0
-        version: 8.6.0
+        specifier: 9.0.0
+        version: 9.0.0
       '@eslint/js':
         specifier: 9.35.0
         version: 9.35.0
@@ -109,9 +109,26 @@ packages:
     resolution: {integrity: sha512-6zABk/ECA/QYSCQ1NGiVwwbQerUCZ+TQbp64Q3AgmfNvurHH0j8TtXa1qbShXA6qqkpAj4V5W8pP6mLe1mcMqA==}
     engines: {node: '>=18'}
 
-  '@cyclonedx/cyclonedx-library@8.6.0':
-    resolution: {integrity: sha512-HCK3brdEdV5dmRJkPfXc3d1pvuL6J+pG09naXh7+HzXAlouXykE1tKvwaAU1NvWpOd/zC5o1Nh9yPX0INVJyIA==}
+  '@cyclonedx/cyclonedx-library@9.0.0':
+    resolution: {integrity: sha512-KO4z803vEpaIXajyd5f8bDYbqapngUm+tKWrLDn1JNkzlh54jiFc80g7Cm0RYgOTKDtdUy1MF1QiEloUX9N5tw==}
     engines: {node: '>=20.18.0'}
+    peerDependencies:
+      ajv: ^8.12.0
+      ajv-formats: ^3.0.1
+      ajv-formats-draft2019: ^1.6.1
+      libxmljs2: ^0.35||^0.37
+      xmlbuilder2: ^3.0.2
+    peerDependenciesMeta:
+      ajv:
+        optional: true
+      ajv-formats:
+        optional: true
+      ajv-formats-draft2019:
+        optional: true
+      libxmljs2:
+        optional: true
+      xmlbuilder2:
+        optional: true
 
   '@esbuild/aix-ppc64@0.25.9':
     resolution: {integrity: sha512-OaGtL73Jck6pBKjNIe24BnFE6agGl+6KxDtTfHhy1HmhthfKouEcOhqpSL64K4/0WCtbKFLOdzD/44cJ4k9opA==}
@@ -1388,7 +1405,7 @@ snapshots:
 
   '@bcoe/v8-coverage@1.0.2': {}
 
-  '@cyclonedx/cyclonedx-library@8.6.0':
+  '@cyclonedx/cyclonedx-library@9.0.0':
     dependencies:
       packageurl-js: 2.0.1
       spdx-expression-parse: 4.0.0
