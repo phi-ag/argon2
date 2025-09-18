@@ -1,5 +1,25 @@
 # Changelog
 
+## [0.5.7](https://github.com/phi-ag/argon2/compare/v0.5.6...v0.5.7) (2025-09-18)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([ef034eb](https://github.com/phi-ag/argon2/commit/ef034eb94242cc669c18fdf2f57efaf721eaaec4))
+* **deps:** update dependency @cyclonedx/cyclonedx-library to v8.6.0 ([391d707](https://github.com/phi-ag/argon2/commit/391d7077e8afbe26d2d6eb1f47ea0abbf69599b7))
+* **deps:** update dependency @cyclonedx/cyclonedx-library to v9 ([7267a74](https://github.com/phi-ag/argon2/commit/7267a74ed242b10e9183e4309bb177c9bcb39fde))
+* **deps:** update dependency @types/node to v24.3.3 ([040d787](https://github.com/phi-ag/argon2/commit/040d7876adcc9ba1e122400c8703094fdf4e5efa))
+* **deps:** update dependency @types/node to v24.4.0 ([f1c40f6](https://github.com/phi-ag/argon2/commit/f1c40f6b71bd6e756f4e53f26f56f8ef227ecd5a))
+* **deps:** update dependency @types/node to v24.5.0 ([33da0d0](https://github.com/phi-ag/argon2/commit/33da0d08a5036a00e6d855fb19eb1ac47e4ecfa2))
+* **deps:** update dependency @types/node to v24.5.1 ([c846c5a](https://github.com/phi-ag/argon2/commit/c846c5af1d0f22d86d48ca49d2134db69de5f055))
+* **deps:** update dependency @types/node to v24.5.2 ([d9455c5](https://github.com/phi-ag/argon2/commit/d9455c597d42c81e3c27c471164f932892e38640))
+* **deps:** update dependency globals to v16.4.0 ([a004cd1](https://github.com/phi-ag/argon2/commit/a004cd1f86a1478c78333629c0467e5ba63d4664))
+* **deps:** update dependency typescript-eslint to v8.44.0 ([1e16b26](https://github.com/phi-ag/argon2/commit/1e16b26fa7aa98ecbfe1f6b3e78518bd85484467))
+* **deps:** update emscripten/emsdk docker tag to v4.0.15 ([60063f7](https://github.com/phi-ag/argon2/commit/60063f7ef81aa20e2bcb24bff0d1ab1c7b8c71ff))
+* **deps:** update node.js to v24.8.0 ([829d17d](https://github.com/phi-ag/argon2/commit/829d17d0fa9bd3caf1bd2b11e56b259688892546))
+* **deps:** update pnpm to v10.16.1 ([201c2ee](https://github.com/phi-ag/argon2/commit/201c2ee86c783714097ab6584b9aa1e736867aa6))
+* **deps:** update pnpm to v10.17.0 ([66d2bda](https://github.com/phi-ag/argon2/commit/66d2bda3d63679761121d89c7c167b84803f2f12))
+
 ## [0.5.6](https://github.com/phi-ag/argon2/compare/v0.5.5...v0.5.6) (2025-09-09)
 
 
