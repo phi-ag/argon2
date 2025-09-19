@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.8](https://github.com/phi-ag/argon2/compare/v0.5.7...v0.5.8) (2025-09-19)
+
+
+### Miscellaneous Chores
+
+* **deps:** update eslint monorepo to v9.36.0 ([12c1c54](https://github.com/phi-ag/argon2/commit/12c1c54a6eabb08772f1e6cf21cd550f09161804))
+
 ## [0.5.7](https://github.com/phi-ag/argon2/compare/v0.5.6...v0.5.7) (2025-09-18)
 
 
