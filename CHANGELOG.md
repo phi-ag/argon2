@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.9](https://github.com/phi-ag/argon2/compare/v0.5.8...v0.5.9) (2025-10-15)
+
+
+### Continuous Integration
+
+* switch to trusted publishing ([bbc66b9](https://github.com/phi-ag/argon2/commit/bbc66b9994df2d646ea83831cc196746ac7cda46))
+
 ## [0.5.8](https://github.com/phi-ag/argon2/compare/v0.5.7...v0.5.8) (2025-10-15)
 
 
