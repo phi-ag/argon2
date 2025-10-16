@@ -208,4 +208,17 @@ describe("argon2", async () => {
     // @ts-expect-error
     expect(argon2.tryVerify(encoded, "foo", "not-a-type").error).toEqual("Invalid type");
   });
+
+  test("hash invalid password", () => {
+    expect(argon2.tryHash(null!).error).toEqual("Password is null");
+    expect(argon2.tryHash(undefined!).error).toEqual("Password is undefined");
+  });
+
+  test("verify invalid encoded strings", () => {
+    expect(argon2.tryVerify(null!, "foo").error).toEqual("Encoded string is null");
+    expect(argon2.tryVerify(undefined!, "foo").error).toEqual(
+      "Encoded string is undefined"
+    );
+    expect(argon2.tryVerify("", "foo").error).toEqual("Encoded string is empty");
+  });
 });

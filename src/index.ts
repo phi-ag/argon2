@@ -185,6 +185,9 @@ class Argon2 {
     password: string,
     options?: Partial<Argon2HashOptions>
   ): Argon2TryHashResult => {
+    if (password === null) return { success: false, error: "Password is null" };
+    if (password === undefined) return { success: false, error: "Password is undefined" };
+
     const opts = {
       ...defaultHashOptions,
       ...options
@@ -245,8 +248,12 @@ class Argon2 {
     password: string,
     type?: Argon2Type
   ): Argon2TryVerifyResult => {
-    const $type = type ?? typeFromEncoded(encoded);
+    if (encoded === null) return { success: false, error: "Encoded string is null" };
+    if (encoded === undefined)
+      return { success: false, error: "Encoded string is undefined" };
+    if (encoded === "") return { success: false, error: "Encoded string is empty" };
 
+    const $type = type ?? typeFromEncoded(encoded);
     if ($type === undefined || !($type in Argon2Type))
       return { success: false, error: "Invalid type" };
 
