@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.5.10](https://github.com/phi-ag/argon2/compare/v0.5.9...v0.5.10) (2025-10-16)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency @types/node to v24.8.0 ([7c290fd](https://github.com/phi-ag/argon2/commit/7c290fd2d3fc27a02147ae6cf7851b826d373247))
+* **deps:** update node.js to v25 ([e130035](https://github.com/phi-ag/argon2/commit/e1300350c35060888fb5f2a5d4adabade004b277))
+* improve error messages for invalid hash and verify inputs ([8a0b80d](https://github.com/phi-ag/argon2/commit/8a0b80d30e20dd8145f154cb36b2ee3107036d92))
+
 ## [0.5.9](https://github.com/phi-ag/argon2/compare/v0.5.8...v0.5.9) (2025-10-15)
 
 
