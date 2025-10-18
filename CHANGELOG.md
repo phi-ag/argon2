@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.5.11](https://github.com/phi-ag/argon2/compare/v0.5.10...v0.5.11) (2025-10-18)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency @types/node to v24.8.1 ([7f8007f](https://github.com/phi-ag/argon2/commit/7f8007fa3f75cc1470e305a24ee6f8d5aa99b964))
+* **deps:** update emscripten/emsdk docker tag to v4.0.17 ([220e7f3](https://github.com/phi-ag/argon2/commit/220e7f30efcc3ac0141b629e21d1341408ba6262))
+* **deps:** update eslint monorepo to v9.38.0 ([117c4f5](https://github.com/phi-ag/argon2/commit/117c4f51b760ee35b539e3b4488e459ee47d759c))
+* **deps:** update playwright ([ee85731](https://github.com/phi-ag/argon2/commit/ee857311fb32052bfb358261fd10060dd687d8b8))
+
 ## [0.5.10](https://github.com/phi-ag/argon2/compare/v0.5.9...v0.5.10) (2025-10-16)
 
 
