@@ -7,8 +7,8 @@ export default defineConfig({
       junit: "junit.xml"
     },
     coverage: {
-      all: true,
-      include: ["src/**"],
+      include: ["src/**/*.ts"],
+      exclude: ["src/**/*.{wasm,bench.ts}"],
       reportsDirectory: "coverage",
       reporter: ["text", "cobertura", "html"]
     }
