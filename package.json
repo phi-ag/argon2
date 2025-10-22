@@ -45,7 +45,7 @@
     "sbom": "node utils/sbom.ts"
   },
   "devDependencies": {
-    "@cyclonedx/cyclonedx-library": "9.1.0",
+    "@cyclonedx/cyclonedx-library": "9.2.0",
     "@eslint/js": "9.38.0",
     "@playwright/test": "1.56.1",
     "@trivago/prettier-plugin-sort-imports": "5.2.2",
