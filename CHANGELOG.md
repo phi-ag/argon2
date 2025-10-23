@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.5.11](https://github.com/phi-ag/argon2/compare/v0.5.10...v0.5.11) (2025-10-23)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([3e74124](https://github.com/phi-ag/argon2/commit/3e7412465dfebb42ad5a7847e0005f558035d00d))
+* **deps:** update dependency @cyclonedx/cyclonedx-library to v9.1.0 ([ec49306](https://github.com/phi-ag/argon2/commit/ec49306fc801407be198a6dc4811b7ac5495de34))
+* **deps:** update dependency @cyclonedx/cyclonedx-library to v9.2.0 ([760a132](https://github.com/phi-ag/argon2/commit/760a132252b1e578664e3f7b8874bf25f474fb7b))
+* **deps:** update dependency @types/node to v24.8.1 ([7f8007f](https://github.com/phi-ag/argon2/commit/7f8007fa3f75cc1470e305a24ee6f8d5aa99b964))
+* **deps:** update dependency @types/node to v24.9.1 ([1f7c69c](https://github.com/phi-ag/argon2/commit/1f7c69c32977dfcd67c86accd0817db949d17463))
+* **deps:** update dependency typescript-eslint to v8.46.2 ([f09b10b](https://github.com/phi-ag/argon2/commit/f09b10ba1eaa955a006f67a8e67d40368fbf4549))
+* **deps:** update emscripten/emsdk docker tag to v4.0.17 ([220e7f3](https://github.com/phi-ag/argon2/commit/220e7f30efcc3ac0141b629e21d1341408ba6262))
+* **deps:** update eslint monorepo to v9.38.0 ([117c4f5](https://github.com/phi-ag/argon2/commit/117c4f51b760ee35b539e3b4488e459ee47d759c))
+* **deps:** update playwright ([ee85731](https://github.com/phi-ag/argon2/commit/ee857311fb32052bfb358261fd10060dd687d8b8))
+* **deps:** update pnpm to v10.19.0 ([7b42bfc](https://github.com/phi-ag/argon2/commit/7b42bfc2b764209203a40a4ad4c64114f076cdf3))
+* **deps:** update vitest monorepo to v4 ([b273300](https://github.com/phi-ag/argon2/commit/b273300f7c791612c10bceac42690a6e0ed3fd78))
+
 ## [0.5.10](https://github.com/phi-ag/argon2/compare/v0.5.9...v0.5.10) (2025-10-16)
 
 
