@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.5.12](https://github.com/phi-ag/argon2/compare/v0.5.11...v0.5.12) (2025-10-25)
+
+
+### Miscellaneous Chores
+
+* **deps:** update emscripten/emsdk docker tag to v4.0.18 ([baf50e3](https://github.com/phi-ag/argon2/commit/baf50e3f4985547db1b490398e58671d93b3e13b))
+* **deps:** update googleapis/release-please-action digest to 16a9c90 ([f4833fd](https://github.com/phi-ag/argon2/commit/f4833fd508b5250d8484498e12aabb5eed05ed75))
+* **deps:** update vitest monorepo to v4.0.2 ([7fa9122](https://github.com/phi-ag/argon2/commit/7fa912208a0deee0e3aad336054f0a3f7dd5da32))
+* **deps:** update vitest monorepo to v4.0.3 ([59759fd](https://github.com/phi-ag/argon2/commit/59759fd370c7ae51c1e7892b5d0f67fedb718096))
+
 ## [0.5.11](https://github.com/phi-ag/argon2/compare/v0.5.10...v0.5.11) (2025-10-23)
 
 
