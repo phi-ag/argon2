@@ -7,6 +7,9 @@
     "group:recommended"
   ],
   "ignorePresets": ["workarounds:typesNodeVersioning"],
+  "minimumReleaseAge": "1 day",
+  "internalChecksFilter": "strict",
+  "postUpdateOptions": ["pnpmDedupe"],
   "git-submodules": {
     "enabled": true
   },
@@ -14,7 +17,6 @@
     "enabled": true,
     "automerge": true
   },
-  "postUpdateOptions": ["pnpmDedupe"],
   "customManagers": [
     {
       "customType": "regex",
