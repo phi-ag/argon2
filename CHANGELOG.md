@@ -1,5 +1,35 @@
 # Changelog
 
+## [0.5.12](https://github.com/phi-ag/argon2/compare/v0.5.11...v0.5.12) (2025-11-06)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([f158cc0](https://github.com/phi-ag/argon2/commit/f158cc003377834acfcb822d374d9ba8124d61fd))
+* **deps:** lock file maintenance ([bd35dfa](https://github.com/phi-ag/argon2/commit/bd35dfa71144675fce33218b41f73638a1d04e82))
+* **deps:** update dependency @trivago/prettier-plugin-sort-imports to v6 ([9d5d5b8](https://github.com/phi-ag/argon2/commit/9d5d5b8a74c37ee5a3e69a39837ceb4850e9e58c))
+* **deps:** update dependency @types/node to v24.10.0 ([15d37fd](https://github.com/phi-ag/argon2/commit/15d37fdb7a96712556ea20932b3b01ec3ef73d82))
+* **deps:** update dependency @types/node to v24.9.2 ([771d0d2](https://github.com/phi-ag/argon2/commit/771d0d20b1c36480c7c7e7bc53e8eef31f01eb24))
+* **deps:** update dependency globals to v16.5.0 ([c1e3fe0](https://github.com/phi-ag/argon2/commit/c1e3fe02d35ddc4a33892d3e665236acfa3e58dd))
+* **deps:** update dependency typescript-eslint to v8.46.3 ([ff1f248](https://github.com/phi-ag/argon2/commit/ff1f248a07e09ba470353cca4b79e2273dfa6016))
+* **deps:** update emscripten/emsdk docker tag to v4.0.18 ([baf50e3](https://github.com/phi-ag/argon2/commit/baf50e3f4985547db1b490398e58671d93b3e13b))
+* **deps:** update emscripten/emsdk docker tag to v4.0.19 ([3f7cae1](https://github.com/phi-ag/argon2/commit/3f7cae17d3c685d21fa596e4cc630a95d0c511e1))
+* **deps:** update eslint monorepo to v9.39.1 ([e4f55ed](https://github.com/phi-ag/argon2/commit/e4f55ed6dff1c13b5157d41e7a1c5384fb3d37de))
+* **deps:** update googleapis/release-please-action digest to 16a9c90 ([f4833fd](https://github.com/phi-ag/argon2/commit/f4833fd508b5250d8484498e12aabb5eed05ed75))
+* **deps:** update node.js to v25.1.0 ([2b5a24b](https://github.com/phi-ag/argon2/commit/2b5a24bb87c09787200e9f64fc60fc2b7e060433))
+* **deps:** update pnpm to v10.20.0 ([e41c26e](https://github.com/phi-ag/argon2/commit/e41c26e4ebc8d5b6319f9ee6a211b31c8f71a0e1))
+* **deps:** update vitest monorepo to v4.0.2 ([7fa9122](https://github.com/phi-ag/argon2/commit/7fa912208a0deee0e3aad336054f0a3f7dd5da32))
+* **deps:** update vitest monorepo to v4.0.3 ([59759fd](https://github.com/phi-ag/argon2/commit/59759fd370c7ae51c1e7892b5d0f67fedb718096))
+* **deps:** update vitest monorepo to v4.0.4 ([89ed27d](https://github.com/phi-ag/argon2/commit/89ed27d280e6a25fd961b96499d8858d90b461f1))
+* **deps:** update vitest monorepo to v4.0.5 ([4ccde1f](https://github.com/phi-ag/argon2/commit/4ccde1f5788a694d04cdf7240d9d925d03e443dc))
+* **deps:** update vitest monorepo to v4.0.6 ([bf1ea30](https://github.com/phi-ag/argon2/commit/bf1ea30c466a00a307cba29c66922c5e1f2d85cc))
+* **deps:** update vitest monorepo to v4.0.7 ([08b29d3](https://github.com/phi-ag/argon2/commit/08b29d3290b8cbc792026ba6b0f98b04e4558cc0))
+
+
+### Continuous Integration
+
+* **renovate:** set minimum release age ([72608a7](https://github.com/phi-ag/argon2/commit/72608a70f9d18efd5e172f40d250e1ee98a07416))
+
 ## [0.5.11](https://github.com/phi-ag/argon2/compare/v0.5.10...v0.5.11) (2025-10-23)
 
 
