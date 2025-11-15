@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.5.13](https://github.com/phi-ag/argon2/compare/v0.5.12...v0.5.13) (2025-11-15)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([2f090b2](https://github.com/phi-ag/argon2/commit/2f090b29e0369042d8b2c8a07ef296ac3a910df8))
+* **deps:** update dependency @types/node to v24.10.1 ([ef7f305](https://github.com/phi-ag/argon2/commit/ef7f305d9d4dbc7017d5abdc9e0c7beadb6d76fd))
+* **deps:** update dependency typescript-eslint to v8.46.4 ([1fee094](https://github.com/phi-ag/argon2/commit/1fee09462df7578d5bce251c025312df83df6fdc))
+* **deps:** update node.js to v25.2.0 ([3b80d31](https://github.com/phi-ag/argon2/commit/3b80d317882b67c18c3c6bab31abe5a9c08aa3d5))
+* **deps:** update pnpm to v10.21.0 ([a362873](https://github.com/phi-ag/argon2/commit/a362873ff1d4750d27e7499a467a34421f0ae3cd))
+* **deps:** update pnpm to v10.22.0 ([55b7389](https://github.com/phi-ag/argon2/commit/55b73896f6294dcdda114ff7e90ab8c5a4df3e8e))
+* **deps:** update vitest monorepo to v4.0.8 ([cff4bab](https://github.com/phi-ag/argon2/commit/cff4bab2b1eca7eaed5573cec178738604919e32))
+* **deps:** update vitest monorepo to v4.0.9 ([84df391](https://github.com/phi-ag/argon2/commit/84df391e3952b16605976f6cb4037086db87faf9))
+
 ## [0.5.12](https://github.com/phi-ag/argon2/compare/v0.5.11...v0.5.12) (2025-11-06)
 
 
