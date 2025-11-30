@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.5.14](https://github.com/phi-ag/argon2/compare/v0.5.13...v0.5.14) (2025-11-30)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency prettier to v3.7.1 ([5ce6612](https://github.com/phi-ag/argon2/commit/5ce6612f104aa1494ec80861e91846a499f6f8d2))
+* **deps:** update dependency typescript-eslint to v8.48.0 ([51075f5](https://github.com/phi-ag/argon2/commit/51075f5e539e6aff25e5b574f5d2fc590000c2ba))
+* **deps:** update pnpm to v10.23.0 ([f182b84](https://github.com/phi-ag/argon2/commit/f182b8427184756757af9f0426bcc0db348a9fbd))
+* **deps:** update pnpm to v10.24.0 ([2aeaa92](https://github.com/phi-ag/argon2/commit/2aeaa92dfb8f2cf1886a875b1e90c28ec84bdcb2))
+* **deps:** update vitest monorepo to v4.0.12 ([b59250c](https://github.com/phi-ag/argon2/commit/b59250c411b2d824cd078aee5049abdda17bce71))
+* **deps:** update vitest monorepo to v4.0.13 ([b7701a0](https://github.com/phi-ag/argon2/commit/b7701a015e289c58afac59e227271b1ca34c26b0))
+* **deps:** update vitest monorepo to v4.0.14 ([fda4c22](https://github.com/phi-ag/argon2/commit/fda4c22726f55459608c8c6fb6a9cfcb7202c1e3))
+
 ## [0.5.13](https://github.com/phi-ag/argon2/compare/v0.5.12...v0.5.13) (2025-11-21)
 
 
