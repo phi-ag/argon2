@@ -1,5 +1,33 @@
 # Changelog
 
+## [0.5.14](https://github.com/phi-ag/argon2/compare/v0.5.13...v0.5.14) (2025-12-04)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([14a2b6c](https://github.com/phi-ag/argon2/commit/14a2b6c0171f761956a797065f4df6feb2093aa8))
+* **deps:** update actions/checkout digest to 8e8c483 ([a8842d9](https://github.com/phi-ag/argon2/commit/a8842d92e1711e638a0aa244888a669e17e2af81))
+* **deps:** update actions/setup-node digest to 395ad32 ([c483da9](https://github.com/phi-ag/argon2/commit/c483da9548ae6b8cd6673f80f001869cebd38e61))
+* **deps:** update dependency prettier to v3.7.1 ([5ce6612](https://github.com/phi-ag/argon2/commit/5ce6612f104aa1494ec80861e91846a499f6f8d2))
+* **deps:** update dependency prettier to v3.7.2 ([8a3aa7c](https://github.com/phi-ag/argon2/commit/8a3aa7c2c7ac09996ef0134e0d27c3a071b62dbc))
+* **deps:** update dependency prettier to v3.7.3 ([1a8c37c](https://github.com/phi-ag/argon2/commit/1a8c37c5109d7dbc209219987071eaf148dfd15d))
+* **deps:** update dependency typescript-eslint to v8.48.0 ([51075f5](https://github.com/phi-ag/argon2/commit/51075f5e539e6aff25e5b574f5d2fc590000c2ba))
+* **deps:** update emscripten/emsdk docker tag to v4.0.21 ([0ab411d](https://github.com/phi-ag/argon2/commit/0ab411d9499f39e8eb4c016a143cc97d26434bc7))
+* **deps:** update playwright ([4826774](https://github.com/phi-ag/argon2/commit/4826774a1b8f7b4935dacaed2644354d0f018fc9))
+* **deps:** update pnpm to v10.23.0 ([f182b84](https://github.com/phi-ag/argon2/commit/f182b8427184756757af9f0426bcc0db348a9fbd))
+* **deps:** update pnpm to v10.24.0 ([2aeaa92](https://github.com/phi-ag/argon2/commit/2aeaa92dfb8f2cf1886a875b1e90c28ec84bdcb2))
+* **deps:** update vitest monorepo to v4.0.12 ([b59250c](https://github.com/phi-ag/argon2/commit/b59250c411b2d824cd078aee5049abdda17bce71))
+* **deps:** update vitest monorepo to v4.0.13 ([b7701a0](https://github.com/phi-ag/argon2/commit/b7701a015e289c58afac59e227271b1ca34c26b0))
+* **deps:** update vitest monorepo to v4.0.14 ([fda4c22](https://github.com/phi-ag/argon2/commit/fda4c22726f55459608c8c6fb6a9cfcb7202c1e3))
+* set pnpm minimum release age to fix renovate lock file maintenance behavior ([8113ae0](https://github.com/phi-ag/argon2/commit/8113ae0d45ac73bf0fc72bf3d9dc3ecbf10beb8b))
+
+
+### Continuous Integration
+
+* **renovate:** disable minimum release age checks for digest updates ([3d0d9ba](https://github.com/phi-ag/argon2/commit/3d0d9ba1160bf6c30a774cc62f6978c86ea3407f))
+* **renovate:** disable minimum release age checks for docker ([a2ce141](https://github.com/phi-ag/argon2/commit/a2ce141a421f8f22917a6139e55bde321781ef85))
+* **renovate:** disable minimum release age checks for lock file maintenance ([967aa59](https://github.com/phi-ag/argon2/commit/967aa595cb82e56fe2b2c9cdc53c33e959139e0b))
+
 ## [0.5.13](https://github.com/phi-ag/argon2/compare/v0.5.12...v0.5.13) (2025-11-21)
 
 
