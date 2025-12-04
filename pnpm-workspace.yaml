@@ -1,6 +1,7 @@
 savePrefix: ""
 autoInstallPeers: false
 strictPeerDependencies: true
+minimumReleaseAge: 1440
 ignoredOptionalDependencies:
   - "@pkgjs/parseargs"
   - fsevents
