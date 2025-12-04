@@ -44,6 +44,11 @@
       "automerge": true
     },
     {
+      "description": "Disable minimum release age checks for docker",
+      "matchDatasources": ["docker"],
+      "minimumReleaseAge": null
+    },
+    {
       "groupName": "playwright",
       "matchPackageNames": [
         "phi-ag/run-playwright",
