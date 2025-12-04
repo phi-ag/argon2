@@ -49,8 +49,8 @@
       "minimumReleaseAge": null
     },
     {
-      "description": "Disable minimum release age checks for digest updates",
-      "matchUpdateTypes": ["digest"],
+      "description": "Disable minimum release age checks for lock file maintenance and digest updates",
+      "matchUpdateTypes": ["lockFileMaintenance", "digest"],
       "minimumReleaseAge": null
     },
     {
