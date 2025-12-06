@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.5.15](https://github.com/phi-ag/argon2/compare/v0.5.14...v0.5.15) (2025-12-06)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency @cyclonedx/cyclonedx-library to v9.4.0 ([7d19e98](https://github.com/phi-ag/argon2/commit/7d19e98ea271e74cfd5d5fd135ab3a581733ff13))
+* **deps:** update dependency prettier to v3.7.4 ([9d552bb](https://github.com/phi-ag/argon2/commit/9d552bbbb2826259bd173f2f647e4631da25d2e5))
+* **deps:** update dependency typescript-eslint to v8.48.1 ([d4e84b5](https://github.com/phi-ag/argon2/commit/d4e84b5d5ed4f292a0ea5c259a9aeae9cb2ff1af))
+* **deps:** update vitest monorepo to v4.0.15 ([a9efb82](https://github.com/phi-ag/argon2/commit/a9efb82e00c62a0fc127049e7532048cd3650cee))
+
 ## [0.5.14](https://github.com/phi-ag/argon2/compare/v0.5.13...v0.5.14) (2025-12-04)
 
 
