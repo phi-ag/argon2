@@ -11,8 +11,8 @@ importers:
   .:
     devDependencies:
       '@cyclonedx/cyclonedx-library':
-        specifier: 9.4.0
-        version: 9.4.0
+        specifier: 9.4.1
+        version: 9.4.1
       '@eslint/js':
         specifier: 9.39.1
         version: 9.39.1
@@ -105,8 +105,8 @@ packages:
     resolution: {integrity: sha512-6zABk/ECA/QYSCQ1NGiVwwbQerUCZ+TQbp64Q3AgmfNvurHH0j8TtXa1qbShXA6qqkpAj4V5W8pP6mLe1mcMqA==}
     engines: {node: '>=18'}
 
-  '@cyclonedx/cyclonedx-library@9.4.0':
-    resolution: {integrity: sha512-KE8bvG9iaIXmKBj1W5pWGWX4DaXwxF2ooNHUyeTFUykwfuwjWcbqRMrfJu17OFX5p3I59lqx7CGi9EmE8U4kwQ==}
+  '@cyclonedx/cyclonedx-library@9.4.1':
+    resolution: {integrity: sha512-fY/ZEFXEKM4X/eC2vClPrpucgb4IsyKYT1q9SBFx2+ySJ0jA2NELIf1va+8SDlcv6yUgwyLqtJ92g2KivQp3eA==}
     engines: {node: '>=20.18.0'}
     peerDependencies:
       ajv: ^8.12.0
@@ -1248,7 +1248,7 @@ snapshots:
 
   '@bcoe/v8-coverage@1.0.2': {}
 
-  '@cyclonedx/cyclonedx-library@9.4.0':
+  '@cyclonedx/cyclonedx-library@9.4.1':
     dependencies:
       packageurl-js: 2.0.1
       spdx-expression-parse: 4.0.0
