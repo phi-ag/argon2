@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.5.15](https://github.com/phi-ag/argon2/compare/v0.5.14...v0.5.15) (2025-12-14)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/cache action to v5 ([9e01453](https://github.com/phi-ag/argon2/commit/9e0145307f478a25105584fd25bbd4e68dbf47e0))
+* **deps:** update codecov/codecov-action digest to 671740a ([226f8c0](https://github.com/phi-ag/argon2/commit/226f8c0547fe0a32fb1ea55699268db16db34967))
+* **deps:** update dependency @cyclonedx/cyclonedx-library to v9.4.0 ([7d19e98](https://github.com/phi-ag/argon2/commit/7d19e98ea271e74cfd5d5fd135ab3a581733ff13))
+* **deps:** update dependency @cyclonedx/cyclonedx-library to v9.4.1 ([77fc8fb](https://github.com/phi-ag/argon2/commit/77fc8fb4c63f29ffccbf7e6684ce7b05354fabcd))
+* **deps:** update dependency @types/node to v24.10.2 ([245c8f3](https://github.com/phi-ag/argon2/commit/245c8f38c549ceb695b27eac369f9d4668ed7c87))
+* **deps:** update dependency @types/node to v24.10.3 ([79152bd](https://github.com/phi-ag/argon2/commit/79152bdca0b38aadec74f95690b357f2eb89c544))
+* **deps:** update dependency prettier to v3.7.4 ([9d552bb](https://github.com/phi-ag/argon2/commit/9d552bbbb2826259bd173f2f647e4631da25d2e5))
+* **deps:** update dependency typescript-eslint to v8.48.1 ([d4e84b5](https://github.com/phi-ag/argon2/commit/d4e84b5d5ed4f292a0ea5c259a9aeae9cb2ff1af))
+* **deps:** update dependency typescript-eslint to v8.49.0 ([2c84bf2](https://github.com/phi-ag/argon2/commit/2c84bf2de8dbe121df479ce9b1b6c076bf316fa0))
+* **deps:** update pnpm to v10.25.0 ([d272f44](https://github.com/phi-ag/argon2/commit/d272f449f831aa778c0f9c840eb68eb8538d7fda))
+* **deps:** update vitest monorepo to v4.0.15 ([a9efb82](https://github.com/phi-ag/argon2/commit/a9efb82e00c62a0fc127049e7532048cd3650cee))
+
 ## [0.5.14](https://github.com/phi-ag/argon2/compare/v0.5.13...v0.5.14) (2025-12-04)
 
 
