@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.16](https://github.com/phi-ag/argon2/compare/v0.5.15...v0.5.16) (2025-12-26)
+
+
+### Miscellaneous Chores
+
+* **deps:** update pnpm to v10.26.2 ([ca27228](https://github.com/phi-ag/argon2/commit/ca272282d89cf8a0b6caa99e34bfe333e734bf50))
+
 ## [0.5.15](https://github.com/phi-ag/argon2/compare/v0.5.14...v0.5.15) (2025-12-25)
 
 
