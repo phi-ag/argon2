@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.5.16](https://github.com/phi-ag/argon2/compare/v0.5.15...v0.5.16) (2026-01-03)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([7358e70](https://github.com/phi-ag/argon2/commit/7358e702db3522bbc9f50ace5fd1b5d60bc863ed))
+* **deps:** update dependency typescript-eslint to v8.51.0 ([a22e28f](https://github.com/phi-ag/argon2/commit/a22e28fe55d4d1e21a64ede9b53fc384392912ba))
+* **deps:** update pnpm to v10.26.2 ([ca27228](https://github.com/phi-ag/argon2/commit/ca272282d89cf8a0b6caa99e34bfe333e734bf50))
+* **deps:** update pnpm to v10.27.0 ([b4ea9c0](https://github.com/phi-ag/argon2/commit/b4ea9c0c2e199fcdc710100a5067813ad5b8f45b))
+
 ## [0.5.15](https://github.com/phi-ag/argon2/compare/v0.5.14...v0.5.15) (2025-12-25)
 
 
