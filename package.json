@@ -48,7 +48,7 @@
     "@cyclonedx/cyclonedx-library": "9.4.1",
     "@eslint/js": "9.39.2",
     "@playwright/test": "1.57.0",
-    "@trivago/prettier-plugin-sort-imports": "6.0.0",
+    "@trivago/prettier-plugin-sort-imports": "6.0.1",
     "@types/libsodium-wrappers-sumo": "0.7.8",
     "@types/node": "25.0.3",
     "@vitest/coverage-v8": "4.0.16",
