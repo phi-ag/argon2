@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.5.16](https://github.com/phi-ag/argon2/compare/v0.5.15...v0.5.16) (2026-01-10)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([579cecc](https://github.com/phi-ag/argon2/commit/579cecc61b3e581ebc32cfdd4778c5d045faf882))
+* **deps:** lock file maintenance ([7358e70](https://github.com/phi-ag/argon2/commit/7358e702db3522bbc9f50ace5fd1b5d60bc863ed))
+* **deps:** update dependency @trivago/prettier-plugin-sort-imports to v6.0.1 ([367bdb4](https://github.com/phi-ag/argon2/commit/367bdb4614bf908571ee55965a0ce0b2f116770c))
+* **deps:** update dependency @trivago/prettier-plugin-sort-imports to v6.0.2 ([23b3a15](https://github.com/phi-ag/argon2/commit/23b3a1551c4da2b2158e03343d82f5dacab791aa))
+* **deps:** update dependency globals to v17 ([c0d4541](https://github.com/phi-ag/argon2/commit/c0d4541c28d42b0357674a6a4dd7637d3fab289b))
+* **deps:** update dependency typescript-eslint to v8.51.0 ([a22e28f](https://github.com/phi-ag/argon2/commit/a22e28fe55d4d1e21a64ede9b53fc384392912ba))
+* **deps:** update dependency typescript-eslint to v8.52.0 ([39c8683](https://github.com/phi-ag/argon2/commit/39c8683a4904569d473a5938889d623f3d386e41))
+* **deps:** update emscripten/emsdk docker tag to v4.0.23 ([e3b87f0](https://github.com/phi-ag/argon2/commit/e3b87f02ea8154cef15ced192e3a51c476896b50))
+* **deps:** update pnpm to v10.26.2 ([ca27228](https://github.com/phi-ag/argon2/commit/ca272282d89cf8a0b6caa99e34bfe333e734bf50))
+* **deps:** update pnpm to v10.27.0 ([b4ea9c0](https://github.com/phi-ag/argon2/commit/b4ea9c0c2e199fcdc710100a5067813ad5b8f45b))
+
 ## [0.5.15](https://github.com/phi-ag/argon2/compare/v0.5.14...v0.5.15) (2025-12-25)
 
 
