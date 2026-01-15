@@ -2,8 +2,12 @@ savePrefix: ""
 autoInstallPeers: false
 strictPeerDependencies: true
 minimumReleaseAge: 1440
+blockExoticSubdeps: true
+trustPolicy: "no-downgrade"
+
 ignoredOptionalDependencies:
   - "@pkgjs/parseargs"
   - fsevents
-ignoredBuiltDependencies:
-  - esbuild
+
+allowBuilds:
+  esbuild: false
