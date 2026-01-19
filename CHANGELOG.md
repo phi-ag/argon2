@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.5.17](https://github.com/phi-ag/argon2/compare/v0.5.16...v0.5.17) (2026-01-19)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([13658c4](https://github.com/phi-ag/argon2/commit/13658c4dd33f618cd52fd2b0c907e6b8274189b6))
+* **deps:** update actions/cache digest to 8b402f5 ([89399a8](https://github.com/phi-ag/argon2/commit/89399a818edc6717cc804f796943d4d67e0a6126))
+* **deps:** update dependency @types/node to v25.0.7 ([73feb3e](https://github.com/phi-ag/argon2/commit/73feb3ee0998f131db8211f3ec9bc03cddadf2b9))
+* **deps:** update dependency @types/node to v25.0.8 ([8a26f9c](https://github.com/phi-ag/argon2/commit/8a26f9c1c74f2146573f158cea0a7e6a704f2e72))
+* **deps:** update dependency @types/node to v25.0.9 ([10e4f2e](https://github.com/phi-ag/argon2/commit/10e4f2e62fe598904a607c01013f0dfa6d9b9d05))
+* **deps:** update dependency prettier to v3.8.0 ([d1f152f](https://github.com/phi-ag/argon2/commit/d1f152fa08e59ffcd182c7668d6ec4f11dc188ae))
+* **pnpm:** block exotic subdeps and configure trust policy ([5c81f69](https://github.com/phi-ag/argon2/commit/5c81f69abb73692d0fb62766511170b9341dee9c))
+
 ## [0.5.16](https://github.com/phi-ag/argon2/compare/v0.5.15...v0.5.16) (2026-01-15)
 
 
