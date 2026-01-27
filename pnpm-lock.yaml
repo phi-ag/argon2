@@ -23,8 +23,8 @@ importers:
         specifier: 6.0.2
         version: 6.0.2(prettier@3.8.1)
       '@types/libsodium-wrappers-sumo':
-        specifier: 0.7.8
-        version: 0.7.8
+        specifier: 0.8.2
+        version: 0.8.2
       '@types/node':
         specifier: 25.0.10
         version: 25.0.10
@@ -41,8 +41,8 @@ importers:
         specifier: 4.12.0
         version: 4.12.0
       libsodium-wrappers-sumo:
-        specifier: 0.8.1
-        version: 0.8.1
+        specifier: 0.8.2
+        version: 0.8.2
       packageurl-js:
         specifier: 2.0.1
         version: 2.0.1
@@ -526,12 +526,9 @@ packages:
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
-  '@types/libsodium-wrappers-sumo@0.7.8':
-    resolution: {integrity: sha512-N2+df4MB/A+W0RAcTw7A5oxKgzD+Vh6Ye7lfjWIi5SdTzVLfHPzxUjhwPqHLO5Ev9fv/+VHl+sUaUuTg4fUPqw==}
-
-  '@types/libsodium-wrappers@0.8.2':
-    resolution: {integrity: sha512-+2IDfSULPUskSjIYfZl9suIUsIE5PXwoKZiE/j0MZWd+M9nEGvJDsk/ztMZKNhL1lBL+1CaypW0dQSjqPW2dMg==}
-    deprecated: This is a stub types definition. libsodium-wrappers provides its own type definitions, so you do not need this installed.
+  '@types/libsodium-wrappers-sumo@0.8.2':
+    resolution: {integrity: sha512-uFOBpg/r21hExVlh2ty8YpDfSR+Yy3Jn8XS4+SSjitbhTxdYq+pBz/49XRxyUFe8SzqujHf/Wu0/O4d+FUtNfQ==}
+    deprecated: This is a stub types definition. libsodium-wrappers-sumo provides its own type definitions, so you do not need this installed.
 
   '@types/node@25.0.10':
     resolution: {integrity: sha512-zWW5KPngR/yvakJgGOmZ5vTBemDoSqF3AcV/LrO5u5wTWyEAVVh+IT39G4gtyAkh3CtTZs8aX/yRM82OfzHJRg==}
@@ -899,14 +896,8 @@ packages:
   libsodium-sumo@0.8.2:
     resolution: {integrity: sha512-uMgnjphJ717jLN+jFG1HUgNrK/gOVVfaO1DGZ1Ig/fKLKLVhvaH/sM1I1v784JFvmkJDaczDpi7xSYC4Jvdo1Q==}
 
-  libsodium-wrappers-sumo@0.8.1:
-    resolution: {integrity: sha512-xcX1+mQbdwko50AsZWn5r4crZO5H5bHh9ceMHsjBxPyrMn0zFHycms2jcHvXzk71nh4V0rQGCiOjB2ckshd/ew==}
-
-  libsodium-wrappers@0.8.2:
-    resolution: {integrity: sha512-VFLmfxkxo+U9q60tjcnSomQBRx2UzlRjKWJqvB4K1pUqsMQg4cu3QXA2nrcsj9A1qRsnJBbi2Ozx1hsiDoCkhw==}
-
-  libsodium@0.8.2:
-    resolution: {integrity: sha512-TsnGYMoZtpweT+kR+lOv5TVsnJ/9U0FZOsLFzFOMWmxqOAYXjX3fsrPAW+i1LthgDKXJnI9A8dWEanT1tnJKIw==}
+  libsodium-wrappers-sumo@0.8.2:
+    resolution: {integrity: sha512-wd1xAY++Kr6VMikSaa4EPRAHJmFvNlGWiiwU3Jh3GR1zRYF3/I3vy/wYsr4k3LVsNzwb9sqfEQ4LdVQ6zEebyQ==}
 
   locate-path@6.0.0:
     resolution: {integrity: sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==}
@@ -1525,13 +1516,9 @@ snapshots:
 
   '@types/json-schema@7.0.15': {}
 
-  '@types/libsodium-wrappers-sumo@0.7.8':
+  '@types/libsodium-wrappers-sumo@0.8.2':
     dependencies:
-      '@types/libsodium-wrappers': 0.8.2
-
-  '@types/libsodium-wrappers@0.8.2':
-    dependencies:
-      libsodium-wrappers: 0.8.2
+      libsodium-wrappers-sumo: 0.8.2
 
   '@types/node@25.0.10':
     dependencies:
@@ -1954,15 +1941,9 @@ snapshots:
 
   libsodium-sumo@0.8.2: {}
 
-  libsodium-wrappers-sumo@0.8.1:
+  libsodium-wrappers-sumo@0.8.2:
     dependencies:
       libsodium-sumo: 0.8.2
-
-  libsodium-wrappers@0.8.2:
-    dependencies:
-      libsodium: 0.8.2
-
-  libsodium@0.8.2: {}
 
   locate-path@6.0.0:
     dependencies:
