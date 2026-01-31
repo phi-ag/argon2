@@ -26,11 +26,11 @@ importers:
         specifier: 0.8.2
         version: 0.8.2
       '@types/node':
-        specifier: 25.0.10
-        version: 25.0.10
+        specifier: 25.1.0
+        version: 25.1.0
       '@vitest/coverage-v8':
         specifier: 4.0.18
-        version: 4.0.18(vitest@4.0.18(@types/node@25.0.10))
+        version: 4.0.18(vitest@4.0.18(@types/node@25.1.0))
       eslint:
         specifier: 9.39.2
         version: 9.39.2
@@ -60,7 +60,7 @@ importers:
         version: 13.0.0
       vitest:
         specifier: 4.0.18
-        version: 4.0.18(@types/node@25.0.10)
+        version: 4.0.18(@types/node@25.1.0)
 
 packages:
 
@@ -530,8 +530,8 @@ packages:
     resolution: {integrity: sha512-uFOBpg/r21hExVlh2ty8YpDfSR+Yy3Jn8XS4+SSjitbhTxdYq+pBz/49XRxyUFe8SzqujHf/Wu0/O4d+FUtNfQ==}
     deprecated: This is a stub types definition. libsodium-wrappers-sumo provides its own type definitions, so you do not need this installed.
 
-  '@types/node@25.0.10':
-    resolution: {integrity: sha512-zWW5KPngR/yvakJgGOmZ5vTBemDoSqF3AcV/LrO5u5wTWyEAVVh+IT39G4gtyAkh3CtTZs8aX/yRM82OfzHJRg==}
+  '@types/node@25.1.0':
+    resolution: {integrity: sha512-t7frlewr6+cbx+9Ohpl0NOTKXZNV9xHRmNOvql47BFJKcEG1CxtxlPEEe+gR9uhVWM4DwhnvTF110mIL4yP9RA==}
 
   '@typescript-eslint/eslint-plugin@8.54.0':
     resolution: {integrity: sha512-hAAP5io/7csFStuOmR782YmTthKBJ9ND3WVL60hcOjvtGFb+HJxH4O5huAcmcZ9v9G8P+JETiZ/G1B8MALnWZQ==}
@@ -1520,7 +1520,7 @@ snapshots:
     dependencies:
       libsodium-wrappers-sumo: 0.8.2
 
-  '@types/node@25.0.10':
+  '@types/node@25.1.0':
     dependencies:
       undici-types: 7.16.0
 
@@ -1615,7 +1615,7 @@ snapshots:
       '@typescript-eslint/types': 8.54.0
       eslint-visitor-keys: 4.2.1
 
-  '@vitest/coverage-v8@4.0.18(vitest@4.0.18(@types/node@25.0.10))':
+  '@vitest/coverage-v8@4.0.18(vitest@4.0.18(@types/node@25.1.0))':
     dependencies:
       '@bcoe/v8-coverage': 1.0.2
       '@vitest/utils': 4.0.18
@@ -1627,7 +1627,7 @@ snapshots:
       obug: 2.1.1
       std-env: 3.10.0
       tinyrainbow: 3.0.3
-      vitest: 4.0.18(@types/node@25.0.10)
+      vitest: 4.0.18(@types/node@25.1.0)
 
   '@vitest/expect@4.0.18':
     dependencies:
@@ -1638,13 +1638,13 @@ snapshots:
       chai: 6.2.2
       tinyrainbow: 3.0.3
 
-  '@vitest/mocker@4.0.18(vite@7.3.1(@types/node@25.0.10))':
+  '@vitest/mocker@4.0.18(vite@7.3.1(@types/node@25.1.0))':
     dependencies:
       '@vitest/spy': 4.0.18
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 7.3.1(@types/node@25.0.10)
+      vite: 7.3.1(@types/node@25.1.0)
 
   '@vitest/pretty-format@4.0.18':
     dependencies:
@@ -2143,7 +2143,7 @@ snapshots:
 
   uuid@13.0.0: {}
 
-  vite@7.3.1(@types/node@25.0.10):
+  vite@7.3.1(@types/node@25.1.0):
     dependencies:
       esbuild: 0.27.2
       fdir: 6.5.0(picomatch@4.0.3)
@@ -2152,12 +2152,12 @@ snapshots:
       rollup: 4.56.0
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 25.0.10
+      '@types/node': 25.1.0
 
-  vitest@4.0.18(@types/node@25.0.10):
+  vitest@4.0.18(@types/node@25.1.0):
     dependencies:
       '@vitest/expect': 4.0.18
-      '@vitest/mocker': 4.0.18(vite@7.3.1(@types/node@25.0.10))
+      '@vitest/mocker': 4.0.18(vite@7.3.1(@types/node@25.1.0))
       '@vitest/pretty-format': 4.0.18
       '@vitest/runner': 4.0.18
       '@vitest/snapshot': 4.0.18
@@ -2174,10 +2174,10 @@ snapshots:
       tinyexec: 1.0.2
       tinyglobby: 0.2.15
       tinyrainbow: 3.0.3
-      vite: 7.3.1(@types/node@25.0.10)
+      vite: 7.3.1(@types/node@25.1.0)
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@types/node': 25.0.10
+      '@types/node': 25.1.0
     transitivePeerDependencies:
       - jiti
       - less
