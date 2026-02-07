@@ -1,5 +1,26 @@
 # Changelog
 
+## [0.5.18](https://github.com/phi-ag/argon2/compare/v0.5.17...v0.5.18) (2026-02-07)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([72009f4](https://github.com/phi-ag/argon2/commit/72009f44741639cc722b651f964f7da8844dd8a7))
+* **deps:** remove obsolete @types/libsodium-wrappers-sumo ([82c116a](https://github.com/phi-ag/argon2/commit/82c116ae46e232f70fedd0bc00579188832f5055))
+* **deps:** update actions/cache digest to cdf6c1f ([5e2fe30](https://github.com/phi-ag/argon2/commit/5e2fe3005cb2219f768e291abb0d9a8787db103e))
+* **deps:** update actions/checkout digest to de0fac2 ([a5650a1](https://github.com/phi-ag/argon2/commit/a5650a1d792185005cb269f4a2bac2f6e1ffc38c))
+* **deps:** update dependency @playwright/test to v1.58.1 ([c519451](https://github.com/phi-ag/argon2/commit/c519451e23d7d200b6f55b14380f8c52dfede3e6))
+* **deps:** update dependency @types/node to v25.1.0 ([2871da0](https://github.com/phi-ag/argon2/commit/2871da0d6bf344e8b345a1f35f03a91c69fded36))
+* **deps:** update dependency @types/node to v25.2.0 ([2ff7ab2](https://github.com/phi-ag/argon2/commit/2ff7ab27dc830d255029dfca84121ad9792eb7fd))
+* **deps:** update dependency globals to v17.2.0 ([a3ef738](https://github.com/phi-ag/argon2/commit/a3ef7383114c5c28d5bbb63636a09d71c0cd0bc7))
+* **deps:** update dependency globals to v17.3.0 ([d89970f](https://github.com/phi-ag/argon2/commit/d89970fad8c05e7874e95808cb6febbd1c1eee47))
+* **deps:** update dependency typescript-eslint to v8.54.0 ([7d5a73a](https://github.com/phi-ag/argon2/commit/7d5a73a544672d9b2dfc88b1cb8952adf519a38c))
+* **deps:** update mcr.microsoft.com/playwright docker tag to v1.58.1 ([a9adaa0](https://github.com/phi-ag/argon2/commit/a9adaa0a7ebe2a34b4232efe88c68d4ed228550c))
+* **deps:** update mcr.microsoft.com/playwright docker tag to v1.58.2 ([9da9e9b](https://github.com/phi-ag/argon2/commit/9da9e9ba6037968eccc05cb6c0c07dd5b228bbc7))
+* **deps:** update node.js to v25.6.0 ([5f3b307](https://github.com/phi-ag/argon2/commit/5f3b307a1df5f1b519135228aaea7cb47bf4c690))
+* **deps:** update phi-ag/run-playwright digest to b3daaea ([4bdfbbf](https://github.com/phi-ag/argon2/commit/4bdfbbf56fda548bc3ef63b41a5560f5d59976bc))
+* **deps:** update pnpm to v10.28.2 ([79e3343](https://github.com/phi-ag/argon2/commit/79e3343b5df2ed0c02cd3208a3229a911fa59545))
+
 ## [0.5.17](https://github.com/phi-ag/argon2/compare/v0.5.16...v0.5.17) (2026-01-29)
 
 
