@@ -1,5 +1,31 @@
 # Changelog
 
+## [0.5.19](https://github.com/phi-ag/argon2/compare/v0.5.18...v0.5.19) (2026-03-02)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([f522bee](https://github.com/phi-ag/argon2/commit/f522bee3430201832bd84e08f41e88789b8f8266))
+* **deps:** pin actions/attest action to 59d8942 ([9dce093](https://github.com/phi-ag/argon2/commit/9dce093d743b4d949604b01859faadad92f3324d))
+* **deps:** update dependency @types/node to v25.3.0 ([1bb1ffb](https://github.com/phi-ag/argon2/commit/1bb1ffb5ae0312d901c80b30cc712ee817150c1d))
+* **deps:** update dependency @types/node to v25.3.2 ([95601bb](https://github.com/phi-ag/argon2/commit/95601bb3fcbc3e4f51e2566aaf6004af365d22c1))
+* **deps:** update dependency eslint to v10.0.1 ([24e536f](https://github.com/phi-ag/argon2/commit/24e536fe700e8cc27a1038d5f7c3ad364a9b5ade))
+* **deps:** update dependency eslint to v10.0.2 ([3a5f759](https://github.com/phi-ag/argon2/commit/3a5f75906a94f3cb4ad5db3ddd17e96caf820ec3))
+* **deps:** update dependency typescript-eslint to v8.56.1 ([b0c21e6](https://github.com/phi-ag/argon2/commit/b0c21e622910accde4de85ecfe2af4717f4f48aa))
+* **deps:** update emscripten/emsdk docker tag to v5.0.2 ([52a07e1](https://github.com/phi-ag/argon2/commit/52a07e1fd479a56caf4bb30956b7960e0a598390))
+* **deps:** update node.js to v25.7.0 ([a8d3efa](https://github.com/phi-ag/argon2/commit/a8d3efa3d80534e76f13af5ba9fbc22ee3aa40f6))
+* **deps:** update phi-ag/run-playwright digest to e2545af ([feb93e0](https://github.com/phi-ag/argon2/commit/feb93e0a55e8f8e3dc0d3f303c0af49de7090f40))
+* **deps:** update pnpm to v10.30.0 ([e50d124](https://github.com/phi-ag/argon2/commit/e50d12438dcd51f1a1d66c4d4863992adbed7378))
+* **deps:** update pnpm to v10.30.1 ([41c809f](https://github.com/phi-ag/argon2/commit/41c809fc5b33e86cc1c72369018a3b72cff29896))
+* **deps:** update pnpm to v10.30.2 ([5284fa9](https://github.com/phi-ag/argon2/commit/5284fa99757f7e72caccdb5e133c3f43e2e3da77))
+* **deps:** update pnpm to v10.30.3 ([7b9154d](https://github.com/phi-ag/argon2/commit/7b9154d9e415bc70bcbea79d521b1e9d2dc2dff7))
+
+
+### Continuous Integration
+
+* **renovate:** disable minimum release age checks for pinDigest ([0cbe285](https://github.com/phi-ag/argon2/commit/0cbe285feaf28d4866c358c108d7d17c47d1eb12))
+* replace deprecated action actions/attest-sbom ([3832544](https://github.com/phi-ag/argon2/commit/383254465673269aecadaaf02cbf6c773a2786ec))
+
 ## [0.5.18](https://github.com/phi-ag/argon2/compare/v0.5.17...v0.5.18) (2026-02-20)
 
 
