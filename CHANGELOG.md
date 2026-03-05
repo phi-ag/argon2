@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.5.20](https://github.com/phi-ag/argon2/compare/v0.5.19...v0.5.20) (2026-03-05)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/setup-node digest to 53b8394 ([6babf4c](https://github.com/phi-ag/argon2/commit/6babf4cfeaa0d7e0ccbf6ce95cbd326df6abe1a8))
+* **deps:** update dependency @cyclonedx/cyclonedx-library to v9.5.0 ([b882e21](https://github.com/phi-ag/argon2/commit/b882e211f3bda28946e8926a424b19aa1dfa1428))
+* **deps:** update dependency globals to v17.4.0 ([14f2b67](https://github.com/phi-ag/argon2/commit/14f2b67ac673aa38011520f8654622853f3d5f73))
+* **deps:** update node.js to v25.8.0 ([be75609](https://github.com/phi-ag/argon2/commit/be75609be0f1ac41cb54e766bb0b1247696e5b3d))
+
 ## [0.5.19](https://github.com/phi-ag/argon2/compare/v0.5.18...v0.5.19) (2026-03-02)
 
 
