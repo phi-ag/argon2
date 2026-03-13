@@ -1,7 +1,7 @@
 import { resolve } from "node:path";
 
-import { Enums, Factories, Models, Serialize, Spec } from "@cyclonedx/cyclonedx-library";
-import { PackageURL } from "packageurl-js";
+import { Contrib, Enums, Models, Serialize, Spec } from "@cyclonedx/cyclonedx-library";
+import spdxExpressionParser from "spdx-expression-parse";
 import { v7 as uuidv7 } from "uuid";
 
 import packageJson from "../package.json" with { type: "json" };
@@ -12,7 +12,8 @@ import {
   sha256File
 } from "./utils.ts";
 
-const lFac = new Factories.LicenseFactory();
+//const lFac = new Factories.LicenseFactory();
+const lFac = new Contrib.License.Factories.LicenseFactory(spdxExpressionParser);
 
 const { SOURCE_DATE_EPOCH } = process.env;
 
@@ -23,7 +24,7 @@ const sourceDateEpoch = SOURCE_DATE_EPOCH
 const bom = new Models.Bom();
 bom.serialNumber = `urn:uuid:${uuidv7({ msecs: sourceDateEpoch.getTime() })}`;
 
-const purl = PackageURL.fromString(`pkg:npm/${packageJson.name}@${packageJson.version}`);
+const purl = `pkg:npm/${packageJson.name}@${packageJson.version}`;
 
 bom.metadata.timestamp = sourceDateEpoch;
 
@@ -65,9 +66,7 @@ bom.metadata.component.externalReferences.add(
 
 const argon2Git = argon2GitSubmodule();
 
-const argon2Purl = PackageURL.fromString(
-  `pkg:generic/P-H-C/phc-winner-argon2@${argon2Git.version}`
-);
+const argon2Purl = `pkg:generic/P-H-C/phc-winner-argon2@${argon2Git.version}`;
 
 const argon2 = new Models.Component(
   Enums.ComponentType.Library,
@@ -90,9 +89,7 @@ bom.components.add(argon2);
 
 const em = await emscriptenContainer();
 
-const emPurl = PackageURL.fromString(
-  `pkg:generic/${em.name}@${em.version.slice(0, em.version.indexOf("@"))}`
-);
+const emPurl = `pkg:generic/${em.name}@${em.version.slice(0, em.version.indexOf("@"))}`;
 
 const emscripten = new Models.Component(Enums.ComponentType.Container, em.name, {
   version: em.version,
@@ -116,7 +113,7 @@ emscripten.externalReferences.add(
 
 bom.components.add(emscripten);
 
-const nodePurl = PackageURL.fromString(`pkg:generic/node@${process.version.slice(1)}`);
+const nodePurl = `pkg:generic/node@${process.version.slice(1)}`;
 
 const node = new Models.Component(Enums.ComponentType.Application, "node", {
   version: process.version.slice(1),
@@ -146,9 +143,7 @@ node.externalReferences.add(
 
 bom.components.add(node);
 
-const pnpmPurl = PackageURL.fromString(
-  `pkg:generic/${packageJson.packageManager.slice(0, packageJson.packageManager.indexOf("+"))}`
-);
+const pnpmPurl = `pkg:generic/${packageJson.packageManager.slice(0, packageJson.packageManager.indexOf("+"))}`;
 
 const pnpm = new Models.Component(Enums.ComponentType.Application, "pnpm", {
   version: packageJson.packageManager.slice(packageJson.packageManager.indexOf("@") + 1),

@@ -11,8 +11,8 @@ importers:
   .:
     devDependencies:
       '@cyclonedx/cyclonedx-library':
-        specifier: 9.5.0
-        version: 9.5.0
+        specifier: 10.0.0
+        version: 10.0.0(spdx-expression-parse@4.0.0)
       '@eslint/js':
         specifier: 10.0.1
         version: 10.0.1(eslint@10.0.3)
@@ -25,6 +25,9 @@ importers:
       '@types/node':
         specifier: 25.3.5
         version: 25.3.5
+      '@types/spdx-expression-parse':
+        specifier: 3.0.5
+        version: 3.0.5
       '@vitest/coverage-v8':
         specifier: 4.0.18
         version: 4.0.18(vitest@4.0.18(@types/node@25.3.5))
@@ -40,12 +43,12 @@ importers:
       libsodium-wrappers-sumo:
         specifier: 0.8.2
         version: 0.8.2
-      packageurl-js:
-        specifier: 2.0.1
-        version: 2.0.1
       prettier:
         specifier: 3.8.1
         version: 3.8.1
+      spdx-expression-parse:
+        specifier: 4.0.0
+        version: 4.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -102,14 +105,16 @@ packages:
     resolution: {integrity: sha512-6zABk/ECA/QYSCQ1NGiVwwbQerUCZ+TQbp64Q3AgmfNvurHH0j8TtXa1qbShXA6qqkpAj4V5W8pP6mLe1mcMqA==}
     engines: {node: '>=18'}
 
-  '@cyclonedx/cyclonedx-library@9.5.0':
-    resolution: {integrity: sha512-rKUcvRGXYhW0JhNgy4eWcgroUYSIJLAd7JhlAE5Jtoy1TvGsWUV0EhWyVwtnhfB1au87YzGwDqJHm/oH/wlM/w==}
+  '@cyclonedx/cyclonedx-library@10.0.0':
+    resolution: {integrity: sha512-xDXf2eqzeFHdjamj6oBV3duRSfrlmsJ5+2z9tXp7q5qxJP5Awmjf4ABSutS4qkVHHj7JzKFL/EM0V0Nihc7zPg==}
     engines: {node: '>=20.18.0'}
     peerDependencies:
       ajv: ^8.12.0
       ajv-formats: ^3.0.1
       ajv-formats-draft2019: ^1.6.1
       libxmljs2: ^0.35||^0.37
+      packageurl-js: '*'
+      spdx-expression-parse: '*'
       xmlbuilder2: ^3.0.2||^4.0.0
     peerDependenciesMeta:
       ajv:
@@ -119,6 +124,10 @@ packages:
       ajv-formats-draft2019:
         optional: true
       libxmljs2:
+        optional: true
+      packageurl-js:
+        optional: true
+      spdx-expression-parse:
         optional: true
       xmlbuilder2:
         optional: true
@@ -530,6 +539,9 @@ packages:
   '@types/node@25.3.5':
     resolution: {integrity: sha512-oX8xrhvpiyRCQkG1MFchB09f+cXftgIXb3a7UUa4Y3wpmZPw5tyZGTLWhlESOLq1Rq6oDlc8npVU2/9xiCuXMA==}
 
+  '@types/spdx-expression-parse@3.0.5':
+    resolution: {integrity: sha512-XrojSCTzVxPAfWeAiw8Hg27OW/4jalE7yiohCHRPprqfPyt2oG+Osy1HstUPMF26cEdno3IeEhv31Pzl0wwsQw==}
+
   '@typescript-eslint/eslint-plugin@8.56.1':
     resolution: {integrity: sha512-Jz9ZztpB37dNC+HU2HI28Bs9QXpzCz+y/twHOwhyrIRdbuVDxSytJNDl6z/aAKlaRIwC7y8wJdkBv7FxYGgi0A==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -915,9 +927,6 @@ packages:
     resolution: {integrity: sha512-LaNjtRWUBY++zB5nE/NwcaoMylSPk+S+ZHNB1TzdbMJMny6dynpAGt7X/tl/QYq3TIeE6nxHppbo2LGymrG5Pw==}
     engines: {node: '>=10'}
 
-  packageurl-js@2.0.1:
-    resolution: {integrity: sha512-N5ixXjzTy4QDQH0Q9YFjqIWd6zH6936Djpl2m9QNFmDv5Fum8q8BjkpAcHNMzOFE0IwQrFhJWex3AN6kS0OSwg==}
-
   parse-imports-exports@0.2.4:
     resolution: {integrity: sha512-4s6vd6dx1AotCx/RCI2m7t7GCh5bDRUtGNvRfHSP2wbBQdMi67pPe7mtzmgwcaQ8VKK/6IB7Glfyu3qdZJPybQ==}
 
@@ -1207,9 +1216,8 @@ snapshots:
 
   '@bcoe/v8-coverage@1.0.2': {}
 
-  '@cyclonedx/cyclonedx-library@9.5.0':
-    dependencies:
-      packageurl-js: 2.0.1
+  '@cyclonedx/cyclonedx-library@10.0.0(spdx-expression-parse@4.0.0)':
+    optionalDependencies:
       spdx-expression-parse: 4.0.0
 
   '@esbuild/aix-ppc64@0.27.3':
@@ -1460,6 +1468,8 @@ snapshots:
   '@types/node@25.3.5':
     dependencies:
       undici-types: 7.18.2
+
+  '@types/spdx-expression-parse@3.0.5': {}
 
   '@typescript-eslint/eslint-plugin@8.56.1(@typescript-eslint/parser@8.56.1(eslint@10.0.3)(typescript@5.9.3))(eslint@10.0.3)(typescript@5.9.3)':
     dependencies:
@@ -1901,8 +1911,6 @@ snapshots:
   p-locate@5.0.0:
     dependencies:
       p-limit: 3.1.0
-
-  packageurl-js@2.0.1: {}
 
   parse-imports-exports@0.2.4:
     dependencies:
