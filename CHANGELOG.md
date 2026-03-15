@@ -1,5 +1,24 @@
 # Changelog
 
+## [0.5.20](https://github.com/phi-ag/argon2/compare/v0.5.19...v0.5.20) (2026-03-15)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/setup-node digest to 53b8394 ([6babf4c](https://github.com/phi-ag/argon2/commit/6babf4cfeaa0d7e0ccbf6ce95cbd326df6abe1a8))
+* **deps:** update dependency @cyclonedx/cyclonedx-library to v10 ([e28b3cc](https://github.com/phi-ag/argon2/commit/e28b3cc5b947547f9b66a97f7404fd1eb91e212b))
+* **deps:** update dependency @cyclonedx/cyclonedx-library to v9.5.0 ([b882e21](https://github.com/phi-ag/argon2/commit/b882e211f3bda28946e8926a424b19aa1dfa1428))
+* **deps:** update dependency @types/node to v25.3.5 ([2030134](https://github.com/phi-ag/argon2/commit/2030134abf1e7524560b34908e62d95dbd8b5293))
+* **deps:** update dependency @types/node to v25.4.0 ([3c23dbe](https://github.com/phi-ag/argon2/commit/3c23dbe231f424067e7f5c998c00b100bbf70bcc))
+* **deps:** update dependency eslint to v10.0.3 ([a7a52e1](https://github.com/phi-ag/argon2/commit/a7a52e113582761af603417f1ffd68e330696052))
+* **deps:** update dependency globals to v17.4.0 ([14f2b67](https://github.com/phi-ag/argon2/commit/14f2b67ac673aa38011520f8654622853f3d5f73))
+* **deps:** update dependency typescript-eslint to v8.57.0 ([e52af53](https://github.com/phi-ag/argon2/commit/e52af53d0aa15ed5060c677d73839e514e8c7f22))
+* **deps:** update emscripten/emsdk docker tag to v5.0.3 ([16b98c9](https://github.com/phi-ag/argon2/commit/16b98c981dcd2618d3b6e7c40e034b1fc8dd1873))
+* **deps:** update node.js to v25.8.0 ([be75609](https://github.com/phi-ag/argon2/commit/be75609be0f1ac41cb54e766bb0b1247696e5b3d))
+* **deps:** update node.js to v25.8.1 ([e6b8b30](https://github.com/phi-ag/argon2/commit/e6b8b30162d617e3b6525cc6312b8577bd6740c6))
+* **deps:** update pnpm to v10.31.0 ([8bf5743](https://github.com/phi-ag/argon2/commit/8bf5743ab85df1709be6e2f8aee79eb60525c432))
+* **deps:** update pnpm to v10.32.1 ([66bbad4](https://github.com/phi-ag/argon2/commit/66bbad4a94144cdc01ff1bacdf82aac43f49c5ea))
+
 ## [0.5.19](https://github.com/phi-ag/argon2/compare/v0.5.18...v0.5.19) (2026-03-02)
 
 
