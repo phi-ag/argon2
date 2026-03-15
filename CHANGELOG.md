@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.21](https://github.com/phi-ag/argon2/compare/v0.5.20...v0.5.21) (2026-03-15)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency @types/node to v25.5.0 ([fe13b90](https://github.com/phi-ag/argon2/commit/fe13b907a94e210278398b8c31cc7e8dc097a765))
+
 ## [0.5.20](https://github.com/phi-ag/argon2/compare/v0.5.19...v0.5.20) (2026-03-15)
 
 
