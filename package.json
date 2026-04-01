@@ -4,6 +4,7 @@
   "version": "0.5.20",
   "license": "MIT",
   "description": "Minimal Argon2 WebAssembly SIMD build",
+  "sideEffects": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/phi-ag/argon2.git"
