@@ -1,5 +1,33 @@
 # Changelog
 
+## [0.5.21](https://github.com/phi-ag/argon2/compare/v0.5.20...v0.5.21) (2026-04-01)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([b2c7907](https://github.com/phi-ag/argon2/commit/b2c79072ed36b9d5be53a03e41fd5546880a62fb))
+* **deps:** lock file maintenance ([44484d5](https://github.com/phi-ag/argon2/commit/44484d5cf5270b84e3663b0add342c1853d91078))
+* **deps:** update actions/cache digest to 6682284 ([a5c0163](https://github.com/phi-ag/argon2/commit/a5c01632a078488e1ca6f966e83d887ca87f5d78))
+* **deps:** update codecov/codecov-action action to v6 ([27da9d6](https://github.com/phi-ag/argon2/commit/27da9d63084ba16a6505a24cd88cfd279151c04f))
+* **deps:** update codecov/codecov-action digest to 1af5884 ([7afb955](https://github.com/phi-ag/argon2/commit/7afb95514c1e233bf975b9e04b4aa6ffbc59a7fc))
+* **deps:** update codecov/codecov-action digest to 75cd116 ([83ebdbf](https://github.com/phi-ag/argon2/commit/83ebdbfcdc0177b9d78035fa7048f45a31fdf4fd))
+* **deps:** update dependency @types/node to v25.5.0 ([fe13b90](https://github.com/phi-ag/argon2/commit/fe13b907a94e210278398b8c31cc7e8dc097a765))
+* **deps:** update dependency eslint to v10.1.0 ([29618c3](https://github.com/phi-ag/argon2/commit/29618c35ac2f6be26f0fcf5370f8f9d7a7cca9d3))
+* **deps:** update dependency typescript-eslint to v8.57.1 ([aeb0944](https://github.com/phi-ag/argon2/commit/aeb094462a6b29e56f972d083d81daa106dfda59))
+* **deps:** update dependency typescript-eslint to v8.57.2 ([4243b45](https://github.com/phi-ag/argon2/commit/4243b45232beabe214345abf15758e99982b4dde))
+* **deps:** update emscripten/emsdk docker tag to v5.0.4 ([75c515e](https://github.com/phi-ag/argon2/commit/75c515ece89703eef7aef82ae64c3c703611f172))
+* **deps:** update node.js to v25.8.2 ([c4fd51b](https://github.com/phi-ag/argon2/commit/c4fd51baedbed602d8e570288085568ac1eb8fb4))
+* **deps:** update pnpm to v10.33.0 ([04688e9](https://github.com/phi-ag/argon2/commit/04688e943b57fe0a3d0589f75394f615ada50cb9))
+* **deps:** update vitest monorepo to v4.1.0 ([609f077](https://github.com/phi-ag/argon2/commit/609f07700e9491757c1d0a433f689bf04ed468fa))
+* **deps:** update vitest monorepo to v4.1.1 ([c496867](https://github.com/phi-ag/argon2/commit/c496867053a67a282d98ce9b9cd492c21a7721a1))
+* **deps:** update vitest monorepo to v4.1.2 ([2fd9f7c](https://github.com/phi-ag/argon2/commit/2fd9f7c9aa6438e988fea3211623472ef3586f6c))
+* set side effects to false ([0bc8cc8](https://github.com/phi-ag/argon2/commit/0bc8cc82aed3f41e10f7f60d64fdc14cb5520226))
+
+
+### Continuous Integration
+
+* use oidc for codecov ([83aed15](https://github.com/phi-ag/argon2/commit/83aed153f2d236163cd965ded9bd9bd0855e80f8))
+
 ## [0.5.20](https://github.com/phi-ag/argon2/compare/v0.5.19...v0.5.20) (2026-03-15)
 
 
