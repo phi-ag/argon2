@@ -59,7 +59,7 @@
     "libsodium-wrappers-sumo": "0.8.2",
     "prettier": "3.8.1",
     "spdx-expression-parse": "4.0.0",
-    "typescript": "5.9.3",
+    "typescript": "6.0.2",
     "typescript-eslint": "8.58.0",
     "uuid": "13.0.0",
     "vitest": "4.1.2"
