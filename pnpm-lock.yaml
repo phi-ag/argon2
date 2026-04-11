@@ -26,8 +26,8 @@ importers:
         specifier: 25.5.2
         version: 25.5.2
       '@types/spdx-expression-parse':
-        specifier: 3.0.5
-        version: 3.0.5
+        specifier: 4.0.0
+        version: 4.0.0
       '@vitest/coverage-v8':
         specifier: 4.1.3
         version: 4.1.3(vitest@4.1.3)
@@ -361,8 +361,8 @@ packages:
   '@types/node@25.5.2':
     resolution: {integrity: sha512-tO4ZIRKNC+MDWV4qKVZe3Ql/woTnmHDr5JD8UI5hn2pwBrHEwOEMZK7WlNb5RKB6EoJ02gwmQS9OrjuFnZYdpg==}
 
-  '@types/spdx-expression-parse@3.0.5':
-    resolution: {integrity: sha512-XrojSCTzVxPAfWeAiw8Hg27OW/4jalE7yiohCHRPprqfPyt2oG+Osy1HstUPMF26cEdno3IeEhv31Pzl0wwsQw==}
+  '@types/spdx-expression-parse@4.0.0':
+    resolution: {integrity: sha512-odQzy87phelGS4inXOzjmusx4hoCVD0IbxUANxHzVkmTzMRTNnUPoq1urIl7S1qf09KcDWKLFIftPmLtgbsAHA==}
 
   '@typescript-eslint/eslint-plugin@8.58.1':
     resolution: {integrity: sha512-eSkwoemjo76bdXl2MYqtxg51HNwUSkWfODUOQ3PaTLZGh9uIWWFZIjyjaJnex7wXDu+TRx+ATsnSxdN9YWfRTQ==}
@@ -1305,7 +1305,7 @@ snapshots:
     dependencies:
       undici-types: 7.18.2
 
-  '@types/spdx-expression-parse@3.0.5': {}
+  '@types/spdx-expression-parse@4.0.0': {}
 
   '@typescript-eslint/eslint-plugin@8.58.1(@typescript-eslint/parser@8.58.1(eslint@10.2.0)(typescript@6.0.2))(eslint@10.2.0)(typescript@6.0.2)':
     dependencies:
