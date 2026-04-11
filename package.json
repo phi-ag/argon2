@@ -60,7 +60,7 @@
     "prettier": "3.8.1",
     "spdx-expression-parse": "4.0.0",
     "typescript": "6.0.2",
-    "typescript-eslint": "8.58.0",
+    "typescript-eslint": "8.58.1",
     "uuid": "13.0.0",
     "vitest": "4.1.3"
   },
