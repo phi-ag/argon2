@@ -41,8 +41,8 @@ importers:
         specifier: 4.12.0
         version: 4.12.0
       libsodium-wrappers-sumo:
-        specifier: 0.8.2
-        version: 0.8.2
+        specifier: 0.8.3
+        version: 0.8.3
       prettier:
         specifier: 3.8.2
         version: 3.8.2
@@ -697,8 +697,8 @@ packages:
   libsodium-sumo@0.8.2:
     resolution: {integrity: sha512-uMgnjphJ717jLN+jFG1HUgNrK/gOVVfaO1DGZ1Ig/fKLKLVhvaH/sM1I1v784JFvmkJDaczDpi7xSYC4Jvdo1Q==}
 
-  libsodium-wrappers-sumo@0.8.2:
-    resolution: {integrity: sha512-wd1xAY++Kr6VMikSaa4EPRAHJmFvNlGWiiwU3Jh3GR1zRYF3/I3vy/wYsr4k3LVsNzwb9sqfEQ4LdVQ6zEebyQ==}
+  libsodium-wrappers-sumo@0.8.3:
+    resolution: {integrity: sha512-EfLSlxKJ7RUGVospOlvbvse0suAAVPR+CkZfFcFjPzPtTEgVfvIaZUPsWndVjxYp/om2HDc0iLeR5wLF8YbHZg==}
 
   lightningcss-android-arm64@1.32.0:
     resolution: {integrity: sha512-YK7/ClTt4kAK0vo6w3X+Pnm0D2cf2vPHbhOXdoNti1Ga0al1P4TBZhwjATvjNwLEBCnKvjJc2jQgHXH0NEwlAg==}
@@ -1668,7 +1668,7 @@ snapshots:
 
   libsodium-sumo@0.8.2: {}
 
-  libsodium-wrappers-sumo@0.8.2:
+  libsodium-wrappers-sumo@0.8.3:
     dependencies:
       libsodium-sumo: 0.8.2
 
