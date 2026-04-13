@@ -56,7 +56,7 @@
     "eslint": "10.2.0",
     "globals": "17.4.0",
     "hash-wasm": "4.12.0",
-    "libsodium-wrappers-sumo": "0.8.2",
+    "libsodium-wrappers-sumo": "0.8.3",
     "prettier": "3.8.2",
     "spdx-expression-parse": "4.0.0",
     "typescript": "6.0.2",
