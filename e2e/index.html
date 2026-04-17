@@ -6,6 +6,7 @@
     <title>Argon2 Browser Test</title>
   </head>
   <body>
+    <div id="encodedWithSalt"></div>
     <div id="encoded"></div>
     <div id="success"></div>
     <div id="error"></div>
@@ -13,6 +14,10 @@
       import initialize from "/fetch.js";
 
       const argon2 = await initialize("/argon2.wasm");
+
+      const salt = new TextEncoder().encode("asdfasdfasdfasdf");
+      const { encoded: encodedWithSalt } = argon2.hash("my secret password", { salt });
+
       const { encoded } = argon2.hash("my secret password");
       const { success } = argon2.tryVerify(encoded, "my secret password");
       const { error } = argon2.tryVerify(encoded, "not my password");
@@ -22,6 +27,7 @@
         element.innerHTML = value;
       };
 
+      setValue("encodedWithSalt", encodedWithSalt);
       setValue("encoded", encoded);
       setValue("success", success);
       setValue("error", error);

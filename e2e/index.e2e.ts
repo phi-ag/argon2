@@ -8,6 +8,11 @@ test("hash and verify", async ({ page }) => {
   await page.goto("/");
   await expect(page).toHaveTitle("Argon2 Browser Test");
 
+  const encodedWithSalt = page.locator("#encodedWithSalt");
+  await expect(encodedWithSalt).toHaveText(
+    "$argon2id$v=19$m=65536,t=3,p=4$YXNkZmFzZGZhc2RmYXNkZg$Z6jf3u1V2pXhzHdPMexmG6mG+i5486N1/fV/nlvUI60"
+  );
+
   const encoded = page.locator("#encoded");
   await expect(encoded).toHaveText(/\$argon2id\$/);
 
