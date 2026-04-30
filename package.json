@@ -48,7 +48,7 @@
   "devDependencies": {
     "@cyclonedx/cyclonedx-library": "10.0.0",
     "@eslint/js": "10.0.1",
-    "@playwright/test": "1.58.2",
+    "@playwright/test": "1.59.1",
     "@trivago/prettier-plugin-sort-imports": "6.0.2",
     "@types/node": "25.6.0",
     "@types/spdx-expression-parse": "4.0.0",
