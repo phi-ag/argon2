@@ -54,7 +54,7 @@
     "@types/spdx-expression-parse": "4.0.0",
     "@vitest/coverage-v8": "4.1.5",
     "eslint": "10.3.0",
-    "globals": "17.5.0",
+    "globals": "17.6.0",
     "hash-wasm": "4.12.0",
     "libsodium-wrappers-sumo": "0.8.3",
     "prettier": "3.8.3",
