@@ -1,5 +1,52 @@
 # Changelog
 
+## [0.5.22](https://github.com/phi-ag/argon2/compare/v0.5.21...v0.5.22) (2026-05-06)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([9f120cf](https://github.com/phi-ag/argon2/commit/9f120cf1b8371be9569da6c26e3c0fca1ef355c6))
+* **deps:** lock file maintenance ([fb870c0](https://github.com/phi-ag/argon2/commit/fb870c086a6baaa246832008290c669b28707c9d))
+* **deps:** update actions/cache digest to 27d5ce7 ([d940261](https://github.com/phi-ag/argon2/commit/d9402616c91f970bfb6c55c50ae8c988bdecf9fe))
+* **deps:** update actions/setup-node digest to 48b55a0 ([2eb96d0](https://github.com/phi-ag/argon2/commit/2eb96d083097c3eb8d77fc6d08c924716d4a5939))
+* **deps:** update dependency @types/node to v25.5.2 ([0ba8515](https://github.com/phi-ag/argon2/commit/0ba8515738c90148973df1226f0405d0901084e4))
+* **deps:** update dependency @types/node to v25.6.0 ([8fac1ef](https://github.com/phi-ag/argon2/commit/8fac1ef53a00a9a6cfbabf6003f55ccbbecdb882))
+* **deps:** update dependency @types/spdx-expression-parse to v4 ([343fa3b](https://github.com/phi-ag/argon2/commit/343fa3b5a0a00b270b66c169703b02fe61253523))
+* **deps:** update dependency eslint to v10.2.0 ([a7ae8d6](https://github.com/phi-ag/argon2/commit/a7ae8d601cdb326ce818ecd1bf029b682b5b0f78))
+* **deps:** update dependency eslint to v10.2.1 ([9267b4d](https://github.com/phi-ag/argon2/commit/9267b4d64aa6103f1fad4091dbfd5a042a880801))
+* **deps:** update dependency eslint to v10.3.0 ([6c63dc2](https://github.com/phi-ag/argon2/commit/6c63dc21fe85c36dc2602ac357bfec703dbd8bad))
+* **deps:** update dependency globals to v17.5.0 ([23516ee](https://github.com/phi-ag/argon2/commit/23516eef048b8401f35510ed538b3c8ba7a054cd))
+* **deps:** update dependency globals to v17.6.0 ([f00f0cb](https://github.com/phi-ag/argon2/commit/f00f0cb8469f15a7ed7847d1f9805e3d9b411efd))
+* **deps:** update dependency libsodium-wrappers-sumo to v0.8.3 ([2ea0dc7](https://github.com/phi-ag/argon2/commit/2ea0dc713de124d3e72d58868ff5dc40dc8f2f72))
+* **deps:** update dependency libsodium-wrappers-sumo to v0.8.4 ([9a25a13](https://github.com/phi-ag/argon2/commit/9a25a13d8984f26a3a576d620fdd54a4e9a58e0d))
+* **deps:** update dependency prettier to v3.8.2 ([0fed1af](https://github.com/phi-ag/argon2/commit/0fed1af9360090cf6a7ca4ac65c0bb9191e4cd97))
+* **deps:** update dependency prettier to v3.8.3 ([f979a1f](https://github.com/phi-ag/argon2/commit/f979a1f201a68012a1d402bd29a9d381af0bcfe9))
+* **deps:** update dependency typescript to v6 ([10d9910](https://github.com/phi-ag/argon2/commit/10d991005d47d16b6dafbd56ef3efea0c70b5cd4))
+* **deps:** update dependency typescript to v6.0.3 ([280b425](https://github.com/phi-ag/argon2/commit/280b4252a7a13862a98a8b361a417a731d900f5a))
+* **deps:** update dependency typescript-eslint to v8.58.0 ([53c7714](https://github.com/phi-ag/argon2/commit/53c77140c6a61015844a242970762b936f901e73))
+* **deps:** update dependency typescript-eslint to v8.58.1 ([49e23f8](https://github.com/phi-ag/argon2/commit/49e23f8fd7cb7cbd6cac8bbe41851820d9df2d2d))
+* **deps:** update dependency typescript-eslint to v8.58.2 ([8a385bc](https://github.com/phi-ag/argon2/commit/8a385bc2a2bc58bd84146b27124263a9343d9d94))
+* **deps:** update dependency typescript-eslint to v8.59.0 ([110bbf0](https://github.com/phi-ag/argon2/commit/110bbf0db0cbb06ffb0bf341b94d854b7c3d2528))
+* **deps:** update dependency typescript-eslint to v8.59.1 ([a50a212](https://github.com/phi-ag/argon2/commit/a50a21218f95ac83357c44daaf5d2bcd8b3b15b4))
+* **deps:** update dependency uuid to v14 ([f8806a8](https://github.com/phi-ag/argon2/commit/f8806a8b8119d1024354d436830444a10f287320))
+* **deps:** update emscripten/emsdk docker tag to v5.0.5 ([4ed430a](https://github.com/phi-ag/argon2/commit/4ed430ae60e957d3129040fa7316d0568e96ef2f))
+* **deps:** update emscripten/emsdk docker tag to v5.0.6 ([15423af](https://github.com/phi-ag/argon2/commit/15423af7c6a692b961b6a76175ea229d074b72bc))
+* **deps:** update emscripten/emsdk docker tag to v5.0.7 ([4816829](https://github.com/phi-ag/argon2/commit/4816829fa67199ea4d9b57cbc7feaf09e3ea5d75))
+* **deps:** update googleapis/release-please-action action to v5 ([f036bea](https://github.com/phi-ag/argon2/commit/f036beaf13973cb121527bf66f7c8b9986e61a1f))
+* **deps:** update googleapis/release-please-action digest to 5c625bf ([58f6a82](https://github.com/phi-ag/argon2/commit/58f6a820d5d056859a463cb5ad45b593c711f5b8))
+* **deps:** update node.js to v25.9.0 ([5eb483e](https://github.com/phi-ag/argon2/commit/5eb483e82da7efe792386f9acb708cbdede123ff))
+* **deps:** update node.js to v26 ([8022298](https://github.com/phi-ag/argon2/commit/80222980db336296c35c627d4cf3c3a332503e0c))
+* **deps:** update pnpm to v10.33.1 ([5f8f7d4](https://github.com/phi-ag/argon2/commit/5f8f7d438b801fb4f3f14e0585ede1a7f6ad65d0))
+* **deps:** update pnpm to v10.33.2 ([c76828b](https://github.com/phi-ag/argon2/commit/c76828b634082cd532095d2171e4bdc19c321013))
+* **deps:** update vitest monorepo to v4.1.3 ([08dbc20](https://github.com/phi-ag/argon2/commit/08dbc20e2be63739fa04ea8ed37dc77c962330ef))
+* **deps:** update vitest monorepo to v4.1.4 ([a9cd47c](https://github.com/phi-ag/argon2/commit/a9cd47cfda94599812ca23c887fb4b48d7d13f16))
+* **deps:** update vitest monorepo to v4.1.5 ([d032efe](https://github.com/phi-ag/argon2/commit/d032efe01b1e60214d750127c02df025a119300c))
+
+
+### Tests
+
+* **e2e:** test encoded password with fixed salt ([0be1bb1](https://github.com/phi-ag/argon2/commit/0be1bb1f631a08d246a7fcc738bc97ace4aecb3b))
+
 ## [0.5.21](https://github.com/phi-ag/argon2/compare/v0.5.20...v0.5.21) (2026-04-01)
 
 
