@@ -18,8 +18,8 @@ jobs:
       - name: Export commit timestamp
         uses: ./.github/actions/source-date-epoch
 
-      #- name: Emscripten
-      #  uses: ./.github/actions/emscripten
+      - name: Emscripten
+        uses: ./.github/actions/emscripten
 
       - name: Restore
         uses: ./.github/actions/restore
