@@ -6,4 +6,5 @@ runs:
     - name: Generate SBOM
       shell: bash
       run: |
-        pnpm run --reporter=silent sbom | tee sbom.cdx.json
+        pnpm run --reporter=silent sbom
+        pnpm run sbom | tee sbom.cdx.json | jq -C
