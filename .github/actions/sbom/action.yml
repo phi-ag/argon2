@@ -6,4 +6,4 @@ runs:
     - name: Generate SBOM
       shell: bash
       run: |
-        pnpm run sbom | tee sbom.cdx.json
+        pnpm run --reporter=silent sbom | tee sbom.cdx.json

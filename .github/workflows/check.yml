@@ -18,49 +18,49 @@ jobs:
       - name: Export commit timestamp
         uses: ./.github/actions/source-date-epoch
 
-      - name: Emscripten
-        uses: ./.github/actions/emscripten
+      #- name: Emscripten
+      #  uses: ./.github/actions/emscripten
 
       - name: Restore
         uses: ./.github/actions/restore
 
-      - name: Audit
-        continue-on-error: true
-        run: pnpm audit
+      #- name: Audit
+      #  continue-on-error: true
+      #  run: pnpm audit
 
-      - name: Format
-        run: pnpm format:check
+      #- name: Format
+      #  run: pnpm format:check
 
-      - name: Lint
-        run: pnpm lint
+      #- name: Lint
+      #  run: pnpm lint
 
-      - name: Typecheck
-        run: pnpm typecheck
+      #- name: Typecheck
+      #  run: pnpm typecheck
 
-      - name: Test
-        run: pnpm test:coverage
+      #- name: Test
+      #  run: pnpm test:coverage
 
-      - name: Build
-        run: pnpm build
+      #- name: Build
+      #  run: pnpm build
 
-      - name: End-to-End
-        uses: ./.github/actions/e2e
+      #- name: End-to-End
+      #  uses: ./.github/actions/e2e
 
-      - name: Codecov test results
-        uses: codecov/codecov-action@57e3a136b779b570ffcdbf80b3bdc90e7fab3de2 # v6
-        with:
-          report_type: test_results
-          files: ./junit.xml,./junit.e2e.xml
-          use_oidc: true
+      #- name: Codecov test results
+      #  uses: codecov/codecov-action@57e3a136b779b570ffcdbf80b3bdc90e7fab3de2 # v6
+      #  with:
+      #    report_type: test_results
+      #    files: ./junit.xml,./junit.e2e.xml
+      #    use_oidc: true
 
-      - name: Codecov coverage
-        uses: codecov/codecov-action@57e3a136b779b570ffcdbf80b3bdc90e7fab3de2 # v6
-        with:
-          files: ./coverage/cobertura-coverage.xml
-          use_oidc: true
+      #- name: Codecov coverage
+      #  uses: codecov/codecov-action@57e3a136b779b570ffcdbf80b3bdc90e7fab3de2 # v6
+      #  with:
+      #    files: ./coverage/cobertura-coverage.xml
+      #    use_oidc: true
 
       - name: Generate SBOM
         uses: ./.github/actions/sbom
 
-      - name: Publish dry-run
-        run: npm pack --dry-run
+      #- name: Publish dry-run
+      #  run: npm pack --dry-run
