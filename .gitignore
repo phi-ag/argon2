@@ -8,4 +8,6 @@ dist/
 junit.xml
 junit.e2e.xml
 
+sbom.cdx.json
+
 src/argon2.wasm

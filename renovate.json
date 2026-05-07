@@ -34,6 +34,13 @@
       ],
       "packageNameTemplate": "mcr.microsoft.com/playwright",
       "datasourceTemplate": "docker"
+    },
+    {
+      "customType": "regex",
+      "managerFilePatterns": [".github/actions/restore/action.yml"],
+      "matchStrings": ["corepack@(?<currentValue>[^\\s]+)"],
+      "datasourceTemplate": "npm",
+      "packageNameTemplate": "corepack"
     }
   ],
   "packageRules": [

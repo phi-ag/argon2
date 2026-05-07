@@ -12,6 +12,7 @@ runs:
     - name: Install pnpm
       shell: bash
       run: |
+        npm install -g corepack@0.34.6
         corepack enable
         corepack prepare --activate
 
