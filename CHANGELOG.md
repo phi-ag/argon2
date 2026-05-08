@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.5.23](https://github.com/phi-ag/argon2/compare/v0.5.22...v0.5.23) (2026-05-08)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency typescript-eslint to v8.59.2 ([ab5fb2d](https://github.com/phi-ag/argon2/commit/ab5fb2d00e93647bbec854574cea854938077144))
+* **deps:** update node.js to v26.1.0 ([4c95db2](https://github.com/phi-ag/argon2/commit/4c95db2d1929df8cabdd785e3951bd9bdc9d16b2))
+* **deps:** update pnpm to v11 ([c63ea80](https://github.com/phi-ag/argon2/commit/c63ea8063a5e6e03b7c49f7f32a59e6acfebd861))
+* **deps:** update pnpm to v11.0.5 ([e64f49e](https://github.com/phi-ag/argon2/commit/e64f49ef32387021d9699f28ef40efb908f9f963))
+
 ## [0.5.22](https://github.com/phi-ag/argon2/compare/v0.5.21...v0.5.22) (2026-05-06)
 
 
