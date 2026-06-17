@@ -52,7 +52,7 @@
     "@trivago/prettier-plugin-sort-imports": "6.0.2",
     "@types/node": "25.9.3",
     "@types/spdx-expression-parse": "4.0.0",
-    "@vitest/coverage-v8": "4.1.7",
+    "@vitest/coverage-v8": "4.1.8",
     "eslint": "10.4.0",
     "globals": "17.6.0",
     "hash-wasm": "4.12.0",
@@ -62,7 +62,7 @@
     "typescript": "6.0.3",
     "typescript-eslint": "8.60.0",
     "uuid": "14.0.0",
-    "vitest": "4.1.7"
+    "vitest": "4.1.8"
   },
   "packageManager": "pnpm@11.4.0+sha512.f0febc7e37552ab485494a914241b338e0b3580b93d54ce31f00933015880863129038a1b4ae4e414a0ee63ac35bf21197e990172c4a68256450b5636310968f"
 }
