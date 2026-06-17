@@ -9,12 +9,9 @@ runs:
         node-version-file: .nvmrc
         registry-url: https://registry.npmjs.org
 
-    - name: Install pnpm
+    - name: Install corepack
       shell: bash
-      run: |
-        npm install -g corepack@0.34.6
-        corepack enable
-        corepack prepare --activate
+      run: npm install -g corepack@0.34.6
 
     - name: Get pnpm store directory
       shell: bash

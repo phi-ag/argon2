@@ -51,6 +51,10 @@
       "automerge": true
     },
     {
+      "matchPackageNames": ["corepack"],
+      "automerge": true
+    },
+    {
       "description": "Disable minimum release age checks for docker",
       "matchDatasources": ["docker"],
       "minimumReleaseAge": null
