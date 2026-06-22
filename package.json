@@ -50,7 +50,7 @@
     "@eslint/js": "10.0.1",
     "@playwright/test": "1.61.0",
     "@trivago/prettier-plugin-sort-imports": "6.0.2",
-    "@types/node": "25.9.3",
+    "@types/node": "25.9.4",
     "@types/spdx-expression-parse": "4.0.0",
     "@vitest/coverage-v8": "4.1.9",
     "eslint": "10.5.0",
