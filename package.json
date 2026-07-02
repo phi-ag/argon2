@@ -57,7 +57,7 @@
     "globals": "17.7.0",
     "hash-wasm": "4.12.0",
     "libsodium-wrappers-sumo": "0.8.4",
-    "prettier": "3.9.1",
+    "prettier": "3.9.3",
     "spdx-expression-parse": "4.0.0",
     "typescript": "6.0.3",
     "typescript-eslint": "8.62.0",
