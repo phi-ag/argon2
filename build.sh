@@ -10,12 +10,11 @@ set -eu
   # - SIMD see https://emscripten.org/docs/porting/simd.html
   # - Compiler settings see https://emscripten.org/docs/tools_reference/settings_reference.html
   # - Clang CLI flags see https://clang.llvm.org/docs/ClangCommandLineReference.html#webassembly
-  emcc -std=c89 -Wall -Wextra -Werror -Wno-type-limits -Wno-error=incompatible-pointer-types \
+  emcc -std=c89 -Wall -Wextra -Werror \
     -O3 -flto -msimd128 -mavx2 \
     --no-entry \
     -sSTRICT \
     -sPURE_WASI \
-    -sWASM_BIGINT \
     -sNO_ASSERTIONS \
     -sNO_FILESYSTEM \
     -sMALLOC=emmalloc \
