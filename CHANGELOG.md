@@ -1,5 +1,34 @@
 # Changelog
 
+## [0.5.24](https://github.com/phi-ag/argon2/compare/v0.5.23...v0.5.24) (2026-07-02)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([c312d24](https://github.com/phi-ag/argon2/commit/c312d24e2f4dc983bf0f8e0f080f52e5c794dffc))
+* **deps:** update actions/attest digest to a1948c3 ([37d0076](https://github.com/phi-ag/argon2/commit/37d00765f881d870723d21a09bc3adc77239bd8d))
+* **deps:** update actions/cache action to v6 ([f910efa](https://github.com/phi-ag/argon2/commit/f910efa6aa003f8c0e97e125f83ba61cc6d4439e))
+* **deps:** update actions/cache digest to 55cc834 ([cbc59f4](https://github.com/phi-ag/argon2/commit/cbc59f44f0487a2654aa3410f6cfd4d96d6349c6))
+* **deps:** update dependency @playwright/test to v1.61.1 ([515d9a8](https://github.com/phi-ag/argon2/commit/515d9a858e215e3c7f3cc95dc4339286a98f7098))
+* **deps:** update dependency @types/node to v25.9.4 ([7993c1f](https://github.com/phi-ag/argon2/commit/7993c1f16250011d3ec0e70096aee13c8453d336))
+* **deps:** update dependency @types/node to v26 ([ced2f6b](https://github.com/phi-ag/argon2/commit/ced2f6b4dc65ef4796eeab52767eada93c7c428d))
+* **deps:** update dependency @types/node to v26.0.1 ([ed28a7a](https://github.com/phi-ag/argon2/commit/ed28a7ab34424b1556e2cbc79e49c5109126da55))
+* **deps:** update dependency eslint to v10.6.0 ([6b29830](https://github.com/phi-ag/argon2/commit/6b29830b77117f244fe584c446dc66f49c193cbf))
+* **deps:** update dependency globals to v17.7.0 ([ea49dd0](https://github.com/phi-ag/argon2/commit/ea49dd091cb03cc3b98f1c64235a9ba0251cb4b0))
+* **deps:** update dependency prettier to v3.8.5 ([177627e](https://github.com/phi-ag/argon2/commit/177627e174eabae33c8c78a39061bf46166f3420))
+* **deps:** update dependency prettier to v3.9.0 ([d33d39c](https://github.com/phi-ag/argon2/commit/d33d39c5d0943b9a53302c45a507cda41c7b922e))
+* **deps:** update dependency prettier to v3.9.1 ([1ee20da](https://github.com/phi-ag/argon2/commit/1ee20daab6cf9da1758295d57af8df1943a400ca))
+* **deps:** update dependency typescript-eslint to v8.62.0 ([317716d](https://github.com/phi-ag/argon2/commit/317716d5d106596f7a36c1fd8e940a9b023fd16b))
+* **deps:** update dependency uuid to v14.0.1 ([d218215](https://github.com/phi-ag/argon2/commit/d2182150e8eed5d654bda07029b577f947a0c38a))
+* **deps:** update emscripten/emsdk docker tag to v6.0.1 ([9888919](https://github.com/phi-ag/argon2/commit/98889198328c48c1d72c70ab4588d3025a2e1b87))
+* **deps:** update emscripten/emsdk docker tag to v6.0.2 ([39a629a](https://github.com/phi-ag/argon2/commit/39a629a9eba3904b925f1e96de739f73383215e4))
+* **deps:** update node.js to v26.4.0 ([c6c30a4](https://github.com/phi-ag/argon2/commit/c6c30a41e7c90352fd5ab7bcd8f51e3394e03257))
+* **deps:** update playwright ([621d24c](https://github.com/phi-ag/argon2/commit/621d24c4394c93874cf3a223ffae5a89cdf5fa08))
+* **deps:** update playwright ([9316efb](https://github.com/phi-ag/argon2/commit/9316efba64c79b93b3b0a6650f2dc6ae2b4870e3))
+* **deps:** update pnpm to v11.8.0 ([574c4a7](https://github.com/phi-ag/argon2/commit/574c4a7fb871baf08364a77dc2bd342cb44b1598))
+* **deps:** update pnpm to v11.9.0 ([9ab2809](https://github.com/phi-ag/argon2/commit/9ab2809e29911d891445fd42793fa3df28b2e991))
+* **emscripten:** remove obsolete build flags ([95eeefb](https://github.com/phi-ag/argon2/commit/95eeefbef741dfd299c414beebac9983351a5730))
+
 ## [0.5.23](https://github.com/phi-ag/argon2/compare/v0.5.22...v0.5.23) (2026-06-18)
 
 
