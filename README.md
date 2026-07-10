@@ -15,6 +15,9 @@ Minimal Argon2 WebAssembly SIMD build inspired by [antelle/argon2-browser](https
 
 Node.js / Deno / Bun (see [node.ts](src/node.ts))
 
+> [!NOTE]
+> Native implementations are available for [Node.js](https://nodejs.org/api/crypto.html#cryptoargon2algorithm-parameters-callback) and [Bun](https://bun.com/reference/node/crypto/argon2)
+
 ```ts
 import initialize from "@phi-ag/argon2/node";
 
