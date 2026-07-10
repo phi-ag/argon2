@@ -31,7 +31,7 @@ describe("argon2", async () => {
 
     expect(argon2.verify(encoded, password));
 
-    expect(() => argon2.verify(encoded, "not the password")).toThrowError(
+    expect(() => argon2.verify(encoded, "not the password")).toThrow(
       "The password does not match the supplied hash"
     );
   });
@@ -47,7 +47,7 @@ describe("argon2", async () => {
     );
 
     expect(argon2.verify(encoded, p));
-    expect(() => argon2.verify(encoded, "not the password")).toThrowError(
+    expect(() => argon2.verify(encoded, "not the password")).toThrow(
       "The password does not match the supplied hash"
     );
   });
@@ -56,7 +56,7 @@ describe("argon2", async () => {
     const { encoded } = argon2.hash(p);
     expect(argon2.verify(encoded, p));
 
-    expect(() => argon2.verify(encoded, "not my password")).toThrowError(
+    expect(() => argon2.verify(encoded, "not my password")).toThrow(
       "The password does not match the supplied hash"
     );
 
@@ -85,7 +85,7 @@ describe("argon2", async () => {
     expect(argon2.tryHash(p, { hashLength: null }).error).toEqual(typeError);
     expect(argon2.tryHash(p, { hashLength: 55.2 }).error).toEqual(typeError);
 
-    expect(() => argon2.hash(p, { hashLength: 55.2 })).toThrowError(typeError);
+    expect(() => argon2.hash(p, { hashLength: 55.2 })).toThrow(typeError);
   });
 
   test("hash password with salt", () => {
