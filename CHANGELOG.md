@@ -1,5 +1,31 @@
 # Changelog
 
+## [0.5.25](https://github.com/phi-ag/argon2/compare/v0.5.24...v0.5.25) (2026-07-14)
+
+
+### Documentation
+
+* add native implementation note ([8d51350](https://github.com/phi-ag/argon2/commit/8d51350d94d4e6f71153c1a69e7296ed15025dfa))
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([150f670](https://github.com/phi-ag/argon2/commit/150f670bb585cf1594dab93370d56273785666c3))
+* **deps:** lock file maintenance ([f3f174d](https://github.com/phi-ag/argon2/commit/f3f174d7ad5d6d68655754315af7184599e286ed))
+* **deps:** update dependency @types/node to v26.1.0 ([771f6b0](https://github.com/phi-ag/argon2/commit/771f6b024af8d313ebd2f7d105a9a37655ba6ead))
+* **deps:** update dependency @types/node to v26.1.1 ([6c8bd12](https://github.com/phi-ag/argon2/commit/6c8bd128da47f818d94de2a2d4371c9c3b4aff29))
+* **deps:** update dependency eslint to v10.7.0 ([6bdee4b](https://github.com/phi-ag/argon2/commit/6bdee4b7ef0f6f4d13f7deda1e05963daef2adab))
+* **deps:** update dependency prettier to v3.9.3 ([8d1ce23](https://github.com/phi-ag/argon2/commit/8d1ce23cfce1c7d8e15a947f55bc63346efca88d))
+* **deps:** update dependency prettier to v3.9.4 ([7bd6af6](https://github.com/phi-ag/argon2/commit/7bd6af69b202fb68cc9a6c966118d8f9a84ff167))
+* **deps:** update dependency prettier to v3.9.5 ([ca7c346](https://github.com/phi-ag/argon2/commit/ca7c3461a2568281fc0efa431e0fe7349d0992a1))
+* **deps:** update dependency typescript-eslint to v8.62.1 ([615d69d](https://github.com/phi-ag/argon2/commit/615d69d54d38a52f90e3ec6f42103359bbf99af8))
+* **deps:** update dependency typescript-eslint to v8.63.0 ([654e729](https://github.com/phi-ag/argon2/commit/654e729a8e8f99642f99937b4df7aa4feff3ae92))
+* **deps:** update emscripten/emsdk docker tag to v6.0.3 ([559a8ed](https://github.com/phi-ag/argon2/commit/559a8eddbd0eea3c7885f3189e4f50099aa06a19))
+* **deps:** update node.js to v26.5.0 ([77e9c3a](https://github.com/phi-ag/argon2/commit/77e9c3a8ed809d0b5c646f7053c63da1d9326768))
+* **deps:** update pnpm to v11.10.0 ([47f4058](https://github.com/phi-ag/argon2/commit/47f4058455f23ce696db3a35220710d00db4e340))
+* **deps:** update pnpm to v11.11.0 ([105cc0d](https://github.com/phi-ag/argon2/commit/105cc0d0e710d2d962bf2e42baa8f2bfb709b88d))
+* **deps:** update vitest monorepo to v4.1.10 ([38643b9](https://github.com/phi-ag/argon2/commit/38643b977a7359d108d194861b022de1b23bcef8))
+
 ## [0.5.24](https://github.com/phi-ag/argon2/compare/v0.5.23...v0.5.24) (2026-07-02)
 
 
