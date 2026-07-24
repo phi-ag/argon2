@@ -1,5 +1,25 @@
 # Changelog
 
+## [0.5.26](https://github.com/phi-ag/argon2/compare/v0.5.25...v0.5.26) (2026-07-24)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/attest digest to f7c74d2 ([094100c](https://github.com/phi-ag/argon2/commit/094100c9ae2728a087b68f325c5eb1be4dd7b1b1))
+* **deps:** update actions/checkout digest to 3d3c42e ([866c581](https://github.com/phi-ag/argon2/commit/866c581b4aba6c7a4a4994fbbbaacfa08b8a8a88))
+* **deps:** update actions/setup-node action to v7 ([6e48eaa](https://github.com/phi-ag/argon2/commit/6e48eaa2137d8b9f6e3008c24211d2373a46467a))
+* **deps:** update actions/setup-node digest to 2499707 ([9b9a6b1](https://github.com/phi-ag/argon2/commit/9b9a6b1d4f810f906a67da6f3f134fe16a10860b))
+* **deps:** update dependency prettier to v3.9.6 ([f27b2b9](https://github.com/phi-ag/argon2/commit/f27b2b978f0f88da8a102774bb188a66c0c5f0dd))
+* **deps:** update dependency spdx-expression-parse to v5 ([42c8c66](https://github.com/phi-ag/argon2/commit/42c8c668aa4e93645f0d6ca5ca313a524ace2b70))
+* **deps:** update dependency typescript-eslint to v8.64.0 ([bd3667b](https://github.com/phi-ag/argon2/commit/bd3667b77d0e6d24176db660c1e92e3fe4aa04b9))
+* **deps:** update dependency typescript-eslint to v8.65.0 ([aaca9ae](https://github.com/phi-ag/argon2/commit/aaca9ae1461418a21a1be7641b5db71054ff1e0b))
+* **deps:** update emscripten/emsdk docker tag to v6.0.4 ([fe2b72e](https://github.com/phi-ag/argon2/commit/fe2b72e080c47dd1cccb1e8d1227719c294403ef))
+* **deps:** update pnpm to v11.12.0 ([a7e6b75](https://github.com/phi-ag/argon2/commit/a7e6b7595f39d76881a89315926df81b97bde6e4))
+* **deps:** update pnpm to v11.13.0 ([f9bdcde](https://github.com/phi-ag/argon2/commit/f9bdcdeb2c527fb6925a03ff208a75562a839011))
+* **deps:** update pnpm to v11.13.1 ([8e5ca54](https://github.com/phi-ag/argon2/commit/8e5ca542bf0bb0d3c0c332c414ec8d4023d41816))
+* **deps:** update pnpm to v11.15.0 ([f343ff4](https://github.com/phi-ag/argon2/commit/f343ff494d1c9f10cc35a291acf6e8d0d63433a3))
+* **deps:** update pnpm to v11.15.1 ([9b7754d](https://github.com/phi-ag/argon2/commit/9b7754ddc4a87bfaac82909b310c6926c1bed0df))
+
 ## [0.5.25](https://github.com/phi-ag/argon2/compare/v0.5.24...v0.5.25) (2026-07-14)
 
 
