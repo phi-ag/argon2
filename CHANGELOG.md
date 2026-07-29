@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.5.27](https://github.com/phi-ag/argon2/compare/v0.5.26...v0.5.27) (2026-07-29)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([399ae27](https://github.com/phi-ag/argon2/commit/399ae27b39d46c0a0a5a1f2874f22f511ed8bf07))
+* **deps:** update dependency eslint to v10.8.0 ([d3286af](https://github.com/phi-ag/argon2/commit/d3286af5f5c6c7623c6a9d1d5e8d672b17b06161))
+* **deps:** update emscripten/emsdk docker tag to v6.0.5 ([f370821](https://github.com/phi-ag/argon2/commit/f370821411605ec6cb78238ef2c1c21eff35ebd0))
+* **deps:** update playwright to v1.62.0 ([af4df6c](https://github.com/phi-ag/argon2/commit/af4df6cef7025338fa8bfb60ae913cc2a7e94ed3))
+* **deps:** update pnpm to v11.16.0 ([079f41a](https://github.com/phi-ag/argon2/commit/079f41ac8fcc9c3175bee1c004dc492f2cf86519))
+* **deps:** update pnpm to v11.17.0 ([185195f](https://github.com/phi-ag/argon2/commit/185195fe28572b4fb1b198fe564dd46cee84ef18))
+
 ## [0.5.26](https://github.com/phi-ag/argon2/compare/v0.5.25...v0.5.26) (2026-07-24)
 
 
