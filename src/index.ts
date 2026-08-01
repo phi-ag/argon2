@@ -54,12 +54,12 @@ export interface Argon2TryVerifyError {
 
 export type Argon2TryVerifyResult = Argon2TryVerifySuccess | Argon2TryVerifyError;
 
-export const typeFromEncoded = (encoded: string): Argon2Type | undefined => {
+export function typeFromEncoded(encoded: string): Argon2Type | undefined {
   if (!encoded?.length) return;
   if (encoded.startsWith("$argon2d$")) return Argon2Type.Argon2d;
   if (encoded.startsWith("$argon2i$")) return Argon2Type.Argon2i;
   if (encoded.startsWith("$argon2id$")) return Argon2Type.Argon2id;
-};
+}
 
 export const defaultHashOptions: Argon2HashOptions = {
   hashLength: 32,
@@ -70,7 +70,7 @@ export const defaultHashOptions: Argon2HashOptions = {
   version: Argon2Version.Version13
 };
 
-const validateHashOptions = (opts: Argon2HashOptions): string | undefined => {
+function validateHashOptions(opts: Argon2HashOptions): string | undefined {
   if (!Number.isInteger(opts.hashLength)) return "Hash length must be an integer";
   if (!Number.isInteger(opts.timeCost)) return "Time cost must be an integer";
   if (!Number.isInteger(opts.memoryCost)) return "Memory cost must be an integer";
@@ -88,7 +88,7 @@ const validateHashOptions = (opts: Argon2HashOptions): string | undefined => {
     if (!(opts.salt instanceof Uint8Array)) return "Salt must be of type Uint8Array";
     if (opts.salt.length < 8) return "Salt length is too small";
   }
-};
+}
 
 type Ptr = number;
 
@@ -96,7 +96,7 @@ type DisposablePtr = Disposable & { ptr: Ptr };
 
 interface Argon2Exports extends WebAssembly.Exports {
   memory: WebAssembly.Memory;
-  _initialize: () => void;
+  _initialize(): void;
   malloc(length: number): Ptr;
   free(ptr: Ptr): void;
   argon2_hash(
@@ -131,8 +131,9 @@ interface Argon2Exports extends WebAssembly.Exports {
   ): number;
 }
 
-export const generateSalt = (length: number): Uint8Array =>
-  crypto.getRandomValues(new Uint8Array(length));
+export function generateSalt(length: number): Uint8Array {
+  return crypto.getRandomValues(new Uint8Array(length));
+}
 
 class Argon2 {
   readonly #exports: Argon2Exports;
@@ -145,46 +146,50 @@ class Argon2 {
   }
 
   // see https://github.com/WebAssembly/design/issues/1296
-  #heap = () => new Uint8Array(this.#exports.memory.buffer);
+  #heap(): Uint8Array {
+    return new Uint8Array(this.#exports.memory.buffer);
+  }
 
-  #toCString = (value: string): Uint8Array => this.#encoder.encode(value + "\0");
+  #toCString(value: string): Uint8Array {
+    return this.#encoder.encode(value + "\0");
+  }
 
-  #fromCString = (ptr: Ptr, length?: number): string => {
+  #fromCString(ptr: Ptr, length?: number): string {
     const heap = this.#heap();
     if (length) return this.#decoder.decode(heap.subarray(ptr, ptr + length));
 
     let end = ptr;
     while (heap[end]) ++end;
     return this.#decoder.decode(heap.subarray(ptr, end));
-  };
+  }
 
-  #malloc = (length: number): DisposablePtr => {
+  #malloc(length: number): DisposablePtr {
     const ptr = this.#exports.malloc(length);
     return {
       ptr,
       [Symbol.dispose]: () => this.#exports.free(ptr)
     };
-  };
+  }
 
-  #copyToHeap = (array: Uint8Array): DisposablePtr => {
+  #copyToHeap(array: Uint8Array): DisposablePtr {
     const ptr = this.#malloc(array.length);
     this.#heap().set(array, ptr.ptr);
     return ptr;
-  };
+  }
 
-  #copyFromHeap = (ptr: Ptr, length: number): Uint8Array =>
-    this.#heap().slice(ptr, ptr + length);
+  #copyFromHeap(ptr: Ptr, length: number): Uint8Array {
+    return this.#heap().slice(ptr, ptr + length);
+  }
 
-  #copyStringToHeap = (value: string): DisposablePtr =>
-    this.#copyToHeap(this.#toCString(value));
+  #copyStringToHeap(value: string): DisposablePtr {
+    return this.#copyToHeap(this.#toCString(value));
+  }
 
-  #errorMessage = (error: number): string =>
-    this.#fromCString(this.#exports.argon2_error_message(error));
+  #errorMessage(error: number): string {
+    return this.#fromCString(this.#exports.argon2_error_message(error));
+  }
 
-  tryHash = (
-    password: string,
-    options?: Partial<Argon2HashOptions>
-  ): Argon2TryHashResult => {
+  tryHash(password: string, options?: Partial<Argon2HashOptions>): Argon2TryHashResult {
     if (password === null) return { success: false, error: "Password is null" };
     if (password === undefined) return { success: false, error: "Password is undefined" };
 
@@ -235,19 +240,15 @@ class Argon2 {
     const encoded = this.#fromCString(encodedPtr.ptr, encodedLength - 1);
 
     return { success: true, data: { encoded, hash } };
-  };
+  }
 
-  hash = (password: string, options?: Partial<Argon2HashOptions>): Argon2HashData => {
+  hash(password: string, options?: Partial<Argon2HashOptions>): Argon2HashData {
     const result = this.tryHash(password, options);
     if (result.success) return result.data;
     throw Error(result.error);
-  };
+  }
 
-  tryVerify = (
-    encoded: string,
-    password: string,
-    type?: Argon2Type
-  ): Argon2TryVerifyResult => {
+  tryVerify(encoded: string, password: string, type?: Argon2Type): Argon2TryVerifyResult {
     if (encoded === null) return { success: false, error: "Encoded string is null" };
     if (encoded === undefined)
       return { success: false, error: "Encoded string is undefined" };
@@ -270,12 +271,12 @@ class Argon2 {
     if (result !== 0) return { success: false, error: this.#errorMessage(result) };
 
     return { success: true };
-  };
+  }
 
-  verify = (encoded: string, password: string, type?: Argon2Type): void => {
+  verify(encoded: string, password: string, type?: Argon2Type): void {
     const result = this.tryVerify(encoded, password, type);
     if (!result.success) throw Error(result.error);
-  };
+  }
 }
 
 export default Argon2;
