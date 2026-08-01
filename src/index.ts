@@ -90,7 +90,7 @@ function validateHashOptions(opts: Argon2HashOptions): string | undefined {
   }
 }
 
-type Ptr = number;
+type Ptr = number & { __brand: "ptr" };
 
 type DisposablePtr = Disposable & { ptr: Ptr };
 
