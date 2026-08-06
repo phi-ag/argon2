@@ -2,6 +2,7 @@ node_modules/
 coverage/
 dist/
 .emscripten/
+.wit-bindgen/
 .e2e-results/
 .run-playwright/
 
