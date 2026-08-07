@@ -1,5 +1,27 @@
 # Changelog
 
+## [0.5.28](https://github.com/phi-ag/argon2/compare/v0.5.27...v0.5.28) (2026-08-07)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([5710711](https://github.com/phi-ag/argon2/commit/57107115fdddcc80c3860c4f8d84d3a6a8c198fd))
+* **deps:** update actions/attest digest to 1e69f48 ([78d3607](https://github.com/phi-ag/argon2/commit/78d3607f79c0d2d9d12c10a31879178915b3789e))
+* **deps:** update actions/attest digest to 508db95 ([ca480f3](https://github.com/phi-ag/argon2/commit/ca480f32536c205efae828c9f23c842f4b68ee15))
+* **deps:** update dependency @playwright/test to v1.62.1 ([d8b652d](https://github.com/phi-ag/argon2/commit/d8b652d389400f5d0ecf83c463b2f2d9fa72445d))
+* **deps:** update dependency @types/node to v26.1.2 ([7925390](https://github.com/phi-ag/argon2/commit/7925390cc4c1ccfe234940b5d76caafb51abbf48))
+* **deps:** update dependency globals to v17.8.0 ([83465fa](https://github.com/phi-ag/argon2/commit/83465fa210c4387dbbcd7225d2c8c28541e7f795))
+* **deps:** update dependency globals to v17.9.0 ([7695e95](https://github.com/phi-ag/argon2/commit/7695e95520055c3221c6d581336dba572a3537de))
+* **deps:** update dependency typescript-eslint to v8.66.0 ([9c2f337](https://github.com/phi-ag/argon2/commit/9c2f337fb8e3e09a7b7061a2abef6c6e6ce5b1fa))
+* **deps:** update emscripten/emsdk docker tag to v6.0.6 ([3d0d14f](https://github.com/phi-ag/argon2/commit/3d0d14ff1d2675b3c4e0cee5b594b6c0882a7287))
+* **deps:** update mcr.microsoft.com/playwright docker tag to v1.62.1 ([20bcd06](https://github.com/phi-ag/argon2/commit/20bcd06173d183b270e4bd54683734f130d4fcd4))
+* **deps:** update node.js to v26.5.1 ([7c5c3ab](https://github.com/phi-ag/argon2/commit/7c5c3ab0e729894a630bb5a6f90f5be4e375afd7))
+* **deps:** update node.js to v26.6.0 ([9093e24](https://github.com/phi-ag/argon2/commit/9093e24df75603c167da10e615a7141489aa68ac))
+* **deps:** update node.js to v26.7.0 ([3494e25](https://github.com/phi-ag/argon2/commit/3494e254502fcc4257bf0ba8fa34a43f205aefb0))
+* **deps:** update pnpm to v11.18.0 ([37bdfea](https://github.com/phi-ag/argon2/commit/37bdfea18786c42e51e345faeffd101b3488a2d2))
+* **deps:** update pnpm to v11.19.0 ([be9ac5c](https://github.com/phi-ag/argon2/commit/be9ac5c0d64c479239516a1c3895a8bdc7518e86))
+* **deps:** update pnpm to v11.20.0 ([cef4d0e](https://github.com/phi-ag/argon2/commit/cef4d0ec5bdeb5498eab22eeb4b2a7c326b491de))
+
 ## [0.5.27](https://github.com/phi-ag/argon2/compare/v0.5.26...v0.5.27) (2026-07-29)
 
 
