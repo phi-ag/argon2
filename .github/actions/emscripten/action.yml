@@ -12,6 +12,6 @@ runs:
           ${{ runner.os }}-emscripten
 
     - name: Build emscripten
-      uses: docker://emscripten/emsdk:6.0.6@sha256:be96eff5810e42c632f3f8b795388a6b596e4fb21ec28b9e1fb1bc49bb3b1eef
+      uses: docker://emscripten/emsdk:6.0.7@sha256:71190e58eab340c692c0c3bb9741705f5c9625766a561c906dc6c01b1ed6d761
       with:
         args: ./build.sh
