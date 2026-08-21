@@ -4,15 +4,13 @@ settings:
   autoInstallPeers: false
   excludeLinksFromLockfile: false
 
-pnpmfileChecksum: sha256-zx4m7F8SPpCbWSzTH2pyWe3sIY7gMgpL0iBnhBs/6Do=
-
 importers:
 
   .:
     devDependencies:
       '@cyclonedx/cyclonedx-library':
-        specifier: 10.1.1
-        version: 10.1.1(spdx-expression-parse@5.0.0)
+        specifier: 10.2.0
+        version: 10.2.0(spdx-expression-parse@5.0.0)
       '@eslint/js':
         specifier: 10.0.1
         version: 10.0.1(eslint@10.8.1(supports-color@7.2.0))
@@ -105,8 +103,8 @@ packages:
     resolution: {integrity: sha512-6zABk/ECA/QYSCQ1NGiVwwbQerUCZ+TQbp64Q3AgmfNvurHH0j8TtXa1qbShXA6qqkpAj4V5W8pP6mLe1mcMqA==}
     engines: {node: '>=18'}
 
-  '@cyclonedx/cyclonedx-library@10.1.1':
-    resolution: {integrity: sha512-m3GxJ4fdHMZb5tbu5o+PEfNsgHcDdbbnXKqD4wZlCuCk4lsQfc42wXv7FYFRCAgImC6TaXJdF+K35Tx7a+yaow==}
+  '@cyclonedx/cyclonedx-library@10.2.0':
+    resolution: {integrity: sha512-hGeo1XXM0zuIeTyzJihxPxnEOeNBmgZkuPRmTR28RktlAqF9xLneonHRCzahZHLgCq/LOmtCs5vyojJlnmJ87w==}
     engines: {node: '>=20.18.0'}
     peerDependencies:
       ajv: ^8.12.0
@@ -1108,7 +1106,7 @@ snapshots:
 
   '@bcoe/v8-coverage@1.0.2': {}
 
-  '@cyclonedx/cyclonedx-library@10.1.1(spdx-expression-parse@5.0.0)':
+  '@cyclonedx/cyclonedx-library@10.2.0(spdx-expression-parse@5.0.0)':
     optionalDependencies:
       spdx-expression-parse: 5.0.0
 
