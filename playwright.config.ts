@@ -1,4 +1,4 @@
-import { defineConfig, devices } from "@playwright/test";
+import { defineConfig, devices, type PlaywrightTestConfig } from "@playwright/test";
 
 export default defineConfig({
   testDir: "e2e",
@@ -9,7 +9,7 @@ export default defineConfig({
   retries: process.env.CI ? 1 : 0,
   workers: process.env.CI ? 1 : undefined,
   webServer: {
-    command: "node e2e/server.js",
+    command: "node e2e/server.ts",
     reuseExistingServer: !process.env.CI,
     stdout: "pipe",
     stderr: "pipe"
@@ -32,4 +32,4 @@ export default defineConfig({
       use: { ...devices["Desktop Safari"] }
     }
   ]
-});
+}) as PlaywrightTestConfig;

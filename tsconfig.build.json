@@ -1,4 +1,11 @@
 {
   "extends": "./tsconfig",
+  "compilerOptions": {
+    "noEmit": false,
+    "allowImportingTsExtensions": false,
+    "rootDir": "./src",
+    "outDir": "./dist"
+  },
+  "include": ["src"],
   "exclude": ["src/**/*.test.ts", "src/**/*.bench.ts"]
 }

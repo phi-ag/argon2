@@ -5,13 +5,13 @@ import { resolve } from "node:path";
 import readline from "node:readline/promises";
 import { pipeline } from "node:stream/promises";
 
-export const argon2GitSubmodule = () => {
+export function argon2GitSubmodule(): { name: string; version: string; tag: string } {
   const result = execSync("git submodule status phc-winner-argon2").toString().trim();
   const [version, name, tag] = result.split(" ");
   return { name, version, tag: tag.slice(1, -1) };
-};
+}
 
-export const emscriptenContainer = async () => {
+export async function emscriptenContainer(): Promise<{ name: string; version: string }> {
   const path = resolve(
     import.meta.dirname,
     "..",
@@ -37,9 +37,9 @@ export const emscriptenContainer = async () => {
   }
 
   throw Error("Missing emscripten container");
-};
+}
 
-export const sha1File = async (path: string): Promise<string> => {
+export async function sha1File(path: string): Promise<string> {
   const stream = createReadStream(path);
   const hash = createHash("sha1");
   hash.setEncoding("hex");
@@ -48,9 +48,9 @@ export const sha1File = async (path: string): Promise<string> => {
 
   hash.end();
   return hash.read();
-};
+}
 
-export const sha256File = async (path: string): Promise<string> => {
+export async function sha256File(path: string): Promise<string> {
   const stream = createReadStream(path);
   const hash = createHash("sha256");
   hash.setEncoding("hex");
@@ -59,4 +59,4 @@ export const sha256File = async (path: string): Promise<string> => {
 
   hash.end();
   return hash.read();
-};
+}

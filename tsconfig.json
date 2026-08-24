@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
-    "rootDir": "./src",
-    "outDir": "./dist",
+    "noEmit": true,
     "declaration": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
@@ -14,7 +13,9 @@
     "removeComments": true,
     "strict": true,
     "skipLibCheck": true,
+    "noImplicitReturns": true,
+    "allowImportingTsExtensions": true,
     "types": ["node"]
   },
-  "include": ["src"]
+  "exclude": ["dist", "coverage", "phc-winner-argon2"]
 }

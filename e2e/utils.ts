@@ -1,6 +1,6 @@
 import { type Page } from "@playwright/test";
 
-export const throwOnConsoleError = (page: Page) => {
+export function throwOnConsoleError(page: Page): void {
   page.on("console", (message) => {
     if (message.type() === "error") throw message;
     if (message.type() === "warning") console.warn(message);
@@ -9,4 +9,4 @@ export const throwOnConsoleError = (page: Page) => {
   page.on("pageerror", (error) => {
     throw error;
   });
-};
+}
