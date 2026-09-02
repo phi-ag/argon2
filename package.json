@@ -59,7 +59,7 @@
     "oxfmt": "0.61.0",
     "spdx-expression-parse": "5.0.0",
     "typescript": "6.0.3",
-    "typescript-eslint": "8.67.0",
+    "typescript-eslint": "8.68.0",
     "uuid": "14.0.2",
     "vitest": "4.1.11"
   },
