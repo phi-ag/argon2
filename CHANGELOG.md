@@ -1,5 +1,59 @@
 # Changelog
 
+## [0.5.28](https://github.com/phi-ag/argon2/compare/v0.5.27...v0.5.28) (2026-09-05)
+
+
+### Miscellaneous Chores
+
+* **deps:** lock file maintenance ([22b2504](https://github.com/phi-ag/argon2/commit/22b25042e5132b28cfb3326d0e0c29cbe32a9b1a))
+* **deps:** lock file maintenance ([a59c7cb](https://github.com/phi-ag/argon2/commit/a59c7cb14cf510e2e303a65e02b4f260e7bb9114))
+* **deps:** lock file maintenance ([5710711](https://github.com/phi-ag/argon2/commit/57107115fdddcc80c3860c4f8d84d3a6a8c198fd))
+* **deps:** update actions/attest digest to 1e69f48 ([78d3607](https://github.com/phi-ag/argon2/commit/78d3607f79c0d2d9d12c10a31879178915b3789e))
+* **deps:** update actions/attest digest to 508db95 ([ca480f3](https://github.com/phi-ag/argon2/commit/ca480f32536c205efae828c9f23c842f4b68ee15))
+* **deps:** update dependency @cyclonedx/cyclonedx-library to v10.1.1 ([5caf77e](https://github.com/phi-ag/argon2/commit/5caf77ed1c19094d0f7cb904d36e7eff0eacd54c))
+* **deps:** update dependency @cyclonedx/cyclonedx-library to v10.2.0 ([b044653](https://github.com/phi-ag/argon2/commit/b04465368c4b945da5ed3a60a8c4b72b3f451547))
+* **deps:** update dependency @playwright/test to v1.62.1 ([d8b652d](https://github.com/phi-ag/argon2/commit/d8b652d389400f5d0ecf83c463b2f2d9fa72445d))
+* **deps:** update dependency @types/node to v26.1.2 ([7925390](https://github.com/phi-ag/argon2/commit/7925390cc4c1ccfe234940b5d76caafb51abbf48))
+* **deps:** update dependency @types/node to v26.2.0 ([96e2aaf](https://github.com/phi-ag/argon2/commit/96e2aaf99f92eb70921ca40089083b8d70f10292))
+* **deps:** update dependency @types/node to v26.4.0 ([9dd325c](https://github.com/phi-ag/argon2/commit/9dd325cbb1420f8d8e17e254ad4d6fdff79bb9c3))
+* **deps:** update dependency @types/node to v26.4.1 ([8ab35eb](https://github.com/phi-ag/argon2/commit/8ab35eb8f4f768b8cd87c1ae3e4ec0b9faa750f4))
+* **deps:** update dependency corepack to v0.36.0 ([bdcc7cb](https://github.com/phi-ag/argon2/commit/bdcc7cbf28fc8d2c3496f54145de0c125b883489))
+* **deps:** update dependency eslint to v10.8.1 ([804164e](https://github.com/phi-ag/argon2/commit/804164e0de148c6104c0a4806e74a5b496bfc331))
+* **deps:** update dependency eslint to v10.9.1 ([6efa48d](https://github.com/phi-ag/argon2/commit/6efa48d670654047e450f5f99fde8f0fb204314c))
+* **deps:** update dependency globals to v17.11.0 ([778a3bb](https://github.com/phi-ag/argon2/commit/778a3bba466b5645f059c58d5c06c40899f8a357))
+* **deps:** update dependency globals to v17.12.0 ([4724159](https://github.com/phi-ag/argon2/commit/47241596f30324aeb1b2c4459dd1c2e3ec87929c))
+* **deps:** update dependency globals to v17.8.0 ([83465fa](https://github.com/phi-ag/argon2/commit/83465fa210c4387dbbcd7225d2c8c28541e7f795))
+* **deps:** update dependency globals to v17.9.0 ([7695e95](https://github.com/phi-ag/argon2/commit/7695e95520055c3221c6d581336dba572a3537de))
+* **deps:** update dependency typescript-eslint to v8.66.0 ([9c2f337](https://github.com/phi-ag/argon2/commit/9c2f337fb8e3e09a7b7061a2abef6c6e6ce5b1fa))
+* **deps:** update dependency typescript-eslint to v8.67.0 ([d795199](https://github.com/phi-ag/argon2/commit/d7951996d5d660e484c11b3819a091fe28b25ecf))
+* **deps:** update dependency typescript-eslint to v8.68.0 ([27332e3](https://github.com/phi-ag/argon2/commit/27332e3f1f0881ac72e504c5986ca680f619f64f))
+* **deps:** update dependency typescript-eslint to v8.69.0 ([4e165c7](https://github.com/phi-ag/argon2/commit/4e165c78cb46b0e4b189dc8a209bc8741753ac62))
+* **deps:** update dependency uuid to v14.0.2 ([7234507](https://github.com/phi-ag/argon2/commit/723450782b199bc7be5b6780a6e962e3a17e6e28))
+* **deps:** update emscripten/emsdk docker tag to v6.0.6 ([3d0d14f](https://github.com/phi-ag/argon2/commit/3d0d14ff1d2675b3c4e0cee5b594b6c0882a7287))
+* **deps:** update emscripten/emsdk docker tag to v6.0.7 ([5fa5ef1](https://github.com/phi-ag/argon2/commit/5fa5ef1fc0bed94ecf566d7fc07e0ea63033e6a5))
+* **deps:** update emscripten/emsdk docker tag to v6.0.8 ([16ee77c](https://github.com/phi-ag/argon2/commit/16ee77caf8b21cb7f8530cca83c0e871c75cc8ef))
+* **deps:** update emscripten/emsdk docker tag to v6.0.9 ([ecb270a](https://github.com/phi-ag/argon2/commit/ecb270ac956ae1d34f77664a81ed10662bdd26ac))
+* **deps:** update mcr.microsoft.com/playwright docker tag to v1.62.1 ([20bcd06](https://github.com/phi-ag/argon2/commit/20bcd06173d183b270e4bd54683734f130d4fcd4))
+* **deps:** update node.js to v26.5.1 ([7c5c3ab](https://github.com/phi-ag/argon2/commit/7c5c3ab0e729894a630bb5a6f90f5be4e375afd7))
+* **deps:** update node.js to v26.6.0 ([9093e24](https://github.com/phi-ag/argon2/commit/9093e24df75603c167da10e615a7141489aa68ac))
+* **deps:** update node.js to v26.7.0 ([3494e25](https://github.com/phi-ag/argon2/commit/3494e254502fcc4257bf0ba8fa34a43f205aefb0))
+* **deps:** update node.js to v26.8.1 ([3f37a4d](https://github.com/phi-ag/argon2/commit/3f37a4d891539061e0889aefdc965926db15a32c))
+* **deps:** update pnpm to v11.18.0 ([37bdfea](https://github.com/phi-ag/argon2/commit/37bdfea18786c42e51e345faeffd101b3488a2d2))
+* **deps:** update pnpm to v11.19.0 ([be9ac5c](https://github.com/phi-ag/argon2/commit/be9ac5c0d64c479239516a1c3895a8bdc7518e86))
+* **deps:** update pnpm to v11.20.0 ([cef4d0e](https://github.com/phi-ag/argon2/commit/cef4d0ec5bdeb5498eab22eeb4b2a7c326b491de))
+* **deps:** update pnpm to v11.21.0 ([cccd1da](https://github.com/phi-ag/argon2/commit/cccd1dae6af9068b9961eac69e65e386dce88c94))
+* **deps:** update pnpm to v11.25.0 ([8fd6e16](https://github.com/phi-ag/argon2/commit/8fd6e1694055c697e13c2087c09453b3d0cd5b7c))
+* **deps:** update vitest monorepo to v4.1.11 ([b28ecfe](https://github.com/phi-ag/argon2/commit/b28ecfe8e94692923ef1c33118dcd8436e6cd494))
+* prefer named functions ([4cc734e](https://github.com/phi-ag/argon2/commit/4cc734e890251a5bf4bf38d50d227c12d619811a))
+* remove .pnpmfile.cjs ([3a4adf4](https://github.com/phi-ag/argon2/commit/3a4adf489248ecd650cd94b0f2ddc12edc30cca1))
+* switch to oxfmt ([06e0236](https://github.com/phi-ag/argon2/commit/06e0236b8ddc47145a52cb0f77e42886c44c00c3))
+* use branded type for internal pointer type ([8dcc1d7](https://github.com/phi-ag/argon2/commit/8dcc1d7610b2e83e36659b833bdb64e518e43007))
+
+
+### Tests
+
+* replace deprecated `toThrowError` ([2825a76](https://github.com/phi-ag/argon2/commit/2825a76faf5e82241406efd191cc6a9234183adf))
+
 ## [0.5.27](https://github.com/phi-ag/argon2/compare/v0.5.26...v0.5.27) (2026-07-29)
 
 
