@@ -51,7 +51,7 @@
       "automerge": true
     },
     {
-      "matchPackageNames": ["corepack"],
+      "matchPackageNames": ["corepack", "oxfmt"],
       "automerge": true
     },
     {
