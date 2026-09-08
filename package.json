@@ -48,7 +48,7 @@
   "devDependencies": {
     "@cyclonedx/cyclonedx-library": "10.2.0",
     "@eslint/js": "10.0.1",
-    "@playwright/test": "1.62.1",
+    "@playwright/test": "1.63.0",
     "@types/node": "26.4.1",
     "@types/spdx-expression-parse": "4.0.0",
     "@vitest/coverage-v8": "5.0.0",
