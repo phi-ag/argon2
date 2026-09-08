@@ -1,6 +1,6 @@
 import { argon2Verify, argon2id } from "hash-wasm";
 import libsodium from "libsodium-wrappers-sumo";
-import { bench, describe } from "vitest";
+import { expect, test } from "vitest";
 
 import {
   type Argon2HashOptions,
@@ -30,52 +30,45 @@ const fast: Argon2HashOptions = {
 
 const password = "my secret password";
 
-describe.each([
-  { name: "defaults", options: defaults },
-  { name: "fast", options: fast }
-])("hash and verify $name", async ({ options }) => {
-  // NOTE: `hash-wasm` doesn't provide a initialize function,
-  // using 1 second warmup time trying to compensate for this.
-  const argon2 = await initialize();
+test.for([["defaults", defaults] as const, ["fast", fast] as const])(
+  "hash and verify %s",
+  async ([_name, options], { bench }) => {
+    // NOTE: `hash-wasm` doesn't provide a initialize function,
+    const argon2 = await initialize();
 
-  bench(
-    "@phi-ag/argon2",
-    () => {
-      const { encoded } = argon2.hash(password, options);
-      // NOTE: Passing type to `verify` would skip parsing type from encoded string.
-      argon2.verify(encoded, password);
-    },
-    { time: 10_000 }
-  );
+    const result = await bench.compare(
+      bench("@phi-ag/argon2", () => {
+        const { encoded } = argon2.hash(password, options);
+        // NOTE: Passing type to `verify` would skip parsing type from encoded string.
+        argon2.verify(encoded, password);
+      }),
+      bench("hash-wasm", async () => {
+        // NOTE: Identical function call in `argon2.hash`.
+        const salt = generateSalt(16);
 
-  // NOTE: `hash-wasm` doesn't provide sync hash and verify functions.
-  bench(
-    "hash-wasm",
-    async () => {
-      // NOTE: Identical function call in `argon2.hash`.
-      const salt = generateSalt(16);
+        // NOTE: It's not possible to provide password and options separately.
+        const hash = await argon2id({
+          password,
+          salt,
+          parallelism: options.parallelism,
+          iterations: options.timeCost,
+          memorySize: options.memoryCost,
+          hashLength: options.hashLength,
+          outputType: "encoded"
+        });
 
-      // NOTE: It's not possible to provide password and options separately.
-      const hash = await argon2id({
-        password,
-        salt,
-        parallelism: options.parallelism,
-        iterations: options.timeCost,
-        memorySize: options.memoryCost,
-        hashLength: options.hashLength,
-        outputType: "encoded"
-      });
+        await argon2Verify({
+          password,
+          hash
+        });
+      })
+    );
 
-      await argon2Verify({
-        password,
-        hash
-      });
-    },
-    { time: 10_000, warmupTime: 1_000 }
-  );
-});
+    expect(result.get("@phi-ag/argon2")).toBeFasterThan(result.get("hash-wasm"));
+  }
+);
 
-describe("hash and verify 'libsodium'", async () => {
+test("hash and verify 'libsodium'", async ({ bench }) => {
   /*
    * NOTE:
    * - `hashLength` is 32, see https://github.com/jedisct1/libsodium/blob/master/src/libsodium/crypto_pwhash/argon2/pwhash_argon2id.c#L15
@@ -95,18 +88,12 @@ describe("hash and verify 'libsodium'", async () => {
   const argon2 = await initialize();
   await libsodium.ready;
 
-  bench(
-    "@phi-ag/argon2",
-    () => {
+  const result = await bench.compare(
+    bench("@phi-ag/argon2", () => {
       const { encoded } = argon2.hash(password, options);
       argon2.verify(encoded, password);
-    },
-    { time: 10_000 }
-  );
-
-  bench(
-    "libsodium.js",
-    () => {
+    }),
+    bench("libsodium.js", () => {
       const hash = libsodium.crypto_pwhash_str(
         password,
         options.timeCost,
@@ -115,20 +102,8 @@ describe("hash and verify 'libsodium'", async () => {
 
       if (!libsodium.crypto_pwhash_str_verify(hash, password))
         throw Error("Verify libsodium hash failed");
-    },
-    { time: 10_000 }
+    })
   );
-});
 
-describe.skip("memory view", async () => {
-  const buffer = new ArrayBuffer(128 * 1024 * 1024);
-  const fixed = new Uint8Array(buffer);
-
-  bench("fixed", () => {
-    fixed.subarray(65_536, 65_536 + 100);
-  });
-
-  bench("recreate", () => {
-    new Uint8Array(buffer).subarray(65_536, 65_536 + 100);
-  });
+  expect(result.get("@phi-ag/argon2")).toBeFasterThan(result.get("libsodium.js"));
 });
