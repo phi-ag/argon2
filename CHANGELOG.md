@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.5.29](https://github.com/phi-ag/argon2/compare/v0.5.28...v0.5.29) (2026-09-13)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency @types/node to v26.5.0 ([e33b880](https://github.com/phi-ag/argon2/commit/e33b880ff27c97d7506aa308b95c99cd73b962f7))
+* **deps:** update dependency @types/node to v26.5.1 ([b24163d](https://github.com/phi-ag/argon2/commit/b24163d3e3e30d27dc763d70f7f18107ba92a488))
+* **deps:** update dependency oxfmt to v0.67.0 ([63ba1db](https://github.com/phi-ag/argon2/commit/63ba1db3931c92477b5bb676fe4d0d5943ca9ccf))
+* **deps:** update dependency typescript-eslint to v8.70.0 ([cf8b67e](https://github.com/phi-ag/argon2/commit/cf8b67ebde11978900892e566618b38c60f976f1))
+* **deps:** update node.js to v26.8.2 ([e8d97d6](https://github.com/phi-ag/argon2/commit/e8d97d671e25b1ee77cc5cb953ba0308563bef94))
+* **deps:** update phi-ag/run-playwright digest to 5a83095 ([1546053](https://github.com/phi-ag/argon2/commit/1546053a7d99cd1e028e7702683d7c5cb51f6152))
+* **deps:** update pnpm to v12.4.0 ([adc061f](https://github.com/phi-ag/argon2/commit/adc061f0bf84f79e0c9a251d85ca9618ae7e9b50))
+
+
+### Tests
+
+* fix benchmark ([d152440](https://github.com/phi-ag/argon2/commit/d152440898cbf79440748fd4736ccc12b290fde0))
+
 ## [0.5.28](https://github.com/phi-ag/argon2/compare/v0.5.27...v0.5.28) (2026-09-08)
 
 
