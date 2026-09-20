@@ -167,8 +167,8 @@ importers:
   .:
     devDependencies:
       '@cyclonedx/cyclonedx-library':
-        specifier: 10.2.0
-        version: 10.2.0(spdx-expression-parse@5.0.0)
+        specifier: 10.3.0
+        version: 10.3.0(spdx-expression-parse@5.0.0)
       '@eslint/js':
         specifier: 10.0.1
         version: 10.0.1(eslint@10.10.0(supports-color@7.2.0))
@@ -244,8 +244,8 @@ packages:
   '@cacheable/utils@2.5.0':
     resolution: {integrity: sha512-buipgOVDkkPXNR5+xBpDw7Zk2n1EvU7qBJCNUcL7rhQ//kfpOXPAvQ511Os0vpLYJ1pZnvudNytkQt2hst3wqA==}
 
-  '@cyclonedx/cyclonedx-library@10.2.0':
-    resolution: {integrity: sha512-hGeo1XXM0zuIeTyzJihxPxnEOeNBmgZkuPRmTR28RktlAqF9xLneonHRCzahZHLgCq/LOmtCs5vyojJlnmJ87w==}
+  '@cyclonedx/cyclonedx-library@10.3.0':
+    resolution: {integrity: sha512-RIT28sp1U0PCHaaeF3yNRwk6Jig/XJ8UsYAVOMYaHQ+0VVOvsjcp0PTWQFLUqJFF8XMud+Kdq6G+wtDAh+QJFA==}
     engines: {node: '>=20.18.0'}
     peerDependencies:
       ajv: ^8.12.0
@@ -1301,7 +1301,7 @@ snapshots:
       hashery: 1.5.1
       keyv: 5.6.0
 
-  '@cyclonedx/cyclonedx-library@10.2.0(spdx-expression-parse@5.0.0)':
+  '@cyclonedx/cyclonedx-library@10.3.0(spdx-expression-parse@5.0.0)':
     optionalDependencies:
       spdx-expression-parse: 5.0.0
 
