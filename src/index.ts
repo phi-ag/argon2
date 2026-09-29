@@ -212,7 +212,9 @@ class Argon2 {
       opts.type
     );
 
-    using passwordPtr = this.#copyStringToHeap(password);
+    const passwordBytes = this.#encoder.encode(password);
+
+    using passwordPtr = this.#copyToHeap(passwordBytes);
     using saltPtr = this.#copyToHeap(salt);
 
     using hashPtr = this.#malloc(opts.hashLength);
@@ -223,7 +225,7 @@ class Argon2 {
       opts.memoryCost,
       opts.parallelism,
       passwordPtr.ptr,
-      password.length,
+      passwordBytes.length,
       saltPtr.ptr,
       salt.length,
       hashPtr.ptr,
@@ -254,17 +256,22 @@ class Argon2 {
       return { success: false, error: "Encoded string is undefined" };
     if (encoded === "") return { success: false, error: "Encoded string is empty" };
 
+    if (password === null) return { success: false, error: "Password is null" };
+    if (password === undefined) return { success: false, error: "Password is undefined" };
+
     const $type = type ?? typeFromEncoded(encoded);
     if ($type === undefined || !($type in Argon2Type))
       return { success: false, error: "Invalid type" };
 
+    const passwordBytes = this.#encoder.encode(password);
+
     using encodedPtr = this.#copyStringToHeap(encoded);
-    using passwordPtr = this.#copyStringToHeap(password);
+    using passwordPtr = this.#copyToHeap(passwordBytes);
 
     const result = this.#exports.argon2_verify(
       encodedPtr.ptr,
       passwordPtr.ptr,
-      password.length,
+      passwordBytes.length,
       $type
     );
 
