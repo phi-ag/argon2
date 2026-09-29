@@ -1,3 +1,5 @@
+import { argon2Sync } from "node:crypto";
+
 import { describe, expect, test } from "vitest";
 
 import { Argon2Type, Argon2Version, typeFromEncoded } from "./index.js";
@@ -35,6 +37,49 @@ describe("argon2", async () => {
       "The password does not match the supplied hash"
     );
   });
+
+  test("hash non-ASCII password with specific salt", () => {
+    const password = "ç".repeat(16);
+    const salt = new TextEncoder().encode("asdfasdfasdfasdf");
+
+    const { hash, encoded } = argon2.hash(password, { salt });
+
+    expect(toHex(hash)).toEqual(
+      "adca32b2bdb2454748de7b6fcf3c9570436991adb09cd6e07363a141dca8dbc5"
+    );
+
+    expect(encoded).toEqual(
+      "$argon2id$v=19$m=65536,t=3,p=4$YXNkZmFzZGZhc2RmYXNkZg$rcoysr2yRUdI3ntvzzyVcENpka2wnNbgc2OhQdyo28U"
+    );
+
+    expect(argon2.verify(encoded, password));
+
+    expect(() => argon2.verify(encoded, "ç".repeat(8) + "xxxxxxxx")).toThrow(
+      "The password does not match the supplied hash"
+    );
+  });
+
+  test.for(["my secret password", "şifre-Güçlü1", "pass🔑word", "密码密码", "a\0b", ""])(
+    "hash password %j like node:crypto",
+    (password) => {
+      const salt = new TextEncoder().encode("asdfasdfasdfasdf");
+      const options = { salt, timeCost: 1, memoryCost: 32, parallelism: 1 };
+
+      const { hash, encoded } = argon2.hash(password, options);
+
+      const expected = argon2Sync("argon2id", {
+        message: password,
+        nonce: salt,
+        parallelism: options.parallelism,
+        tagLength: 32,
+        memory: options.memoryCost,
+        passes: options.timeCost
+      });
+
+      expect(toHex(hash)).toEqual(toHex(expected));
+      expect(argon2.verify(encoded, password));
+    }
+  );
 
   test("hash password with specific salt and length", () => {
     const salt = new TextEncoder().encode("asdfasdfasdfasdf");
@@ -212,6 +257,13 @@ describe("argon2", async () => {
   test("hash invalid password", () => {
     expect(argon2.tryHash(null!).error).toEqual("Password is null");
     expect(argon2.tryHash(undefined!).error).toEqual("Password is undefined");
+  });
+
+  test("verify invalid password", () => {
+    const { encoded } = argon2.hash("");
+
+    expect(argon2.tryVerify(encoded, null!).error).toEqual("Password is null");
+    expect(argon2.tryVerify(encoded, undefined!).error).toEqual("Password is undefined");
   });
 
   test("verify invalid encoded strings", () => {
