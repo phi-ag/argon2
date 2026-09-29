@@ -257,13 +257,48 @@ describe("argon2", async () => {
   test("hash invalid password", () => {
     expect(argon2.tryHash(null!).error).toEqual("Password is null");
     expect(argon2.tryHash(undefined!).error).toEqual("Password is undefined");
+
+    const typeError = "Password must be of type string";
+    for (const password of [
+      123,
+      true,
+      {},
+      [],
+      [""],
+      new String(""),
+      { toString: () => "" }
+    ]) {
+      // @ts-expect-error
+      expect(argon2.tryHash(password).error).toEqual(typeError);
+    }
+
+    // @ts-expect-error
+    expect(() => argon2.hash([])).toThrow(typeError);
   });
 
   test("verify invalid password", () => {
     const { encoded } = argon2.hash("");
+    expect(argon2.verify(encoded, ""));
 
     expect(argon2.tryVerify(encoded, null!).error).toEqual("Password is null");
     expect(argon2.tryVerify(encoded, undefined!).error).toEqual("Password is undefined");
+
+    const typeError = "Password must be of type string";
+    for (const password of [
+      123,
+      true,
+      {},
+      [],
+      [""],
+      new String(""),
+      { toString: () => "" }
+    ]) {
+      // @ts-expect-error
+      expect(argon2.tryVerify(encoded, password).error).toEqual(typeError);
+    }
+
+    // @ts-expect-error
+    expect(() => argon2.verify(encoded, [])).toThrow(typeError);
   });
 
   test("verify invalid encoded strings", () => {
