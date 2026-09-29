@@ -59,27 +59,72 @@ describe("argon2", async () => {
     );
   });
 
-  test.for(["my secret password", "şifre-Güçlü1", "pass🔑word", "密码密码", "a\0b", ""])(
-    "hash password %j like node:crypto",
-    (password) => {
-      const salt = new TextEncoder().encode("asdfasdfasdfasdf");
-      const options = { salt, timeCost: 1, memoryCost: 32, parallelism: 1 };
+  test.for([
+    ["ASCII", "my secret password"],
+    ["Turkish", "şifre-Güçlü1"],
+    ["emoji", "pass🔑word"],
+    ["CJK", "密码密码"],
+    ["lone surrogate", "a\uD800b"],
+    ["embedded NUL", "a\0b"],
+    ["empty", ""],
+    ["long", "ğ".repeat(100_000)]
+  ])("hash %s password like node:crypto", ([_name, password]) => {
+    const salt = new TextEncoder().encode("asdfasdfasdfasdf");
 
-      const { hash, encoded } = argon2.hash(password, options);
-
-      const expected = argon2Sync("argon2id", {
-        message: password,
-        nonce: salt,
-        parallelism: options.parallelism,
-        tagLength: 32,
-        memory: options.memoryCost,
-        passes: options.timeCost
+    for (const [type, algorithm] of [
+      [Argon2Type.Argon2d, "argon2d"],
+      [Argon2Type.Argon2i, "argon2i"],
+      [Argon2Type.Argon2id, "argon2id"]
+    ] as const) {
+      const { hash, encoded } = argon2.hash(password, {
+        salt,
+        type,
+        timeCost: 1,
+        memoryCost: 32,
+        parallelism: 1
       });
 
+      const expected = argon2Sync(algorithm, {
+        message: password,
+        nonce: salt,
+        parallelism: 1,
+        tagLength: 32,
+        memory: 32,
+        passes: 1
+      });
+      const tag = expected.toString("base64").replace(/=+$/, "");
+
       expect(toHex(hash)).toEqual(toHex(expected));
+      expect(encoded).toEqual(
+        `$${algorithm}$v=19$m=32,t=1,p=1$YXNkZmFzZGZhc2RmYXNkZg$${tag}`
+      );
       expect(argon2.verify(encoded, password));
     }
-  );
+  });
+
+  test.for([
+    ["Zürich2026!", "Zürich2026?"],
+    ["şifre-Güçlü1", "şifre-Güçaaa"],
+    ["ç".repeat(16), "ç".repeat(8) + "xxxxxxxx"]
+  ])("hash %j and reject %j", ([password, prefixTwin]) => {
+    const encoder = new TextEncoder();
+    const prefix = (value: string) => encoder.encode(value).subarray(0, value.length);
+
+    expect(prefixTwin).toHaveLength(password.length);
+    expect(prefix(prefixTwin)).toEqual(prefix(password));
+
+    const { encoded } = argon2.hash(password, {
+      timeCost: 1,
+      memoryCost: 32,
+      parallelism: 1
+    });
+
+    expect(argon2.verify(encoded, password));
+    expect(argon2.tryVerify(encoded, prefixTwin)).toEqual({
+      success: false,
+      error: "The password does not match the supplied hash"
+    });
+  });
 
   test("hash password with specific salt and length", () => {
     const salt = new TextEncoder().encode("asdfasdfasdfasdf");
