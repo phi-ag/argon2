@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.6.1](https://github.com/phi-ag/argon2/compare/v0.6.0...v0.6.1) (2026-10-03)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency oxfmt to v0.71.0 ([992fd04](https://github.com/phi-ag/argon2/commit/992fd0492e3813743ac139a469d8ea6de6716730))
+* **deps:** update dependency typescript-eslint to v8.71.0 ([9c1f8c0](https://github.com/phi-ag/argon2/commit/9c1f8c07a6a57db75c372f5c0f4878cfc227a83f))
+* **deps:** update emscripten/emsdk docker tag to v6.0.11 ([d2f8921](https://github.com/phi-ag/argon2/commit/d2f89211894e5e7ffb4cff3762341d82b3e1fdca))
+* **deps:** update pnpm to v12.7.0 ([8759d1c](https://github.com/phi-ag/argon2/commit/8759d1c274d3fba14f08a9028f79fdd04e33ada3))
+* **deps:** update pnpm to v12.8.1 ([5b99e15](https://github.com/phi-ag/argon2/commit/5b99e159410efa34e43f7685c67e7c22bfa2e4e7))
+* **deps:** update vitest monorepo to v5.0.2 ([d6c787a](https://github.com/phi-ag/argon2/commit/d6c787a372e3eaa65e3378bd979e0425557dce1b))
+* **deps:** update vitest monorepo to v5.0.3 ([b98f870](https://github.com/phi-ag/argon2/commit/b98f870acab30f38c3bed587d52dd3719d02ccb1))
+
 ## [0.6.0](https://github.com/phi-ag/argon2/compare/v0.5.28...v0.6.0) (2026-09-29)
 
 
