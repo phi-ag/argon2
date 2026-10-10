@@ -51,10 +51,11 @@ const { encoded } = argon2.hash("my secret password");
 Astro endpoint running on [Cloudflare](https://developers.cloudflare.com/workers/runtime-apis/webassembly/javascript/#use-from-javascript)
 
 ```ts
+import type { APIRoute } from "astro";
+
 import Argon2 from "@phi-ag/argon2";
 // @ts-expect-error
 import wasm from "@phi-ag/argon2/argon2.wasm";
-import type { APIRoute } from "astro";
 
 const argon2 = new Argon2(await WebAssembly.instantiate(wasm));
 
