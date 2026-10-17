@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.6.2](https://github.com/phi-ag/argon2/compare/v0.6.1...v0.6.2) (2026-10-17)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency @types/node to v26.6.5 ([d48f41d](https://github.com/phi-ag/argon2/commit/d48f41df45ed5814056865995b1dd780938976bf))
+* **deps:** update dependency oxfmt to v0.73.0 ([5d2ce58](https://github.com/phi-ag/argon2/commit/5d2ce5858631b61c388497d4b02a00192bc5f25f))
+* **deps:** update dependency typescript-eslint to v8.71.2 ([0efbf6b](https://github.com/phi-ag/argon2/commit/0efbf6b9891a33ca80b6490f28754eeaac8e9a7b))
+* **deps:** update dependency uuid to v14.0.3 ([d231a37](https://github.com/phi-ag/argon2/commit/d231a379f2fbf331c6d09f2cc017f7f037b20c7c))
+* **deps:** update mcr.microsoft.com/playwright docker tag to v1.64.1 ([6be019d](https://github.com/phi-ag/argon2/commit/6be019dc07e390b6d45c820287a83e9e9517de5f))
+* **deps:** update node.js to v26.12.0 ([304871d](https://github.com/phi-ag/argon2/commit/304871d75683047a5d14fd28fd9b3526c350ecb9))
+* **deps:** update playwright to v1.64.0 ([965ab4a](https://github.com/phi-ag/argon2/commit/965ab4a4a0e704da8f650597cd6c889b93e965f2))
+* **deps:** update pnpm to v12.11.2 ([d2f8842](https://github.com/phi-ag/argon2/commit/d2f88427e39ea9a9fe68faa4157f3d4c5a9f8971))
+* **deps:** update pnpm to v12.13.0 ([895ebda](https://github.com/phi-ag/argon2/commit/895ebdaf3f6287a42bb865aad49b6b55e6276dd3))
+* **deps:** update vitest monorepo to v5.0.4 ([e6a97f3](https://github.com/phi-ag/argon2/commit/e6a97f316ed01bb3b16337f5d80d60ad3cbecec4))
+
 ## [0.6.1](https://github.com/phi-ag/argon2/compare/v0.6.0...v0.6.1) (2026-10-10)
 
 
