@@ -1,4 +1,4 @@
-import { defineConfig } from "vitest/config";
+import { type ViteUserConfig, defineConfig } from "vitest/config";
 
 export default defineConfig({
   test: {
@@ -13,4 +13,4 @@ export default defineConfig({
       reporter: ["text", "cobertura", "html"]
     }
   }
-});
+}) as ViteUserConfig;

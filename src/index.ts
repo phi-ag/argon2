@@ -55,10 +55,11 @@ export interface Argon2TryVerifyError {
 export type Argon2TryVerifyResult = Argon2TryVerifySuccess | Argon2TryVerifyError;
 
 export function typeFromEncoded(encoded: string): Argon2Type | undefined {
-  if (!encoded?.length) return;
+  if (!encoded?.length) return undefined;
   if (encoded.startsWith("$argon2d$")) return Argon2Type.Argon2d;
   if (encoded.startsWith("$argon2i$")) return Argon2Type.Argon2i;
   if (encoded.startsWith("$argon2id$")) return Argon2Type.Argon2id;
+  return undefined;
 }
 
 export const defaultHashOptions: Argon2HashOptions = {
@@ -88,6 +89,8 @@ function validateHashOptions(opts: Argon2HashOptions): string | undefined {
     if (!(opts.salt instanceof Uint8Array)) return "Salt must be of type Uint8Array";
     if (opts.salt.length < 8) return "Salt length is too small";
   }
+
+  return undefined;
 }
 
 type Ptr = number & { __brand: "ptr" };
