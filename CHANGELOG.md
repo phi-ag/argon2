@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.6.3](https://github.com/phi-ag/argon2/compare/v0.6.2...v0.6.3) (2026-10-23)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency oxfmt to v0.74.0 ([c6de9ca](https://github.com/phi-ag/argon2/commit/c6de9ca46625408aa20fc84123061789fb8de5a5))
+* **deps:** update dependency typescript-eslint to v8.72.0 ([0664848](https://github.com/phi-ag/argon2/commit/06648489d610d51d63f10837db3fe6be01032e75))
+* **deps:** update mcr.microsoft.com/playwright:v1.64.1-noble docker digest to 47b510d ([f814e8a](https://github.com/phi-ag/argon2/commit/f814e8ac9e49098eb214087963dbc88d53c5f51f))
+* **deps:** update node.js to v26.12.1 ([0fa7794](https://github.com/phi-ag/argon2/commit/0fa77946ae9ef2d9702ecc6dc7940b63df59e253))
+
 ## [0.6.2](https://github.com/phi-ag/argon2/compare/v0.6.1...v0.6.2) (2026-10-21)
 
 
