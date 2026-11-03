@@ -37,7 +37,11 @@
     },
     {
       "customType": "regex",
-      "managerFilePatterns": [".github/actions/restore/action.yml"],
+      "managerFilePatterns": [
+        "e2e_docker.sh",
+        ".github/actions/e2e/action.yml",
+        ".github/actions/restore/action.yml"
+      ],
       "matchStrings": ["corepack@(?<currentValue>[^\\s]+)"],
       "datasourceTemplate": "npm",
       "packageNameTemplate": "corepack"
