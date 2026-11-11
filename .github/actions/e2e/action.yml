@@ -6,7 +6,7 @@ runs:
     - name: End-to-End
       uses: phi-ag/run-playwright@5a83095c61d9461619391a8ee56fc1959acad29c # v1
       with:
-        version: v1.65.0-noble@sha256:6e3fb709361521eb27161606e6da6d2674e5e89fa16516cb37d6fdd91372273d
+        version: v1.65.0-noble@sha256:9beb546099e11f52d62e505537914870e01a67e0e6b00ae41da4775324e73dbe
         options: -v ${STORE_PATH}:${STORE_PATH}
         run: |
           npm install -g --force corepack@0.36.0
