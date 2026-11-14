@@ -46,7 +46,7 @@
     "sbom": "node utils/sbom.ts"
   },
   "devDependencies": {
-    "@cyclonedx/cyclonedx-library": "10.5.0",
+    "@cyclonedx/cyclonedx-library": "10.5.1",
     "@eslint/js": "10.0.1",
     "@playwright/test": "1.65.0",
     "@types/node": "26.6.6",
