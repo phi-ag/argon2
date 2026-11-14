@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.4](https://github.com/phi-ag/argon2/compare/v0.6.3...v0.6.4) (2026-11-14)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency @cyclonedx/cyclonedx-library to v10.5.1 ([3afc14e](https://github.com/phi-ag/argon2/commit/3afc14e143d4a3e91628309d65dc6a97ce60e0dd))
+
 ## [0.6.3](https://github.com/phi-ag/argon2/compare/v0.6.2...v0.6.3) (2026-11-13)
 
 
