@@ -52,7 +52,7 @@
     "@types/node": "26.6.6",
     "@types/spdx-expression-parse": "4.0.0",
     "@vitest/coverage-v8": "5.1.0",
-    "eslint": "10.14.0",
+    "eslint": "10.15.0",
     "globals": "17.14.0",
     "hash-wasm": "4.13.0",
     "libsodium-wrappers-sumo": "0.8.4",
