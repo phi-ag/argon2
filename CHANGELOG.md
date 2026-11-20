@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.6.4](https://github.com/phi-ag/argon2/compare/v0.6.3...v0.6.4) (2026-11-20)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency @cyclonedx/cyclonedx-library to v10.5.1 ([3afc14e](https://github.com/phi-ag/argon2/commit/3afc14e143d4a3e91628309d65dc6a97ce60e0dd))
+* **deps:** update dependency eslint to v10.15.0 ([edfd63a](https://github.com/phi-ag/argon2/commit/edfd63a0edbb9bd299945d4bbafd5385d3841a38))
+* **deps:** update dependency oxfmt to v0.79.0 ([b01831d](https://github.com/phi-ag/argon2/commit/b01831dbfd83c66bc9e8c5585fc2026ed4703625))
+* **deps:** update dependency typescript-eslint to v8.73.0 ([0f9d621](https://github.com/phi-ag/argon2/commit/0f9d621490ec3bee8a215e3d87651588c930b160))
+* **deps:** update playwright ([bb58511](https://github.com/phi-ag/argon2/commit/bb585119d36945aa081bccf6f6e0c18fdfa3211a))
+* **deps:** update pnpm to v12.20.0 ([c6325d6](https://github.com/phi-ag/argon2/commit/c6325d63f1376f237229977312014477f9661c8c))
+
 ## [0.6.3](https://github.com/phi-ag/argon2/compare/v0.6.2...v0.6.3) (2026-11-13)
 
 
