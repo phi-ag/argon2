@@ -48,7 +48,11 @@
     }
   ],
   "packageRules": [
-    { "matchDepNames": ["node"], "ignoreUnstable": false },
+    {
+      "matchDepNames": ["node"],
+      "ignoreUnstable": false,
+      "allowedVersions": "!/-alpha/"
+    },
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "matchCurrentVersion": "!/^0/",
