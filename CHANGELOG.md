@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.6.5](https://github.com/phi-ag/argon2/compare/v0.6.4...v0.6.5) (2026-11-28)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency @types/node to v26.6.10 ([4998720](https://github.com/phi-ag/argon2/commit/49987201195a28d9bacaa17f433dff5d810185e9))
+* **deps:** update dependency @types/node to v26.6.7 ([f10800f](https://github.com/phi-ag/argon2/commit/f10800f744c4ec8a0a29ebc1494cfe4bddd6a0d5))
+* **deps:** update dependency oxfmt to v0.80.0 ([73b9ff0](https://github.com/phi-ag/argon2/commit/73b9ff096cc3679f8438cb59ba6edb42d4204a00))
+* **deps:** update dependency typescript-eslint to v8.74.0 ([b95a294](https://github.com/phi-ag/argon2/commit/b95a294681942b31b57e10151e5ac7df58056a4f))
+* **deps:** update pnpm to v12.22.0 ([a8ccb61](https://github.com/phi-ag/argon2/commit/a8ccb61b6ee74f9e4ce15ba0dac69c4d194b8de1))
+* **deps:** update pnpm to v12.23.0 ([9fab7ac](https://github.com/phi-ag/argon2/commit/9fab7ace819d0d34a256017363be17af2db0f75f))
+
 ## [0.6.4](https://github.com/phi-ag/argon2/compare/v0.6.3...v0.6.4) (2026-11-23)
 
 
