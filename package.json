@@ -51,7 +51,7 @@
     "@playwright/test": "1.65.1",
     "@types/node": "26.6.10",
     "@types/spdx-expression-parse": "4.0.0",
-    "@vitest/coverage-v8": "5.1.1",
+    "@vitest/coverage-v8": "5.1.2",
     "eslint": "10.15.0",
     "globals": "17.14.0",
     "hash-wasm": "4.13.0",
@@ -62,7 +62,7 @@
     "typescript-eslint": "8.74.0",
     "uuid": "14.0.3",
     "vite": "8.3.8",
-    "vitest": "5.1.1"
+    "vitest": "5.1.2"
   },
   "packageManager": "pnpm@12.23.0+sha512.02da94ffaf133f46074322afe552f90d40b5f71ae259aefbccdacc5085b1d617e98d65e0131f5748b9b67445978ee5055d7d59a473f1eef0d504854fefcd5975"
 }
